@@ -1,0 +1,5 @@
+.choiceHead,
+.choiceNo,
+.choiceYes {
+	visibility: hidden;
+}
