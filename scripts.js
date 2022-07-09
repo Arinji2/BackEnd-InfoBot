@@ -16,7 +16,15 @@ let chp1Links = ["www.google.Series1.com"];
 
 //Variables
 let textBoxValue;
-let length, i, j, characters, lengthArray, word, indexWord, buttonNumber;
+let length,
+	i,
+	j,
+	characters,
+	lengthArray,
+	word,
+	indexWord,
+	buttonNumber,
+	chapter = "chp1";
 let spaces = [0];
 
 function confirmation(buttonNumber) {
@@ -53,10 +61,12 @@ function test(number) {
 			choiceHead.innerHTML = "Did You Mean " + word;
 			if(number == 1) {
 				choiceRender(2)
-				console.log(word);
+				setTimeout(redirect(indexWord, chapter), 2000)
+				function redirect(indexNum, chapter) {
+			window.location.replace("http://www.w3schools.com");}
 			}else if(number == 2) {
 				choiceRender(2)
-				
+				continue;
 			}
 			
 		}
