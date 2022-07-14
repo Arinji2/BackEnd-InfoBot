@@ -10,9 +10,9 @@ choiceYes.style.visibility = "hidden";
 choiceNo.style.visibility = "hidden";
 
 //Storage
-let chapters = ["chp1", "chp2", "chp3", "chp4"];
-let chp1Topics = ["series1"];
-let chp1Links = ["www.google.Series1.com"];
+
+let Topics = ["series1", "series2"];
+let Links = ["http://www.w3schools.com", "http://google.com"];
 
 //Variables
 let textBoxValue;
@@ -24,8 +24,7 @@ let length,
 	word,
 	indexWord,
 	buttonNumber,
-	chapter = "chp1";
-let spaces = [0];
+	spaces = [0];
 
 function confirmation(buttonNumber) {
 	if (buttonNumber == 1) {
@@ -55,15 +54,13 @@ function test(number) {
 		word = textBoxValue.substring(spaces[--i], spaces[++i]);
 		word = word.trim();
 		console.log(word);
-		indexWord = chp1Topics.indexOf(word);
+		indexWord = Topics.indexOf(word);
 		if (indexWord !== -1) {
 			choiceRender(1);
 			choiceHead.innerHTML = "Did You Mean " + word;
 			if(number == 1) {
 				choiceRender(2)
-				setTimeout(redirect(indexWord, chapter), 2000)
-				function redirect(indexNum, chapter) {
-			window.location.replace("http://www.w3schools.com");}
+			window.location.replace(Links[indexWord])
 			}else if(number == 2) {
 				choiceRender(2)
 				continue;
