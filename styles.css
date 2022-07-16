@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	scroll-behavior: smooth;
+}
+.container {
+	text-align: center;
+	color: white;
+}
+
+.Navigation {
+	list-style-type: none;
+	overflow: hidden;
+	margin-top: 10px;
+	right: 15px;
+	position: relative;
+	top: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.Navigation li {
+	float: left;
+	list-style-type: none;
+	top: 1%;
+	text-align: center;
+}
+
+.Navigation li a {
+	font-family: "Open Sans", sans-serif;
+	display: block;
+	color: grey;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.Navigation li a:hover {
+	cursor: pointer;
+}
+
+.Navigation li a:active {
+	text-decoration: underline;
+	text-decoration-color: #4285f4;
+	color: black;
+	text-underline-offset: 8px;
+}
+.head {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.head1 {
+	padding-top: 100px;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	font-size: 80px;
+	font-weight: 500;
+}
+.head2 {
+	padding-top: 100px;
+	font-family: "Open Sans", sans-serif;
+	color: #4285f4;
+	font-size: 80px;
+	font-weight: 500;
+}
+
+.headInfo {
+	font-family: "Open Sans", sans-serif;
+	padding-top: 280px;
+	position: absolute;
+	font-size: 15px;
+	color: #757575;
+}
+
+.headPic {
+	position: absolute;
+	top: 450px;
+	border-bottom: 1px solid #c4cfd1;
+	padding-bottom: 40px;
+}
+
+.what {
+	padding-top: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+.what1 {
+	padding-top: 400px;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	font-size: 80px;
+	font-weight: 500;
+}
+.what2 {
+	padding-top: 400px;
+	font-family: "Open Sans", sans-serif;
+	color: #00bb72;
+	font-size: 80px;
+	font-weight: 500;
+}
+
+.whatInfo {
+	font-family: "Open Sans", sans-serif;
+	padding-top: 600px;
+	position: absolute;
+	font-size: 15px;
+	color: #757575;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.what-Info-Color {
+	color: #00bb72;
+}
+
+.headPic2 {
+	position: absolute;
+	top: 1350px;
+	border-bottom: 1px solid #c4cfd1;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #c4cfd1;
+	padding-bottom: 40px;
+}
