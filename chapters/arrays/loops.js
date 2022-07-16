@@ -34,11 +34,11 @@ function confirmation(buttonNumber) {
 		console.log("No");
 		buttonNumber = 0;
 	}
-	test(buttonNumber);
+	main(buttonNumber);
 }
 
 //prettier-ignore
-function test(number) {
+function main(number) {
 	textBoxValue = textBox.value;
 	textBoxValue = textBoxValue.toLowerCase();
 	length = textBoxValue.length;

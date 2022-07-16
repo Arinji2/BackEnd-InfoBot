@@ -27,19 +27,26 @@ text.forEach((text) => {
 });
 
 function chapter(number) {
+	console.log(number);
 	switch (number) {
 		case 1:
 			window.location.href = "chapters/loops/index.html";
+			break;
 		case 2:
 			window.location.href = "chapters/methods/index.html";
+			break;
 		case 3:
 			window.location.href = "chapters/strings/index.html";
+			break;
 		case 4:
 			window.location.href = "chapters/arrays/index.html";
+			break;
 		case 5:
 			window.location.href = "chapters/constructors/index.html";
+			break;
 		case 6:
 			window.location.href = "chapters/classes/index.html";
+			break;
 	}
 }
 

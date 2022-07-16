@@ -1,0 +1,59 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	color: #757575;
+}
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.container {
+	padding: 16px;
+	text-align: center;
+}
+.block {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #04aa6d;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+}
+.block1 {
+	width: 50%;
+	border: none;
+	background-color: #04aa6d;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	align-self: center;
+	font-family: "Open Sans", sans-serif;
+	border: 3px solid white;
+}
+.choice {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.block:hover {
+	background-color: #ddd;
+	color: black;
+}

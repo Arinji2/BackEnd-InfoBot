@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<meta name="author" content="Arinji" />
+	<meta name="keywords" content="Garconia,website" />
+	<meta name="viewport" content="initial-scale=0.9" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+	<h1>Enter Your Question</h1>
+	<h4>
+		Note: If your Question has 2 words (like For Loop) Make sure to not give a
+		space between them
+	</h4>
+	<input type="text" id="input" placeholder="Example: indexAt(i)" />
+	<button class="block" onclick="main()">Submit!</button>
+
+	<div class="choice">
+		<h1 class="choiceHead" id="choiceHead">Did you Mean</h1>
+		<div class="choice-button">
+			<button class="choiceYes block1" id="choiceYes" onclick="confirmation(1)">
+				Yes
+			</button>
+			<button class="choiceNo block1" id="choiceNo" onclick="confirmation(0)">
+				No
+			</button>
+		</div>
+	</div>
+
+	<div></div>
+	<script src="loops.js"></script>
+</body>
