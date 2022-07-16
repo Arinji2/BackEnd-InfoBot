@@ -75,7 +75,16 @@ function scrollFunction() {
 		mybutton.style.display = "none";
 	}
 }
-
+var x = window.matchMedia("(max-width: 600px)");
+function myFunction(x) {
+	if (x.matches) {
+		// If media query matches
+		contact.addEventListener("click", (ev) => {
+			document.documentElement.scrollTo(0, 5560);
+		});
+	}
+}
+myFunction(x);
 function topFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera

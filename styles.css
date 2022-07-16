@@ -99,6 +99,10 @@ body {
 	border-bottom: 1px solid #c4cfd1;
 	padding-bottom: 40px;
 }
+.headPic-Pic {
+	width: 800px;
+	height: 400px;
+}
 .contact {
 	display: flex;
 	justify-content: center;
@@ -302,4 +306,71 @@ body {
 
 #myBtn:hover {
 	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 600px) {
+	.Navigation {
+		list-style-type: none;
+		overflow: hidden;
+		margin-top: 10px;
+		margin: 0;
+		position: relative;
+		top: 50px;
+		left: 5px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.head {
+		flex-direction: column;
+		align-self: center;
+	}
+	.head1,
+	.head2 {
+		text-align: center;
+	}
+	.head {
+		align-items: center;
+	}
+	.headInfo {
+		top: 200px;
+		align-self: center;
+	}
+	.headPic {
+		top: 600px;
+	}
+	.headPic-Pic {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+	}
+
+	.whatInfo {
+		top: 1500px;
+	}
+	.whatPic {
+		top: 1700px;
+	}
+	.chap1 {
+		text-align: center;
+	}
+	.team1 {
+		text-align: center;
+	}
+	.top,
+	.middle {
+		flex-direction: column;
+	}
+	.contactInfo {
+		text-align: center;
+	}
+	.contactPic {
+		top: 5560px;
+		border: 0px solid transparent;
+	}
+	.contactPic-Pic {
+		visibility: hidden;
+	}
 }
