@@ -13,46 +13,101 @@
 		<div class="Container">
 			<nav>
 				<ul class="Navigation">
-					<li><a href="#what-are-we">What Are We?</a></li>
-					<li><a href="#">Chapters</a></li>
-					<li><a href="#">Updates</a></li>
-					<li><a href="#">Meet The Team</a></li>
+					<li>
+						<a href="#" id="what-are-we">What Are We?</a>
+					</li>
+					<li><a href="#" id="chapters-link">Chapters</a></li>
+					<li><a href="#" id="team-link">Meet The Team</a></li>
+					<li><a href="#">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<body>
 		<div class="head" id="head">
-			<h1 class="head1">Meet the <span class="head2">InfoBOT</span></h1>
-			<h4 class="headInfo">Making Programming Easier and Intresting</h4>
-			<div class="headPic">
+			<h1 class="head1" id="animate-info">
+				Meet the <span class="head2">InfoBOT</span>
+			</h1>
+			<h4 class="headInfo" id="animate-info">
+				Making Programming Easier and Intresting
+			</h4>
+			<div class="headPic" id="animate">
 				<img src="Pictures/Coding.jpg" width="800" height="400" />
 			</div>
 		</div>
 
 		<div class="what" id="What">
-			<h1 class="what1">What Are<span class="what2"> We?</span></h1>
-			<h4 class="whatInfo">
+			<h1 class="what1" id="animate-info" id="what1">
+				What Are<span class="what2"> We?</span>
+			</h1>
+
+			<h4 class="whatInfo" id="animate-info">
 				InfoBOT is A way for Students to learn about
-				<span class="what-Info-Color"> Java </span> in style. Each concept is
-				explained through <span class="what-Info-Color">Articles</span>.
-				<br />Students are directed by the InfoBOT through a simple text box. To
-				get Started, go to the
-				<span class="what-Info-Color"> Chapters </span> Section and choose the
-				desired Chapter.
+				<span class="what-Info-Color" id="test123"> Java </span> in style. Each
+				concept is explained through
+				<span class="what-Info-Color">Articles</span>. <br />Students are
+				directed by the InfoBOT through a simple text box. To get Started, go to
+				the<span class="what-Info-Color"> Chapters </span>
+				Section and choose the desired Chapter.
 			</h4>
-			<div class="headPic2">
+			<div class="whatPic" id="animate">
 				<img src="Pictures/What.png" width="300" height="400" />
 			</div>
+			<section id="what-are-we-section"></section>
 		</div>
-		<section id="what-are-we"></section>
-		<div class="head" id="head">
-			<h1 class="head1">Meet the <span class="head2">InfoBOT</span></h1>
-			<h4 class="headInfo">Making Programming Easier and Intresting</h4>
-			<div class="headPic">
-				<img src="Pictures/Coding.jpg" width="800" height="400" />
+
+		<div class="chapters" id="chapters">
+			<h1 class="chap1" id="animate-info">
+				Choose Your <span class="chap2">Chapter</span>
+			</h1>
+		</div>
+		<div class="buttons">
+			<button class="Button" id="animate" onclick="chapter(1)">Loops</button>
+			<button class="Button" id="animate" onclick="chapter(2)">Methods</button>
+			<button class="Button" id="animate" onclick="chapter(3)">String</button>
+		</div>
+		<div class="buttons-2">
+			<button class="Button" id="animate" onclick="chapter(4)">Arrays</button>
+			<button class="Button" id="animate" onclick="chapter(5)">
+				Constructors
+			</button>
+			<button class="Button" id="animate" onclick="chapter(6)">Classes</button>
+		</div>
+		<div class="team" id="team">
+			<h1 class="team1" id="animate-info">
+				Meet the <span class="team2">Team</span>
+			</h1>
+			<section id="chapters"></section>
+		</div>
+		<div class="top">
+			<div class="Arinji" id="animate-info">
+				<img src="Pictures/Arinji.png" class="Arinji-Pic" id="animate" />
+				<h1 id="animate-info">Arinjay</h1>
+				<h1 id="animate-info">CEO</h1>
+				<h3 id="animate-info">
+					I am Arinjay, I love coding and I made this Site
+				</h3>
+			</div>
+			<div class="Nilay" id="animate-info">
+				<img src="Pictures/Nilay.png" class="Nilay-Pic" id="animate" />
+				<h1 id="animate-info">Nilay</h1>
+				<h1 id="animate-info">COO</h1>
+				<h3 id="animate-info">I am Nilay, I handle all of the Articles</h3>
 			</div>
 		</div>
+		<div class="middle">
+			<div class="Yuvraj" id="animate-info">
+				<img src="Pictures/Yuvraj.jpeg" class="Yuvraj-Pic" id="animate" />
+				<h1 id="animate-info">Yuvraj</h1>
+				<h1 id="animate-info">Writer</h1>
+			</div>
+			<div class="Saesha" id="animate-info">
+				<img src="Pictures/Saesha.jpg" class="Saesha-Pic" id="animate" />
+				<h1 id="animate-info">Saesha</h1>
+				<h1 id="animate-info">Writer</h1>
+			</div>
+		</div>
+
 		<script src="scripts.js"></script>
 	</body>
 </html>

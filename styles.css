@@ -6,6 +6,7 @@ body {
 	padding: 0;
 	background-color: white;
 	scroll-behavior: smooth;
+	scroll-padding: -1300px;
 }
 .container {
 	text-align: center;
@@ -42,7 +43,12 @@ body {
 .Navigation li a:hover {
 	cursor: pointer;
 }
-
+.Navigation li a:hover {
+	text-decoration: underline;
+	text-decoration-color: #4285f4;
+	color: black;
+	text-underline-offset: 8px;
+}
 .Navigation li a:active {
 	text-decoration: underline;
 	text-decoration-color: #4285f4;
@@ -74,7 +80,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	padding-top: 280px;
 	position: absolute;
-	font-size: 15px;
+	font-size: 20px;
 	color: #757575;
 }
 
@@ -84,22 +90,30 @@ body {
 	border-bottom: 1px solid #c4cfd1;
 	padding-bottom: 40px;
 }
+.animate {
+	animation: slideInLeft;
+	animation-duration: 1s;
+}
+.animate-info {
+	animation: fadeInUp;
+	animation-duration: 1s;
+}
 
 .what {
-	padding-top: 200px;
+	padding-top: 300px;
 	display: flex;
 	justify-content: center;
 }
 
 .what1 {
-	padding-top: 400px;
+	padding-top: 500px;
 	font-family: "Open Sans", sans-serif;
 	color: #757575;
 	font-size: 80px;
 	font-weight: 500;
 }
 .what2 {
-	padding-top: 400px;
+	padding-top: 500px;
 	font-family: "Open Sans", sans-serif;
 	color: #00bb72;
 	font-size: 80px;
@@ -108,23 +122,151 @@ body {
 
 .whatInfo {
 	font-family: "Open Sans", sans-serif;
-	padding-top: 600px;
 	position: absolute;
-	font-size: 15px;
+	font-size: 20px;
 	color: #757575;
 	word-wrap: break-word;
 	text-align: center;
+	top: 1400px;
 }
 
 .what-Info-Color {
 	color: #00bb72;
 }
 
-.headPic2 {
+.whatPic {
 	position: absolute;
-	top: 1350px;
+	top: 1550px;
 	border-bottom: 1px solid #c4cfd1;
 	padding-bottom: 40px;
+}
+
+.chapters {
+	display: flex;
+	justify-content: center;
+}
+
+.chap1 {
+	padding-top: 750px;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	font-size: 80px;
+	font-weight: 500;
+}
+.chap2 {
+	padding-top: 750px;
+	font-family: "Open Sans", sans-serif;
+	color: #f24336;
+	font-size: 80px;
+	font-weight: 500;
+}
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+.buttons-2 {
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-evenly;
 	border-bottom: 1px solid #c4cfd1;
 	padding-bottom: 40px;
+}
+.Button {
+	background-color: #1967d2;
+	border-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	border: 2px solid #1967d2;
+	font-size: 30px;
+}
+
+.Button:hover {
+	background-color: white;
+	color: #1967d2;
+	cursor: pointer;
+}
+
+.team {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.team1 {
+	padding-top: 100px;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	font-size: 80px;
+	font-weight: 500;
+}
+.team2 {
+	padding-top: 100px;
+	font-family: "Open Sans", sans-serif;
+	color: #ffc107;
+	font-size: 80px;
+	font-weight: 500;
+}
+
+.teamInfo {
+	font-family: "Open Sans", sans-serif;
+	padding-top: 280px;
+	position: absolute;
+	font-size: 15px;
+	color: #757575;
+}
+
+.teamPic {
+	position: absolute;
+	top: 450px;
+	border-bottom: 1px solid #c4cfd1;
+	padding-bottom: 40px;
+}
+
+.top,
+.middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.middle {
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.Arinji-Pic,
+.Nilay-Pic {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: 5px solid #ffc107;
+}
+
+.Arinji,
+.Nilay {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	border: 5px solid #757575;
+	padding: 10px;
+}
+
+.Arinji h1 .Nilay h1 {
+	color: #ffc107;
+}
+.Yuvraj-Pic,
+.Saesha-Pic {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid #ffc107;
+}
+.Yuvraj,
+.Saesha {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+	border: 5px solid #757575;
+	padding: 10px;
 }
