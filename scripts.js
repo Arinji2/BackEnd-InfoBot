@@ -46,6 +46,8 @@ function chapter(number) {
 let what = document.getElementById("what-are-we");
 let chapters = document.getElementById("chapters-link");
 let team = document.getElementById("team-link");
+let contact = document.getElementById("contact-link");
+
 what.addEventListener("click", (ev) => {
 	document.documentElement.scrollTo(0, 1250);
 });
@@ -55,3 +57,26 @@ chapters.addEventListener("click", (ev) => {
 team.addEventListener("click", (ev) => {
 	document.documentElement.scrollTo(0, 2700);
 });
+contact.addEventListener("click", (ev) => {
+	document.documentElement.scrollTo(0, 4200);
+});
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+	scrollFunction();
+};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+}
+
+function topFunction() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
