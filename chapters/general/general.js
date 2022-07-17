@@ -11,8 +11,11 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = ["series1", "series2"];
-let Links = ["http://www.w3schools.com", "http://google.com"];
+let Topics = ["palindrome", "series2"];
+let Links = [
+	"http://www.infobot.cf/general/Articles/palindrome.html",
+	"http://google.com",
+];
 
 //Variables
 let textBoxValue;

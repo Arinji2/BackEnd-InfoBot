@@ -274,7 +274,8 @@ body {
 	color: #ffc107;
 }
 .Yuvraj-Pic,
-.Saesha-Pic {
+.Saesha-Pic,
+.Nikhilesh-Pic {
 	position: relative;
 	height: 200px;
 	width: 200px;
@@ -282,7 +283,8 @@ body {
 	border: 5px solid #ffc107;
 }
 .Yuvraj,
-.Saesha {
+.Saesha,
+.Nikhilesh {
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
 	color: #757575;

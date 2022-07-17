@@ -42,7 +42,7 @@ function chapter(number) {
 			window.location.href = "chapters/arrays/index.html";
 			break;
 		case 5:
-			window.location.href = "chapters/constructors/index.html";
+			window.location.href = "chapters/general/index.html";
 			break;
 		case 6:
 			window.location.href = "chapters/classes/index.html";

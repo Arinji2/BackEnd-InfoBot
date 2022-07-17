@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+	margin: 0;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	color: #757575;
+}
+
+.heading {
+	padding: 50px;
+	color: #00bb72;
+	font-size: 80px;
+	font-weight: 500;
+	text-decoration: 5px overline underline #757575;
+	text-underline-offset: 20px;
+}
+
+.animate-info {
+	animation: fadeInUp;
+	animation-duration: 1s;
+}
+
+.code {
+	padding-top: 30px;
+	color: #00bb72;
+}
+
+.logic h3 {
+	color: #00bb72;
+	padding-top: 30px;
+}
