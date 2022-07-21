@@ -4,7 +4,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background-color: white;
+	background-color: black;
 	scroll-behavior: smooth;
 	scroll-padding: -1300px;
 }
@@ -46,13 +46,13 @@ body {
 .Navigation li a:hover {
 	text-decoration: underline;
 	text-decoration-color: #4285f4;
-	color: black;
+	color: white;
 	text-underline-offset: 8px;
 }
 .Navigation li a:active {
 	text-decoration: underline;
 	text-decoration-color: #4285f4;
-	color: black;
+	color: white;
 	text-underline-offset: 8px;
 }
 .head {
@@ -207,7 +207,7 @@ body {
 }
 
 .Button:hover {
-	background-color: white;
+	background-color: black;
 	color: #1967d2;
 	cursor: pointer;
 }
