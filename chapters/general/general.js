@@ -11,8 +11,11 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = ["palindrome", "series2"];
-let Links = ["../general/Articles/palindrome.html", "http://google.com"];
+let Topics = ["palindrome", "armstrong"];
+let Links = [
+	"../general/Articles/palindrome.html",
+	"../general/Articles/armstrong.html",
+];
 
 //Variables
 let textBoxValue;
