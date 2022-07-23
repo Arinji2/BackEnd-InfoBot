@@ -11,10 +11,11 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = ["palindrome", "armstrong"];
+let Topics = ["palindrome", "armstrong", "brownpair"];
 let Links = [
 	"../general/Articles/palindrome.html",
 	"../general/Articles/armstrong.html",
+	"../general/Articles/brownPair.html",
 ];
 
 //Variables
