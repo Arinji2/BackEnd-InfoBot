@@ -29,7 +29,17 @@ let length,
 	indexWord,
 	buttonNumber,
 	spaces = [0];
-
+function toUpp(checkWord) {
+	let checkLength = checkWord.length;
+	let checkLetter;
+	let newWord = "";
+	for (i = 0; i < checkLength; i++) {
+		checkLetter = checkWord.charAt(i);
+		if (i == 0) checkLetter = checkLetter.toUpperCase();
+		newWord = newWord + checkLetter;
+	}
+	return newWord;
+}
 function confirmation(buttonNumber) {
 	if (buttonNumber == 1) {
 		buttonNumber = 1;
@@ -57,10 +67,11 @@ function main(number) {
 	for (i = 1; i <= lengthArray; i++) {
 		word = textBoxValue.substring(spaces[--i], spaces[++i]);
 		word = word.trim();
-		console.log(word);
 		indexWord = Topics.indexOf(word);
+
 		if (indexWord !== -1) {
 			choiceRender(1);
+			word = toUpp(word);
 			choiceHead.innerHTML = "Did You Mean " + word;
 			if(number == 1) {
 				choiceRender(2)
