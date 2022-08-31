@@ -1,31 +1,61 @@
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-		const intersecting = entry.isIntersecting;
-		entry.target.classList.toggle("animate", intersecting);
-		if (intersecting) observer.unobserve(entry.target);
-	});
+window.onscroll = function () {
+  sticky();
+};
+
+var navbar, sticky;
+window.addEventListener("load", () => {
+  navbar = document.getElementById("navbar");
+  sticky = navbar.offsetTop;
+  sticky();
 });
 
-let pictures = document.querySelectorAll("#animate");
+function sticky() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
-pictures.forEach((pictures) => {
-	observer.observe(pictures);
+const observerTop = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const intersecting = entry.isIntersecting;
+    entry.target.classList.toggle("animate-top", intersecting);
+    if (intersecting) observerTop.unobserve(entry.target);
+  });
 });
 
-const observer2 = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-		const intersecting = entry.isIntersecting;
-		entry.target.classList.toggle("animate-info", intersecting);
-		if (intersecting) observer2.unobserve(entry.target);
-	});
+let topElement = document.querySelectorAll("#Animate-top");
+
+topElement.forEach((topElement) => {
+  observerTop.observe(topElement);
+});
+const observerRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const intersecting = entry.isIntersecting;
+    entry.target.classList.toggle("animate-right", intersecting);
+    if (intersecting) observerRight.unobserve(entry.target);
+  });
 });
 
-let text = document.querySelectorAll("#animate-info");
+let rightElement = document.querySelectorAll("#Animate-right");
 
-text.forEach((text) => {
-	observer2.observe(text);
+rightElement.forEach((rightElement) => {
+  observerRight.observe(rightElement);
+});
+const observerLeft = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const intersecting = entry.isIntersecting;
+    entry.target.classList.toggle("animate-left", intersecting);
+    if (intersecting) observerLeft.unobserve(entry.target);
+  });
 });
 
+let leftElement = document.querySelectorAll("#Animate-left");
+
+leftElement.forEach((leftElement) => {
+  observerLeft.observe(leftElement);
+});
 function chapter(number) {
 	console.log(number);
 	switch (number) {
@@ -50,49 +80,8 @@ function chapter(number) {
 	}
 }
 
-let what = document.getElementById("what-are-we");
-let chapters = document.getElementById("chapters-link");
-let team = document.getElementById("team-link");
-let contact = document.getElementById("contact-link");
-
-what.addEventListener("click", (ev) => {
-	document.documentElement.scrollTo(0, 1250);
+let button = document.getElementById("tryButton");
+var location = document.getElementById("topicSec");
+button.addEventListener("click", () => {
+  window.location.href = "#topicSec";
 });
-chapters.addEventListener("click", (ev) => {
-	document.documentElement.scrollTo(0, 2000);
-});
-team.addEventListener("click", (ev) => {
-	document.documentElement.scrollTo(0, 2700);
-});
-contact.addEventListener("click", (ev) => {
-	document.documentElement.scrollTo(0, 4200);
-});
-
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-	scrollFunction();
-};
-
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-}
-var x = window.matchMedia("(max-width: 600px)");
-function myFunction(x) {
-	if (x.matches) {
-		// If media query matches
-		contact.addEventListener("click", (ev) => {
-			document.documentElement.scrollTo(0, 5560);
-		});
-	}
-}
-myFunction(x);
-function topFunction() {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
