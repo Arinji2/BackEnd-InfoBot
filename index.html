@@ -1,146 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=0.7" />
-		<title>Article ChatBot</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<header>
-		<div class="Container">
-			<nav>
-				<ul class="Navigation">
-					<li>
-						<a href="#" id="what-are-we">What Are We?</a>
-					</li>
-					<li><a href="#" id="chapters-link">Chapters</a></li>
-					<li><a href="#" id="team-link">Meet The Team</a></li>
-					<li><a href="#" id="contact-link">Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<body>
-		<div class="head" id="head">
-			<h1 class="head1" id="animate-info">
-				Meet the <span class="head2">InfoBOT</span>
-			</h1>
-			<h4 class="headInfo" id="animate-info">
-				Making Programming Easier and Intresting
-			</h4>
-			<div class="headPic" id="animate">
-				<img src="Pictures/Coding.jpg" class="headPic-Pic" />
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InfoBot</title>
+    <link rel="stylesheet" href="ExternalCss/buttons.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f1af357be6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <nav id="navbar">
+    <ul class="nav-ul">
+      <li class="nav-ul-li"></li>
+      <li class="nav-ul-li-drop"><a href="#aboutSec">About Us</a></li>
+      <li class="nav-ul-li"><a href="#topicSec">Topics</a></li>
+      <li class="nav-ul-li"><a href="#teamSec">Meet the Team</a></li>
+      <li class="nav-ul-li">
+        <a href="#contactSec">Contact Us</a>
+      </li>
+      <li>
+        <button
+          id="tryButton"
+          class="btn btn-outline-primary mr-md-3 mb-2 mb-md-0"
+        >
+          Try Us Out
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div class="headingSec"></div>
+  <div class="heading">
+    <h1>Meet the <span class="blue">InfoBot</span></h1>
+    <p id="animate-top">
+      Everything a Computer Science Student requires, for Free
+    </p>
+    <img src="Pictures/armstrong.png" class="armstrong-pic" id="Animate-top" />
+  </div>
+  <div class="aboutSec" id="aboutSec"></div>
+  <div class="about" id="About">
+    <h1 id="Animate-top">What is the <span class="yellow">InfoBot</span></h1>
+    <div class="about-content">
+      <img src="Pictures/work.png" id="Animate-left" />
+      <div class="about-content-text" id="Animate-right">
+        <p>
+          <i class="fa-solid fa-arrow-right"></i><span class="white">S</span>The
+          InfoBot is a user friendly way to look up School Programmes
+        </p>
+        <p>
+          <i class="fa-solid fa-arrow-right"></i
+          ><span class="white">S</span>Each Programme is in its own Article,
+          indexed by the InfoBot which can locate them via simple search queries
+        </p>
+        <p>
+          <i class="fa-solid fa-arrow-right"></i>
+          <span class="white">S</span>Each Article is wriiten by our writers,
+          with each having more than 2 years of experience with Java
+        </p>
+        <p>
+          <i class="fa-solid fa-arrow-right"></i>
+          <span class="white">S</span>With a highly advanced support system,
+          constant updates, latest topics. Why not try out InfoBot. Its free
+          anyways.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="topicSec" id="topicSec"></div>
+  <div class="topics" id="Topics">
+    <h1 id="Animate-top">Choose Your <span class="green">Topic</span></h1>
+    <div class="topics-content">
+      <div class="buttons">
+        <button class="Button" id="Animate-left" onclick="chapter(1)">
+          Loops
+        </button>
+        <button class="Button" id="Animate-top" onclick="chapter(2)">
+          Methods
+        </button>
+        <button class="Button" id="Animate-right" onclick="chapter(3)">
+          String
+        </button>
+      </div>
+      <div class="buttons-2">
+        <button class="Button" id="Animate-left" onclick="chapter(4)">
+          Arrays
+        </button>
+        <button class="Button" id="Animate-top" onclick="chapter(5)">
+          General Programs
+        </button>
+        <button class="Button" id="Animate-right" onclick="chapter(6)">
+          Classes
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="teamSec" id="teamSec"></div>
+  <div class="team">
+    <h1 id="Animate-top">Meet the <span class="red">Team</span></h1>
 
-		<div class="what" id="What">
-			<h1 class="what1" id="animate-info" id="what1">
-				What Are<span class="what2"> We?</span>
-			</h1>
-
-			<h4 class="whatInfo" id="animate-info">
-				InfoBOT is A way for Students to learn about
-				<span class="what-Info-Color" id="animate-info"> Java </span> in style.
-				Each concept is explained through
-				<span class="what-Info-Color">Articles</span>. <br />Students are
-				directed by the InfoBOT through a simple text box. To get Started, go to
-				the<span class="what-Info-Color"> Chapters </span>
-				Section and choose the desired Chapter.
-			</h4>
-			<div class="whatPic" id="animate">
-				<img src="Pictures/What.png" width="300" height="400" />
-			</div>
-			<section id="what-are-we-section"></section>
-		</div>
-
-		<div class="chapters" id="chapters">
-			<h1 class="chap1" id="animate-info">
-				Choose Your <span class="chap2">Chapter</span>
-			</h1>
-		</div>
-		<div class="buttons">
-			<button class="Button" id="animate" onclick="chapter(1)">Loops</button>
-			<button class="Button" id="animate" onclick="chapter(2)">Methods</button>
-			<button class="Button" id="animate" onclick="chapter(3)">String</button>
-		</div>
-		<div class="buttons-2">
-			<button class="Button" id="animate" onclick="chapter(4)">Arrays</button>
-			<button class="Button" id="animate" onclick="chapter(5)">
-				General Programs
-			</button>
-			<button class="Button" id="animate" onclick="chapter(6)">Classes</button>
-		</div>
-		<div class="team" id="team">
-			<h1 class="team1" id="animate-info">
-				Meet the <span class="team2">Team</span>
-			</h1>
-			<section id="chapters"></section>
-		</div>
-		<div class="top">
-			<div class="Arinji" id="animate-info">
-				<img src="Pictures/Arinji.png" class="Arinji-Pic" id="animate" />
-				<h1 id="animate-info">Arinjay</h1>
-				<h1 id="animate-info">CEO</h1>
-				<h3 id="animate-info">I am Arinjay, I made the Site</h3>
-			</div>
-			<div class="Nilay" id="animate-info">
-				<img src="Pictures/Nilay.png" class="Nilay-Pic" id="animate" />
-				<h1 id="animate-info">Nilay</h1>
-				<h1 id="animate-info">COO</h1>
-				<h3 id="animate-info">I am Nilay, I handle all of the Articles</h3>
-			</div>
-		</div>
-		<div class="middle">
-			<div class="Yuvraj" id="animate-info">
-				<img src="Pictures/Yuvraj.jpeg" class="Yuvraj-Pic" id="animate" />
-				<h1 id="animate-info">Yuvraj</h1>
-				<h1 id="animate-info">Writer</h1>
-			</div>
-			<div class="Saesha" id="animate-info">
-				<img src="Pictures/Saesha.jpg" class="Saesha-Pic" id="animate" />
-				<h1 id="animate-info">Saesha</h1>
-				<h1 id="animate-info">Writer</h1>
-			</div>
-			<div class="Shreyans" id="animate-info">
-				<img src="Pictures/Shreyans.jpg" class="Shreyans-Pic" id="animate" />
-				<h1 id="animate-info">Shreyans</h1>
-				<h1 id="animate-info">Writer</h1>
-			</div>
-			<div class="Nikhilesh" id="animate-info">
-				<img src="Pictures/Nikhilesh.png" class="Nikhilesh-Pic" id="animate" />
-				<h1 id="animate-info">Nikhilesh</h1>
-				<h1 id="animate-info">Writer</h1>
-			</div>
-		</div>
-		<div class="contact" id="contact">
-			<h1 class="contact1" id="animate-info">
-				Contact <span class="contact2">Us</span>
-			</h1>
-			<h4 class="contactInfo" id="animate-info">
-				For Any Questions, bugs please mail us at
-				<span class="contact-info-highlight">support@infobot.cf</span>
-			</h4>
-			<div class="contactPic" id="animate">
-				<img
-					src="Pictures/logo.jpeg"
-					width="400"
-					height="400"
-					class="contactPic-Pic"
-				/>
-			</div>
-		</div>
-
-		<button onclick="topFunction()" id="myBtn" title="Go to top">
-			<img src="Pictures/top.png" />
-		</button>
-		<script src="scripts.js"></script>
-	</body>
+    <div class="top">
+      <div class="top-row" id="Animate-left">
+        <img src="Pictures/Annie.png" class="top-row-pic" />
+        <h2 class="red">Annie</h2>
+        <h3>Manager</h3>
+      </div>
+      <div class="top-row" id="Animate-top">
+        <img src="Pictures/Arinji.png" class="top-row-pic" />
+        <h2 class="red">Arinjay</h2>
+        <h3>CEO</h3>
+      </div>
+      <div class="top-row" id="Animate-right">
+        <img src="Pictures/Nilay.png" class="top-row-pic" />
+        <h2 class="red">Nilay</h2>
+        <h3>COO</h3>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="middle-row" id="Animate-left">
+        <img src="Pictures/Yuvraj.jpeg" class="middle-row-pic" />
+        <h2 class="red">Yuvraj</h2>
+        <h3>Writer</h3>
+      </div>
+      <div class="middle-row" id="Animate-top">
+        <img src="Pictures/Saesha.jpg" class="middle-row-pic" />
+        <h2 class="red">Saesha</h2>
+        <h3>Writer</h3>
+      </div>
+      <div class="middle-row" id="Animate-top">
+        <img src="Pictures/Anwesha.jpg" class="middle-row-pic" />
+        <h2 class="red">Anwesha</h2>
+        <h3>Writer</h3>
+      </div>
+      <div class="middle-row" id="Animate-right">
+        <img src="Pictures/Shreyans.jpg" class="middle-row-pic" />
+        <h2 class="red">Shreyans</h2>
+        <h3>Writer</h3>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-row" id="Animate-left">
+        <img src="Pictures/Nikhilesh.png" class="bottom-row-pic" />
+        <h2 class="red">Nikhilesh</h2>
+        <h3>Writer</h3>
+      </div>
+      <div class="bottom-row" id="Animate-right">
+        <img src="Pictures/Siddhartha.jpg" class="bottom-row-pic" />
+        <h2 class="red" style="font-size: 50px">Siddhartha</h2>
+        <h3>Writer</h3>
+      </div>
+      <!--      
+      <div class="bottom-row">
+        <img src="Pictures/extra.jpg" class="bottom-row-pic" />
+        <h2 class="red">Extra</h2>
+        <h3>Writer</h3>
+      </div>
+      <div class="bottom-row">
+        <img src="Pictures/extra.jpg" class="bottom-row-pic" />
+        <h2 class="red">Extra</h2>
+        <h3>Writer</h3>
+      </div>
+      -->
+    </div>
+  </div>
+  <div class="contactSec" id="contactSec"></div>
+  <div class="contact" id="Contact">
+    <h1 id="Animate-top">Contact<span class="blue"> Us</span></h1>
+    <div class="contact-content">
+      <div class="contact-content-text" id="Animate-left">
+        <p>
+          <i class="fa-solid fa-arrow-right"></i> Have Questions? Mail us, our
+          support team will be with you within 1-2 business days.
+        </p>
+        <button class="Button">support@infobot.cf</button>
+        <br /><br />
+        <p>
+          <i class="fa-solid fa-arrow-right"></i> Want to Reccomend new
+          Articles? Mail us, our team will be with you within 1-2 business days.
+        </p>
+        <button class="Button">info@infobot.cf</button>
+      </div>
+      <img src="Pictures/mail.png" id="Animate-right" />
+    </div>
+  </div>
+  <script src="scripts.js"></script>
 </html>
