@@ -1,21 +1,3 @@
-window.onscroll = function () {
-  sticky();
-};
-
-var navbar, sticky;
-window.addEventListener("load", () => {
-  navbar = document.getElementById("navbar");
-  sticky = navbar.offsetTop;
-  sticky();
-});
-
-function sticky() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 const observerTop = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -81,7 +63,6 @@ function chapter(number) {
 }
 
 let button = document.getElementById("tryButton");
-var location = document.getElementById("topicSec");
 button.addEventListener("click", () => {
   window.location.href = "#topicSec";
 });
