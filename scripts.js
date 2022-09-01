@@ -1,68 +1,93 @@
-
-const observerTop = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const intersecting = entry.isIntersecting;
-    entry.target.classList.toggle("animate-top", intersecting);
-    if (intersecting) observerTop.unobserve(entry.target);
-  });
+let about = document.getElementById("about-dropdown");
+let aboutContent = document.getElementById("about-content");
+about.addEventListener("click", function () {
+  if (aboutContent.style.display == "block")
+    aboutContent.style.display = "none";
+  else aboutContent.style.display = "block";
 });
 
-let topElement = document.querySelectorAll("#Animate-top");
+let contact = document.getElementById("contact-dropdown");
 
-topElement.forEach((topElement) => {
-  observerTop.observe(topElement);
-});
-const observerRight = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const intersecting = entry.isIntersecting;
-    entry.target.classList.toggle("animate-right", intersecting);
-    if (intersecting) observerRight.unobserve(entry.target);
-  });
+contact.addEventListener("click", function () {
+  let contactContent = document.getElementById("contact-content");
+  if (contactContent.style.display == "block")
+    contactContent.style.display = "none";
+  else contactContent.style.display = "block";
 });
 
-let rightElement = document.querySelectorAll("#Animate-right");
+window.onscroll = function () {
+  scrollFunc();
+};
 
-rightElement.forEach((rightElement) => {
-  observerRight.observe(rightElement);
-});
-const observerLeft = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const intersecting = entry.isIntersecting;
-    entry.target.classList.toggle("animate-left", intersecting);
-    if (intersecting) observerLeft.unobserve(entry.target);
-  });
-});
+var navbar = document.getElementById("navbar");
 
-let leftElement = document.querySelectorAll("#Animate-left");
+var sticky = navbar.offsetTop;
 
-leftElement.forEach((leftElement) => {
-  observerLeft.observe(leftElement);
-});
-function chapter(number) {
-	console.log(number);
-	switch (number) {
-		case 1:
-			window.location.href = "chapters/loops/index.html";
-			break;
-		case 2:
-			window.location.href = "chapters/methods/index.html";
-			break;
-		case 3:
-			window.location.href = "chapters/strings/index.html";
-			break;
-		case 4:
-			window.location.href = "chapters/arrays/index.html";
-			break;
-		case 5:
-			window.location.href = "chapters/general/index.html";
-			break;
-		case 6:
-			window.location.href = "chapters/classes/index.html";
-			break;
-	}
+function scrollFunc() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
 
-let button = document.getElementById("tryButton");
-button.addEventListener("click", () => {
-  window.location.href = "#topicSec";
-});
+class ObserverCreator {
+  constructor(className, objectName, idName) {
+    this.className = className;
+    this.objectName = objectName;
+    this.idName = idName;
+    this.objCreator(className, objectName, idName);
+  }
+  objCreator(className, objectName, idName) {
+    objectName = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const intersecting = entry.isIntersecting;
+        entry.target.classList.toggle(className, intersecting);
+        if (intersecting) objectName.unobserve(entry.target);
+      });
+    });
+
+    let element = document.querySelectorAll(idName);
+
+    element.forEach((element) => {
+      objectName.observe(element);
+    });
+  }
+}
+
+var headPic = new ObserverCreator(
+  "animate-head-pic",
+  "observerHeadPic",
+  "#animate-head-pic"
+);
+
+var top = new ObserverCreator("animate-top", "animateTop", "#animate-top");
+var left = new ObserverCreator("animate-left", "animateLeft", "#animate-left");
+var right = new ObserverCreator(
+  "animate-right",
+  "animateRight",
+  "#animate-right"
+);
+function chapter(number) {
+  console.log(number);
+  switch (number) {
+    case 1:
+      window.location.href = "chapters/loops/index.html";
+      break;
+    case 2:
+      window.location.href = "chapters/methods/index.html";
+      break;
+    case 3:
+      window.location.href = "chapters/strings/index.html";
+      break;
+    case 4:
+      window.location.href = "chapters/arrays/index.html";
+      break;
+    case 5:
+      window.location.href = "chapters/general/index.html";
+      break;
+    case 6:
+      window.location.href = "chapters/classes/index.html";
+      break;
+  }
+}
