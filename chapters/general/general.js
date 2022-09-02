@@ -2,6 +2,7 @@ const textBox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
 const choiceYes = document.getElementById("choiceYes");
 const choiceNo = document.getElementById("choiceNo");
+const listDivHead = document.getElementById("list");
 
 // DOM Settings
 
@@ -28,7 +29,8 @@ let length,
   lengthArray,
   word,
   buttonNumber,
-  spaces = [0];
+  spaces = [0],
+  indexNum = 0;
 function toUpp(checkWord) {
   let checkLength = checkWord.length;
   let checkLetter;
@@ -47,8 +49,9 @@ function confirmation(buttonNumber) {
     window.location.assign(Links[indexWord]);
   } else if (buttonNumber == 0) {
     output.innerHTML =
-      ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunely We Could not locate your Question, Please Try Again with a different Question';
+      ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunately We Could not locate your Question, Please Try Again with a different Question';
     choiceRender(2);
+    listPrograms();
   }
 }
 function loading(number) {
@@ -60,7 +63,7 @@ function loading(number) {
       'Output: Waiting for User Response <i class="white fa-spin fa-solid fa-spinner"></i>';
 }
 //prettier-ignore
-function main(number) {
+function main() {
 	let output = document.getElementById("output");
 	loading(1);
     setTimeout(()=>{
@@ -90,8 +93,12 @@ for (i = 1; i <= lengthArray; i++) {
   if(indexWord == -1 && i == lengthArray){
 	  choiceRender(2);
 output.innerHTML =
-  ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunely We Could not locate your Question, Please Try Again with a different Question';
-  }
+  ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunately We Could not locate your Question, Please Try Again with a different Question';
+ listPrograms();
+
+
+
+}
 }
 	},2000)
 	
@@ -108,4 +115,17 @@ choiceHead.style.display = "none";
 choiceYes.style.display = "none";
 choiceNo.style.display = "none";
 }
+}
+
+function listPrograms() {
+  list.style.display = "block";
+  Topics.forEach((item) => {
+    item = toUpp(item);
+    indexNum++;
+    let listDiv = document.getElementById("listItems");
+    let text = document.createElement("li");
+    let content = document.createTextNode(item);
+    text.appendChild(content);
+    listDiv.appendChild(text);
+  });
 }

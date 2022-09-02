@@ -89,6 +89,16 @@ body h3 {
 .red {
   color: red;
 }
+#list {
+  padding-top: 30px;
+  display: none;
+}
+.listItems {
+  list-style-type: decimal;
+}
+.listItems li {
+  color: #00bb72;
+}
 @media screen and (max-width: 600px) {
   .heading,
   .head h1 {
