@@ -145,11 +145,11 @@ a:-webkit-any-link:hover,
 }
 #Team {
   position: relative;
-  top: 650px;
+  top: 900px;
 }
 #Contact {
   position: relative;
-  top: 900px;
+  top: 650px;
 }
 .why-choose-us-wrapper {
   top: 300px;
@@ -162,11 +162,11 @@ a:-webkit-any-link:hover,
   width: 100%;
 }
 .team-wrapper {
-  top: 800px;
+  top: 1100px;
   width: 100%;
 }
 .contact-wrapper {
-  top: 1100px;
+  top: 800px;
   width: 100%;
 }
 .who-are-we-heading,
