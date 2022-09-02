@@ -91,3 +91,4 @@ function chapter(number) {
       break;
   }
 }
+console.log("Site Ready");
