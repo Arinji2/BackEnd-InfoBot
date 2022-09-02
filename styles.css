@@ -470,7 +470,11 @@ a:-webkit-any-link:hover,
   .contact-content {
     flex-direction: column;
   }
-  .contact-content-highlight {
+  .contact-para {
+    word-wrap: normal;
+    line-height: 1.5;
+  }
+  .contact-highlight {
     font-size: 20px;
   }
   .animate-head-pic {
@@ -521,5 +525,11 @@ a:-webkit-any-link:hover,
     float: right;
     padding-right: 60px;
     padding-top: 20px;
+  }
+  .contact-pic {
+    width: 80%;
+  }
+  .heading-p {
+    line-height: 1.5;
   }
 }

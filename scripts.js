@@ -17,17 +17,25 @@ contact.addEventListener("click", function () {
 
 window.onscroll = function () {
   scrollFunc();
+  scrollFuncM();
 };
 
 var navbar = document.getElementById("navbar");
-
+var navbarM = document.getElementById("navbar-mobile");
 var sticky = navbar.offsetTop;
-
+var stickyM = navbarM.offsetTop;
 function scrollFunc() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
+  }
+}
+function scrollFuncM() {
+  if (window.pageYOffset >= stickyM) {
+    navbarM.classList.add("sticky");
+  } else {
+    navbarM.classList.remove("sticky");
   }
 }
 
