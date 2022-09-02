@@ -470,4 +470,21 @@ a:-webkit-any-link:hover,
   .contact-content-highlight {
     font-size: 20px;
   }
+  .animate-head-pic {
+    animation: zoomIn;
+    animation-duration: 0s;
+  }
+  .animate-top {
+    animation: fadeInUpBig;
+    animation-duration: 0s;
+  }
+  .animate-right {
+    animation: fadeInRightBig;
+    animation-duration: 0s;
+  }
+
+  .animate-left {
+    animation: fadeInLeftBig;
+    animation-duration: 0s;
+  }
 }
