@@ -91,4 +91,9 @@ function chapter(number) {
       break;
   }
 }
-console.log("Site Ready");
+let burger = document.getElementById("burger");
+let mobileNav = document.getElementById("nav-ul-mobile");
+burger.addEventListener("click", () => {
+  if (mobileNav.style.display == "flex") mobileNav.style.display = "none";
+  else mobileNav.style.display = "flex";
+});
