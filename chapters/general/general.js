@@ -13,76 +13,88 @@ choiceNo.style.visibility = "hidden";
 
 let Topics = ["palindrome", "armstrong", "brownpair"];
 let Links = [
-	"../general/Articles/palindrome.html",
-	"../general/Articles/armstrong.html",
-	"../general/Articles/brownPair.html",
+  "../general/Articles/palindrome.html",
+  "../general/Articles/armstrong.html",
+  "../general/Articles/brownPair.html",
 ];
 
 //Variables
+var indexWord;
 let textBoxValue;
 let length,
-	i,
-	j,
-	characters,
-	lengthArray,
-	word,
-	indexWord,
-	buttonNumber,
-	spaces = [0];
+  i,
+  j,
+  characters,
+  lengthArray,
+  word,
+  buttonNumber,
+  spaces = [0];
 function toUpp(checkWord) {
-	let checkLength = checkWord.length;
-	let checkLetter;
-	let newWord = "";
-	for (i = 0; i < checkLength; i++) {
-		checkLetter = checkWord.charAt(i);
-		if (i == 0) checkLetter = checkLetter.toUpperCase();
-		newWord = newWord + checkLetter;
-	}
-	return newWord;
-}
-function confirmation(buttonNumber) {
-	if (buttonNumber == 1) {
-		buttonNumber = 1;
-		console.log(buttonNumber);
-	} else if (buttonNumber == 0) {
-		console.log("No");
-		buttonNumber = 0;
-	}
-	main(buttonNumber);
+  let checkLength = checkWord.length;
+  let checkLetter;
+  let newWord = "";
+  for (i = 0; i < checkLength; i++) {
+    checkLetter = checkWord.charAt(i);
+    if (i == 0) checkLetter = checkLetter.toUpperCase();
+    newWord = newWord + checkLetter;
+  }
+  return newWord;
 }
 
+function confirmation(buttonNumber) {
+  if (buttonNumber == 1) {
+    choiceRender(2);
+    window.location.assign(Links[indexWord]);
+  } else if (buttonNumber == 0) {
+    output.innerHTML =
+      ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunely We Could not locate your Question, Please Try Again with a different Question';
+    choiceRender(2);
+  }
+}
+function loading(number) {
+  if (number === 1)
+    output.innerHTML =
+      'Output: Searching <i class="white fa-spin fa-solid fa-spinner"></i>';
+  else if (number === 2)
+    output.innerHTML =
+      'Output: Waiting for User Response <i class="white fa-spin fa-solid fa-spinner"></i>';
+}
 //prettier-ignore
 function main(number) {
-	textBoxValue = textBox.value;
-	textBoxValue = textBoxValue.toLowerCase();
-	length = textBoxValue.length;
-	for (i = 0; i < length; i++) {
-		characters = textBoxValue.charAt(i);
-		if (characters == " ") {
-			spaces.push(i);
-		}
-	}
+	let output = document.getElementById("output");
+	loading(1);
+    setTimeout(()=>{
+textBoxValue = textBox.value;
+textBoxValue = textBoxValue.toLowerCase();
+length = textBoxValue.length;
+for (i = 0; i < length; i++) {
+  characters = textBoxValue.charAt(i);
+  if (characters == " ") {
+    spaces.push(i);
+  }
+}
 
-	lengthArray = spaces.length;
-	for (i = 1; i <= lengthArray; i++) {
-		word = textBoxValue.substring(spaces[--i], spaces[++i]);
-		word = word.trim();
-		indexWord = Topics.indexOf(word);
+lengthArray = spaces.length;
+for (i = 1; i <= lengthArray; i++) {
+  word = textBoxValue.substring(spaces[--i], spaces[++i]);
+  word = word.trim();
+  indexWord = Topics.indexOf(word);
 
-		if (indexWord !== -1) {
-			choiceRender(1);
-			word = toUpp(word);
-			choiceHead.innerHTML = "Did You Mean " + word;
-			if(number == 1) {
-				choiceRender(2)
-			window.location.replace(Links[indexWord])
-			}else if(number == 2) {
-				choiceRender(2)
-				continue;
-			}
-			
-		}
-	}
+  if (indexWord !== -1) {
+    choiceRender(1);
+		loading(2);
+    word = toUpp(word);
+	console.log(word)
+    choiceHead.innerHTML = "Did You Mean " + word;
+  } 
+  if(indexWord == -1 && i == lengthArray){
+	  choiceRender(2);
+output.innerHTML =
+  ' <i class="red fa-solid fa-circle-xmark"></i> <br /> Output: Unfortunely We Could not locate your Question, Please Try Again with a different Question';
+  }
+}
+	},2000)
+	
 }
 
 //prettier-ignore
@@ -92,7 +104,8 @@ function choiceRender(setting) {
 	choiceYes.style.visibility = "visible";
 	choiceNo.style.visibility = "visible";
 }else if(setting == 2){
-choiceHead.style.visibility = "hidden";
-choiceYes.style.visibility = "hidden";
-choiceNo.style.visibility = "hidden";}
+choiceHead.style.display = "none";
+choiceYes.style.display = "none";
+choiceNo.style.display = "none";
+}
 }
