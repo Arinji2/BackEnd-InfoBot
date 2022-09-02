@@ -215,7 +215,9 @@ a:-webkit-any-link:hover,
 .topic-heading-color {
   color: #00bb72;
 }
-
+.mobile-option {
+  display: none;
+}
 .team-heading {
   font-weight: 500;
   font-size: 100px;
@@ -460,6 +462,7 @@ a:-webkit-any-link:hover,
   .who-are-we-para,
   .why-choose-us-para {
     font-size: 20px;
+    text-align: start;
   }
   .heading-wrapper {
     padding-top: 80px;
@@ -531,5 +534,12 @@ a:-webkit-any-link:hover,
   }
   .heading-p {
     line-height: 1.5;
+  }
+  .content {
+    display: none;
+  }
+  .mobile-option {
+    display: block;
+    color: #757575;
   }
 }

@@ -105,3 +105,10 @@ burger.addEventListener("click", () => {
   if (mobileNav.style.display == "flex") mobileNav.style.display = "none";
   else mobileNav.style.display = "flex";
 });
+
+let mobileOpt = document.getElementById("mobile-opt");
+let team = document.getElementById("content");
+mobileOpt.addEventListener("click", () => {
+  if (team.style.display == "block") team.style.display = "none";
+  else team.style.display = "block";
+});
