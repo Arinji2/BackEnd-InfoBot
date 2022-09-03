@@ -64,6 +64,8 @@ function loading(number) {
 }
 //prettier-ignore
 function main() {
+      let listDiv = document.getElementById("listItems");
+      listDiv.innerHTML = "";
 	let output = document.getElementById("output");
 	loading(1);
     setTimeout(()=>{
