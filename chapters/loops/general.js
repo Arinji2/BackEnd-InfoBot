@@ -6,9 +6,9 @@ const listDivHead = document.getElementById("list");
 
 // DOM Settings
 
-choiceHead.style.visibility = "hidden";
-choiceYes.style.visibility = "hidden";
-choiceNo.style.visibility = "hidden";
+choiceHead.style.display = "none";
+choiceYes.style.display = "none";
+choiceNo.style.display = "none";
 
 //Storage
 
@@ -121,9 +121,9 @@ output.innerHTML =
 //prettier-ignore
 function choiceRender(setting) {
 	if(setting == 1){
-	choiceHead.style.visibility = "visible";
-	choiceYes.style.visibility = "visible";
-	choiceNo.style.visibility = "visible";
+	choiceHead.style.display = "block";
+	choiceYes.style.display = "block";
+	choiceNo.style.display = "block";
 }else if(setting == 2){
 choiceHead.style.display = "none";
 choiceYes.style.display = "none";
