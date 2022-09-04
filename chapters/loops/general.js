@@ -12,8 +12,14 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = [];
-let Links = [];
+let Topics = ["palindrome", "armstrong", "brownpair", "isbn", "prime"];
+let Links = [
+  "../general/Articles/palindrome.html",
+  "../general/Articles/armstrong.html",
+  "../general/Articles/brownPair.html",
+  "../general/Articles/isbn.html",
+  "../general/Articles/prime.html",
+];
 
 //Variables
 var indexWord;
@@ -60,6 +66,8 @@ function loading(number) {
 }
 //prettier-ignore
 function main() {
+      let listDiv = document.getElementById("listItems");
+      listDiv.innerHTML = "";
 	let output = document.getElementById("output");
 	loading(1);
     setTimeout(()=>{

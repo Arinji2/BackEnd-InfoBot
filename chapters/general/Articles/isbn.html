@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <title>General Programs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">ISBN Number</h1>
+        <h3>What is an ISBN Number?</h3>
+        <h3>
+          To verify an ISBN, calculate 10 times the first digit, plus 9 times
+          the second digit, plus 8 times the third digit and so on until we add
+          1 time the last digit. If the final number leaves no remainder when
+          divided by 11, the code is a valid ISBN ISBN number for example:
+          1401601499 = 1×1 + 2×4 + 3×0 + 4×1 + 5×6 + 6×0 + 7×1 + 8×4 + 9×9 +
+          10×9 = 253 which is divisible by 11.
+        </h3>
+      </div>
+      <div class="code">
+        <h2 id="animate-info">Code For ISBN Number</h2>
+      </div>
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
+        <p>public class ISBN_number</p>
+        <p>{</p>
+        <p>static void main()</p>
+        <p>{</p>
+        <p>Scanner in=new Scanner(System.in);</p>
+        <p>int i,n, digit1=0,digit2=0,t,m,r,s=0;</p>
+        <p>System.out.println("Input a number");</p>
+        <p>n=ob.nextInt();</p>
+        <p>t=n;</p>
+        <p>m=n;</p>
+        <p>while(t>0)</p>
+        <p>{</p>
+        <p>digit1++;</p>
+        <p>t=t/10;</p>
+        <p>}</p>
+        <p>if(digit1==10)</p>
+        <p>{</p>
+        <p>while(digit1>=0)</p>
+        <p>{</p>
+        <p>r=n%10;</p>
+        <p>s=s+(r*digit1);</p>
+        <p>digit1= digit 1-1;</p>
+        <p>n=n/10;</p>
+        <p>}</p>
+        <p>if(s%11==0)</p>
+        <p>x=true;</p>
+        <p>if(x=true)</p>
+        <p>System.out.println("legal ISBN");</p>
+        <p>else</p>
+        <p>System.out.println("illegal ISBN");</p>
+        <p>}</p>
+        <p>else</p>
+        <p>System.out.println("illegal ISBN");</p>
+        <p>}</p>
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          For ISBN Number, we made a copy of the input number and multiplied
+          each number by digit extraction with the sequential form of integers
+          from 1 to 9. Finally we checked if the number was divisible by 11 and
+          if it was, then it's a valid ISBN number
+        </h3>
+      </div>
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
