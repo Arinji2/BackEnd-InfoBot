@@ -12,8 +12,8 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = [];
-let Links = [];
+let Topics = ["overloadcalculate"];
+let Links = ["Articles/overloadCalculate.html"];
 
 //Variables
 var indexWord;
@@ -83,7 +83,7 @@ for (i = 1; i <= lengthArray; i++) {
     choiceRender(1);
 		loading(2);
     word = toUpp(word);
-	console.log(word)
+
     choiceHead.innerHTML = "Did You Mean " + word;
   } 
   if(indexWord == -1 && i == lengthArray){

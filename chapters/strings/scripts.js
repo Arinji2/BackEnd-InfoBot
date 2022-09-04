@@ -12,8 +12,8 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = [];
-let Links = [];
+let Topics = ["replace"];
+let Links = ["Articles/replace.html"];
 
 //Variables
 var indexWord;
