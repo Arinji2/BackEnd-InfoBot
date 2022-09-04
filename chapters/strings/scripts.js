@@ -12,8 +12,12 @@ choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["replace", "vowels,digits,spaces"];
-let Links = ["Articles/replace.html", "Articles/freq1.html"];
+let Topics = ["replace", "vowels,digits,spaces", "greaterstring"];
+let Links = [
+  "Articles/replace.html",
+  "Articles/freq1.html",
+  "Articles/greaterString.html",
+];
 
 //Variables
 var indexWord;
