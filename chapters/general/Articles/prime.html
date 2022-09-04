@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Prime Number</h1>
+
+        <h3>What is a Prime Number?</h3>
+
+        <h3>
+          A Prime Number is a number with only 2 factors, that is the number
+          itself and 1. For Example 2 -> 1,2
+        </h3>
+      </div>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Prime Number</h2>
+      </div>
+
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
+
+        <p>public class prime</p>
+
+        <p>{</p>
+
+        <p>int factor(int n)</p>
+
+        <p>{</p>
+
+        <p>int i, k=0;</p>
+
+        <p>for(i=1; i<=n; i++)</p>
+
+        <p>{</p>
+
+        <p>if(n%i==0)</p>
+
+        <p>k++;</p>
+
+        <p>else</p>
+
+        <p>continue;</p>
+
+        <p>}</p>
+
+        <p>return(k);</p>
+
+        <p>}</p>
+
+        <p>void main()</p>
+
+        <p>{</p>
+
+        <p>Scanner ob=new Scanner(System.in);</p>
+
+        <p>System.out.println("Enter a number");</p>
+
+        <p>int x=ob.nextInt();</p>
+
+        <p>int p=factor(x);</p>
+
+        <p>if(p==2)</p>
+
+        <p>System.out.println(x+" is a prime number");</p>
+
+        <p>else</p>
+
+        <p>System.out.println(x+" is not a prime number");</p>
+
+        <p>}</p>
+
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Firstly we find the number of factors of the number input by the user
+          in the factor(n) method and return it to the main method. In the main
+          method, it is checked whether the number of factors is 2 or not
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
