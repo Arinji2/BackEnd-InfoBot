@@ -19,6 +19,7 @@ let Topics = [
   "isbn",
   "prime",
   "special",
+  "fibonacci",
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -27,6 +28,7 @@ let Links = [
   "../loops/Articles/isbn.html",
   "../loops/Articles/prime.html",
   "../loops/Articles/special.html",
+  "../loops/Articles/fibonacci.html",
 ];
 
 //Variables
