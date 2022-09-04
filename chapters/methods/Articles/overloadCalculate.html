@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>Method Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Overloading Calculate</h1>
+
+        <h3>What is Overloading Calculate?</h3>
+
+        <h3>
+          To overload the function calculate by using different parametric list.
+          <br />
+          (i) void calculate(int m, char ch) with one integer argument and one
+          character argument. It checks whether the integer argument is
+          divisible by 7 or not, if ch is 's', otherwise, it checks whether the
+          last digit of the integer argument is 7 or not <br />(ii) void
+          calculate(int a, int b, char ch) with two integer arguments and one
+          character argument. It displays the greater of integer arguments if ch
+          is 'g' otherwise displays the smaller of integer arguments.
+        </h3>
+      </div>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Program</h2>
+      </div>
+
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
+
+        <p>public class overload</p>
+
+        <p>{</p>
+
+        <p>static void calculate(int m, char ch)</p>
+
+        <p>{</p>
+
+        <p>switch(ch)</p>
+
+        <p>{</p>
+
+        <p>case 's':</p>
+
+        <p>if(m%7==0)</p>
+
+        <p>System.out.println( m+" is divisible by 7");</p>
+
+        <p>else</p>
+
+        <p>System.out.println( m+" is not divisible by 7");</p>
+
+        <p>break;</p>
+
+        <p>default:</p>
+
+        <p>if(m/10==7)</p>
+
+        <p>System.out.println("the last digit of "+m+" is 7");</p>
+
+        <p>else</p>
+
+        <p>System.out.println( "the last digit of "+m+" is not 7");</p>
+
+        <p>}</p>
+
+        <p>}</p>
+
+        <p>static void calculate (int a, int b, char ch)</p>
+
+        <p>{</p>
+
+        <p>switch(ch)</p>
+
+        <p>{</p>
+
+        <p>case 'g':</p>
+
+        <p>int max= Math.max(a,b);</p>
+
+        <p>System.out.println("The greatest of the two integers is "+ max);</p>
+
+        <p>break;</p>
+
+        <p>default:</p>
+
+        <p>int min= Math.min(a,b);</p>
+
+        <p>System.out.println("The smallest of the two integers is "+ min);</p>
+
+        <p>}</p>
+
+        <p>}</p>
+
+        <p>static void main()</p>
+
+        <p>{</p>
+
+        <p>calculate(77,'s');</p>
+
+        <p>calculate(16,20,'b');</p>
+
+        <p>}</p>
+
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          The Math. max() function returns the largest of the zero or more
+          numbers given as input parameters while Math.min() function is an
+          inbuilt function in java that returns the minimum of two numbers
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
