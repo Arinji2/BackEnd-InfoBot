@@ -12,13 +12,21 @@ choiceNo.style.visibility = "hidden";
 
 //Storage
 
-let Topics = ["palindrome", "armstrong", "brownpair", "isbn", "prime"];
+let Topics = [
+  "palindrome",
+  "armstrong",
+  "brownpair",
+  "isbn",
+  "prime",
+  "special",
+];
 let Links = [
-  "../general/Articles/palindrome.html",
-  "../general/Articles/armstrong.html",
-  "../general/Articles/brownPair.html",
-  "../general/Articles/isbn.html",
-  "../general/Articles/prime.html",
+  "../loops/Articles/palindrome.html",
+  "../loops/Articles/armstrong.html",
+  "../loops/Articles/brownPair.html",
+  "../loops/Articles/isbn.html",
+  "../loops/Articles/prime.html",
+  "../loops/Articles/special.html",
 ];
 
 //Variables
@@ -60,9 +68,11 @@ function loading(number) {
   if (number === 1)
     output.innerHTML =
       'Output: Searching <i class="white fa-spin fa-solid fa-spinner"></i>';
-  else if (number === 2)
+  else if (number === 2) {
     output.innerHTML =
       'Output: Waiting for User Response <i class="white fa-spin fa-solid fa-spinner"></i>';
+    choiceRender(1);
+  }
 }
 //prettier-ignore
 function main() {
