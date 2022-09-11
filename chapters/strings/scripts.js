@@ -12,11 +12,12 @@ choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["replace", "vowels,digits,spaces", "greaterstring"];
+let Topics = ["replace", "vowels,digits,spaces", "greaterstring", "surname-fullname];
 let Links = [
   "Articles/replace.html",
   "Articles/freq1.html",
   "Articles/greaterString.html",
+  "Articles/surnameFullname.html",
 ];
 
 //Variables
