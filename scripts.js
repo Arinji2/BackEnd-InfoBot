@@ -105,10 +105,15 @@ burger.addEventListener("click", () => {
   if (mobileNav.style.display == "flex") mobileNav.style.display = "none";
   else mobileNav.style.display = "flex";
 });
-
+let mobileOptIcon = document.getElementById("mobile-opt-icon");
 let mobileOpt = document.getElementById("mobile-opt");
 let team = document.getElementById("content");
 mobileOpt.addEventListener("click", () => {
-  if (team.style.display == "block") team.style.display = "none";
-  else team.style.display = "block";
+  if (team.style.display == "block") {
+    team.style.display = "none";
+    mobileOptIcon.classList.toggle("fa-rotate-180");
+  } else {
+    team.style.display = "block";
+    mobileOptIcon.classList.toggle("fa-rotate-180");
+  }
 });
