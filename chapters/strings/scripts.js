@@ -1,4 +1,4 @@
-8const textBox = document.getElementById("input");
+const textBox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
 const choiceYes = document.getElementById("choiceYes");
 const choiceNo = document.getElementById("choiceNo");
