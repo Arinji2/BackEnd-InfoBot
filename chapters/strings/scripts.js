@@ -18,7 +18,7 @@ let Links = [
   "Articles/freq1.html",
   "Articles/greaterString.html",
   "Articles/palindromeWord.html",
-  ""Articles/surnameFullname.html",
+  "Articles/surnameFullname.html",
 ];
 
 //Variables
