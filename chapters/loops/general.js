@@ -6,19 +6,35 @@ const listDivHead = document.getElementById("list");
 
 // DOM Settings
 
-choiceHead.style.visibility = "hidden";
-choiceYes.style.visibility = "hidden";
-choiceNo.style.visibility = "hidden";
+choiceHead.style.display = "none";
+choiceYes.style.display = "none";
+choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["palindrome", "armstrong", "brownpair", "isbn", "prime"];
+let Topics = [
+  "palindrome",
+  "armstrong",
+  "brownpair",
+  "isbn",
+  "prime",
+  "special",
+  "fibonacci",
+  "factorials",
+  "tech",
+  "greater"
+];
 let Links = [
-  "../general/Articles/palindrome.html",
-  "../general/Articles/armstrong.html",
-  "../general/Articles/brownPair.html",
-  "../general/Articles/isbn.html",
-  "../general/Articles/prime.html",
+  "../loops/Articles/palindrome.html",
+  "../loops/Articles/armstrong.html",
+  "../loops/Articles/brownPair.html",
+  "../loops/Articles/isbn.html",
+  "../loops/Articles/prime.html",
+  "../loops/Articles/special.html",
+  "../loops/Articles/fibonacci.html",
+  "../loops/Articles/factorials.html",
+  "../loops/Articles/tech.html",
+  "../loops/Articles/greater.html",
 ];
 
 //Variables
@@ -60,9 +76,11 @@ function loading(number) {
   if (number === 1)
     output.innerHTML =
       'Output: Searching <i class="white fa-spin fa-solid fa-spinner"></i>';
-  else if (number === 2)
+  else if (number === 2) {
     output.innerHTML =
       'Output: Waiting for User Response <i class="white fa-spin fa-solid fa-spinner"></i>';
+    choiceRender(1);
+  }
 }
 //prettier-ignore
 function main() {
@@ -111,9 +129,9 @@ output.innerHTML =
 //prettier-ignore
 function choiceRender(setting) {
 	if(setting == 1){
-	choiceHead.style.visibility = "visible";
-	choiceYes.style.visibility = "visible";
-	choiceNo.style.visibility = "visible";
+	choiceHead.style.display = "block";
+	choiceYes.style.display = "block";
+	choiceNo.style.display = "block";
 }else if(setting == 2){
 choiceHead.style.display = "none";
 choiceYes.style.display = "none";
