@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">Surname first, followed by the first and middle name</h1>
+
+<h3> What is a surname first, followed by the first and middle name?</h3>
+
+<h3>surname first, followed by the first and middle names Sample input - Mohandas Karamchand Gandhi Sample output- GANDHI MOHANDAS KARAMCHAND</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For Program</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class program_669</p>
+
+<p>{</p>
+
+<p>static void main()</p>
+
+<p>{</p>
+
+<p>Scanner in= new Scanner(System.in);</p>
+
+<p>String s= in.nextLine();</p>
+
+<p>s= s.toUpperCase();</p>
+
+<p>int x= s.lastIndexof(' ');</p>
+
+<p>String S1= s.substring(0,x);</p>
+
+<p>String S2= s.substring(x+1);</p>
+
+<p>S2= S2+ " ";</p>
+
+<p>System.out.println(S1+S2);</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+Here we took the input from the user and converted it to uppercase with string function. Then using substring command we did character extraction and later we had a concat with surname and rest of the name.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
