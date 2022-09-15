@@ -26,6 +26,7 @@ let Topics = [
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
+  "../loops/Articles/special.html",
   "../loops/Articles/armstrong.html",
   "../loops/Articles/brownPair.html",
   "../loops/Articles/isbn.html",
