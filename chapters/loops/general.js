@@ -17,6 +17,7 @@ let Topics = [
   "armstrong",
   "brownpair",
   "isbn",
+  "special",
   "prime",
   "fibonacci",
   "factorials",
