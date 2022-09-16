@@ -285,7 +285,26 @@ a:-webkit-any-link:hover,
   justify-content: space-evenly;
   padding-bottom: 30px;
 }
-
+.row4 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.row5 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.row-Pic {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
 .Top-Pic {
   position: relative;
   height: 300px;
@@ -316,12 +335,6 @@ a:-webkit-any-link:hover,
   background-color: white;
 }
 
-.row2-Pic {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-}
 .team-2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -334,12 +347,6 @@ a:-webkit-any-link:hover,
   box-shadow: 3px 20px #757575;
 }
 
-.row3-Pic {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-}
 .team-3 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -350,6 +357,30 @@ a:-webkit-any-link:hover,
 }
 
 .team-3:hover {
+  box-shadow: 3px 20px #757575;
+}
+.team-4 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  box-shadow: 3px 20px #f5f5f5;
+  padding: 10px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.team-4:hover {
+  box-shadow: 3px 20px #757575;
+}
+.team-5 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  box-shadow: 3px 20px #f5f5f5;
+  padding: 10px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.team-5:hover {
   box-shadow: 3px 20px #757575;
 }
 
