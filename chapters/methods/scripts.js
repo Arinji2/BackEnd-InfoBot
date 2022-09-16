@@ -6,14 +6,17 @@ const listDivHead = document.getElementById("list");
 
 // DOM Settings
 
-choiceHead.style.visibility = "hidden";
-choiceYes.style.visibility = "hidden";
-choiceNo.style.visibility = "hidden";
+choiceHead.style.display = "none";
+choiceYes.style.display = "none";
+choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["overloadcalculate","overloadvolume];
-let Links = ["Articles/overloadCalculate.html","Articles/overloadvolume.html"];
+let Topics = ["overloadvolume", "overloadcalculate"];
+let Links = [
+  "../methods/Articles/overloadvolume.html",
+  "../methods/Articles/overloadcalculate.html",
+];
 
 //Variables
 var indexWord;
@@ -54,12 +57,16 @@ function loading(number) {
   if (number === 1)
     output.innerHTML =
       'Output: Searching <i class="white fa-spin fa-solid fa-spinner"></i>';
-  else if (number === 2)
+  else if (number === 2) {
     output.innerHTML =
       'Output: Waiting for User Response <i class="white fa-spin fa-solid fa-spinner"></i>';
+    choiceRender(1);
+  }
 }
 //prettier-ignore
 function main() {
+      let listDiv = document.getElementById("listItems");
+      listDiv.innerHTML = "";
 	let output = document.getElementById("output");
 	loading(1);
     setTimeout(()=>{
@@ -83,7 +90,7 @@ for (i = 1; i <= lengthArray; i++) {
     choiceRender(1);
 		loading(2);
     word = toUpp(word);
-
+	console.log(word)
     choiceHead.innerHTML = "Did You Mean " + word;
   } 
   if(indexWord == -1 && i == lengthArray){
@@ -103,9 +110,9 @@ output.innerHTML =
 //prettier-ignore
 function choiceRender(setting) {
 	if(setting == 1){
-	choiceHead.style.visibility = "visible";
-	choiceYes.style.visibility = "visible";
-	choiceNo.style.visibility = "visible";
+	choiceHead.style.display = "block";
+	choiceYes.style.display = "block";
+	choiceNo.style.display = "block";
 }else if(setting == 2){
 choiceHead.style.display = "none";
 choiceYes.style.display = "none";
