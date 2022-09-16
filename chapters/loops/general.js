@@ -17,8 +17,8 @@ let Topics = [
   "armstrong",
   "brownpair",
   "isbn",
-  "prime",
   "special",
+  "prime",
   "fibonacci",
   "factorials",
   "tech",
@@ -26,11 +26,11 @@ let Topics = [
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
+  "../loops/Articles/special.html",
   "../loops/Articles/armstrong.html",
   "../loops/Articles/brownPair.html",
   "../loops/Articles/isbn.html",
   "../loops/Articles/prime.html",
-  "../loops/Articles/special.html",
   "../loops/Articles/fibonacci.html",
   "../loops/Articles/factorials.html",
   "../loops/Articles/tech.html",
