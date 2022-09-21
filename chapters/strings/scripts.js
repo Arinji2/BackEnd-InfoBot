@@ -12,7 +12,7 @@ choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["replace", "vowels,digits,spaces", "greaterstring", "palindrome", "surname-fullname","togglecase","reversestring"];
+let Topics = ["replace", "vowels,digits,spaces", "greaterstring", "palindrome", "surname-fullname","togglecase","reversestring", "surnamefirst"];
 let Links = [
   "Articles/replace.html",
   "Articles/freq1.html",
@@ -20,7 +20,8 @@ let Links = [
   "Articles/palindromeWord.html",
   "Articles/surnameFullname.html",
   "Articles/togglecase.html",
-  "Articles/reversestring.html"
+  "Articles/reversestring.html",
+  "Articles/surnamefirst.html"	
 ];
 
 //Variables
