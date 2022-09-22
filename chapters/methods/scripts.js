@@ -12,10 +12,11 @@ choiceNo.style.display = "none";
 
 //Storage
 
-let Topics = ["overloadvolume", "overloadcalculate"];
+let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword"];
 let Links = [
   "../methods/Articles/overloadvolume.html",
   "../methods/Articles/overloadcalculate.html",
+  "../methods/Articles/firstcharinword.html"
 ];
 
 //Variables

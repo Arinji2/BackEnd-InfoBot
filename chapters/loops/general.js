@@ -22,7 +22,9 @@ let Topics = [
   "fibonacci",
   "factorials",
   "tech",
-  "greater"
+  "greater",
+  "twinprime",
+  "dudeney"
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -35,6 +37,8 @@ let Links = [
   "../loops/Articles/factorials.html",
   "../loops/Articles/tech.html",
   "../loops/Articles/greater.html",
+  "../loops/Articles/twinprime.html",
+  "../loops/Articles/dudeney.html",
 ];
 
 //Variables

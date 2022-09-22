@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">To reverse the string and find the number of vowels</h1>
+
+<h3> What is a To reverse the string and find the number of vowels?</h3>
+
+<h3>Defining a class to accept a string and print the same in reverse, also print the number of vowels in the string. Sample input = "BEAUTIFUL" <br /> Sample output = "LUFITUAEB""</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For To reverse the string and find the number of vowels</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class program</p>
+
+<p>{</p>
+
+<p>public static void main() </p>
+
+<p>{</p>
+
+<p>Scanner in = new Scanner(System.in);</p>
+
+<p>String s, str="";</p>
+
+<p>char b;</p>
+
+<p> int i,l,v = 0;</p>
+
+<p>System.out.println("Enter the Word");</p>
+
+<p> s = in.next().toUpperCase();</p>
+
+<p>l = s.length();</p>
+
+<p> for(i=0;i<l;i++)</p>
+
+<p>{</p>
+
+<p>b= s.charAt(i);</p>
+
+<p>str = b+str;</p>
+
+<p>if(b=='A'||b=='E'||b=='I'||b=='O'||b=='U')</p>
+
+<p>v++;</p>
+
+<p>}</p>
+
+<p>System.out.println(str);</p>
+
+<p> System.out.println("Number of the vowels = "+v);</p>
+
+<p>}</p>
+
+<p>}</p>

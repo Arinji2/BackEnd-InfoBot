@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">Display the first character of each word by passing the string to a method</h1>
+
+<h3> What is a Display the first character of each word by passing the string to a method?</h3>
+
+<h3>A program to accept a string from the user. Pass the string to a method First(String str) which displays the first characters of each word. Sample input - Thank god its Friday. Sample output - T <br /> G <br /> I <br /> F </h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For Display the first character of each word by passing the string to a method</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class program </p>
+
+<p>{</p>
+
+<p> void First(String str)</p>
+
+<p> {</p>
+
+<p>int i, l;</p>
+
+<p>char b;</p>
+
+<p> str = " " + str;</p>
+
+<p> l = str.length();</p>
+
+<p>for (i=0; i<l ; i++)</p>
+
+<p>{</p>
+
+<p> b = str.charAt(i);</p>
+
+<p>if(Character.isWhitespace(b))</p>
+
+<p>System.out.println(str.charAt(i+1));</p>
+
+<p>}</p>
+
+<p> }</p>
+
+<p> public static void main() </p>
+
+<p>{</p>
+
+<p>Scanner in = new Scanner(System.in);</p>
+
+<p> String s;</p>
+
+<p> program ob = new program();</p>
+
+<p>System.out.println("Enter the Sentence");</p>
+
+<p>s = in.nextLine().toUpperCase();</p>
+
+<p>ob.First(s);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+In this program, We are accepting the string in the main method of the program, and passing it to a method First(String str). In this method, the string undergoes a character extraction. It checks for a spaces. If there is a space, It prints the next letter and the loop continues until it finds another space, repeating the same thing until it exits.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
