@@ -25,7 +25,11 @@
 
         <h3>What is a Pattern?</h3>
 
-        <h3>Triangle to print the string pattern ICSE alphabet by alphabet.</h3>
+        <h3>
+          The counter variable (i) gets incremented by one after each iteration.
+          If its value is even its square gets increased by 1 else it gets
+          reduced by 1
+        </h3>
       </div>
 
       <div class="code">
@@ -33,25 +37,33 @@
       </div>
 
       <div class="code-text" id="animate-info">
-        <p>public class pat4</p>
+        <p>import java.util.*;</p>
 
-        <p>{</p>
+        <p>public class Series {</p>
 
-        <p>static void main()</p>
+        <p>static void main() {</p>
 
-        <p>{</p>
+        <p>int n,i;</p>
 
-        <p>int i;</p>
+        <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>String str = "ICSE";</p>
+        <p>System.out.println("Enter the number of terms");</p>
 
-        <p>for(i=1;i<=4;i++)</p>
+        <p>n=in.nextInt();</p>
 
-        <p>{</p>
+        <p>for(i=1;i<=n;i++){</p>
 
-        <p>System.out.print(str.substring(0,i));</p>
+        <p>if(i%2!=0){</p>
 
-        <p>System.out.println();</p>
+        <p>System.out.print((int)(Math.pow(i,2))-1+" ");</p>
+
+        <p>}</p>
+
+        <p>else {</p>
+
+        <p>System.out.print((int)(Math.pow(i,2))+1+" ");</p>
+
+        <p>}</p>
 
         <p>}</p>
 
@@ -61,9 +73,9 @@
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
-          String function s.substring() is used that extracts a characters from
-          a given index to i and prints it. For loop runs 4 times since ICSE
-          contains 4 characters.
+          The counter variable (i) gets incremented by one after each iteration.
+          If its value is even its square gets increased by 1 else it gets
+          reduced by 1
         </h3>
       </div>
 
