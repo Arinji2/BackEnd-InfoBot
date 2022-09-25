@@ -24,7 +24,8 @@ let Topics = [
   "tech",
   "greater",
   "twinprime",
-  "dudeney"
+  "dudeney",
+  "PerfectNumber"
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -39,6 +40,7 @@ let Links = [
   "../loops/Articles/greater.html",
   "../loops/Articles/twinprime.html",
   "../loops/Articles/dudeney.html",
+  "../loops/Articles/PerfectNumber.html"
 ];
 
 //Variables
