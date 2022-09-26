@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">ATM-Bank</h1>
+
+<h3> What is a ATM-Bank?</h3>
+
+<p>import java.util.*;</p>
+
+<p>public class Bank {</p>
+
+<p>public static void main() {</p>
+
+<p>Scanner in=new Scanner(System.in);</p>
+
+<p>int choice,k=0;</p>
+
+<p>double balance,deposit,withdraw;</p>
+
+<p>System.out.println("Enter your current balance");</p>
+
+<p>balance=in.nextDouble();</p>
+
+<p>while(true){</p>
+
+<p>if(k>=3) {</p>
+
+<p>System.out.println("Do you want to exit? Type 0");</p>
+
+<p>}</p>
+
+<p>System.out.println("Enter your choice");</p>
+
+<p>choice=in.nextInt();</p>
+
+<p>switch(choice){</p>
+
+<p>case 1:</p>
+
+<p>System.out.println("Enter the money to be deposited");</p>
+
+<p>deposit=in.nextDouble();</p>
+
+<p>balance+=deposit;</p>
+
+<p>System.out.println("Current Balance= "+balance);</p>
+
+<p>break;</p>
+
+<p>case 2:</p>
+
+<p>System.out.println("Enter the money to be withdrawn");</p>
+
+<p>withdraw=in.nextDouble();</p>
+
+<p>if(balance>=withdraw) {</p>
+
+<p>balance-=withdraw;</p>
+
+<p>System.out.println("Current Balance= "+balance);</p>
+
+<p>}</p>
+
+<p>else {</p>
+
+<p>System.out.println("Balance not sufficient");</p>
+
+<p>}</p>
+
+<p>break;</p>
+
+<p>case 3: </p>
+
+<p> System.out.println("Current Balance= "+balance); </p>
+
+<p>break;</p>
+
+<p>case 0:</p>
+
+<p>System.out.println("Program terminates"); </p>
+
+<p>System.exit(0); </p>
+
+<p>break;</p>
+
+<p>default: </p>
+
+<p> System.out.println("Invalid choice"); </p>
+
+<p> System.exit(0);</p>
+
+<p>}</p>
+
+<p>k++;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+The choice is inputted and goes to the switch block. After getting out of the satiable condition, it goes back to the start(loop) and continues till the user types '0' to exit.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
