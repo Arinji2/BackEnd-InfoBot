@@ -65,7 +65,10 @@ body h3 {
   overflow-wrap: break-word;
   border: 3px solid white;
 }
-
+.greenText {
+  color: #00bb72;
+  font-style: italic;
+}
 #scroll-off,
 #dark-on {
   display: none;
