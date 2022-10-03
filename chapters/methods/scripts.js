@@ -1,13 +1,20 @@
 //Storage
 
-let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword", "SuccessiveDiscount", "hcflcm","LapDiscParam"];
+let Topics = [
+  "overloadvolume",
+  "overloadcalculate",
+  "firstcharinword",
+  "SuccessiveDiscount",
+  "hcflcm",
+  "LapDiscParam",
+];
 let Links = [
   "../methods/Articles/overloadvolume.html",
   "../methods/Articles/overloadcalculate.html",
   "../methods/Articles/firstcharinword.html",
   "../methods/Articles/SuccessiveDiscount.html",
   "../methods/Articles/hcflcm.html",
-  "../methods/Articles/LapDiscParam.html"
+  "../methods/Articles/LapDiscParam.html",
 ];
 
 let stringbox = document.getElementById("input");
@@ -150,6 +157,7 @@ function main() {
   loading(1);
   setTimeout(() => {
     stringbox = stringbox.value;
+    stringbox = stringbox.toLowerCase();
     let mainArrayOfWords = getWordsArray(stringbox);
     let finalArrayOfWords = checkWordsArray(mainArrayOfWords);
     sessionStorage.setItem("Words", JSON.stringify(finalArrayOfWords));

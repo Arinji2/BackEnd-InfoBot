@@ -10,7 +10,7 @@ let Topics = [
   "reversestring",
   "surnamefirst",
   "ConsecutiveChar",
-  "PreviousChar"
+  "PreviousChar",
 ];
 let Links = [
   "Articles/replace.html",
@@ -22,9 +22,7 @@ let Links = [
   "Articles/reversestring.html",
   "Articles/surnamefirst.html",
   "Articles/ConsecutiveChar.html",
-  "Articles/PreviousChar.html"
-  
-  
+  "Articles/PreviousChar.html",
 ];
 let stringbox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
@@ -166,6 +164,7 @@ function main() {
   loading(1);
   setTimeout(() => {
     stringbox = stringbox.value;
+    stringbox = stringbox.toLowerCase();
     let mainArrayOfWords = getWordsArray(stringbox);
     let finalArrayOfWords = checkWordsArray(mainArrayOfWords);
     sessionStorage.setItem("Words", JSON.stringify(finalArrayOfWords));
