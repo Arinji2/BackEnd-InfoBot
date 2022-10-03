@@ -1,12 +1,13 @@
 //Storage
 
-let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword", "SuccessiveDiscount", "hcflcm"];
+let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword", "SuccessiveDiscount", "hcflcm","LapDiscParam"];
 let Links = [
   "../methods/Articles/overloadvolume.html",
   "../methods/Articles/overloadcalculate.html",
   "../methods/Articles/firstcharinword.html",
   "../methods/Articles/SuccessiveDiscount.html",
   "../methods/Articles/hcflcm.html",
+  "../methods/Articles/LapDiscParam.html"
 ];
 
 let stringbox = document.getElementById("input");
