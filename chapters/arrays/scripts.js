@@ -1,6 +1,6 @@
 //Storage
 
-let Topics = [];
+let Topics = ["CountriesCapital"];
 let Links = [];
 
 let stringbox = document.getElementById("input");
