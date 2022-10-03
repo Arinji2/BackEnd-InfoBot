@@ -83,6 +83,10 @@ body h3 {
   align-items: center;
   justify-content: center;
 }
+.greenText {
+  color: #00bb72;
+  font-style: italic;
+}
 @media screen and (max-width: 600px) {
   .heading,
   .head h1 {
