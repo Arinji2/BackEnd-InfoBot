@@ -173,6 +173,7 @@ function main() {
   loading(1);
   setTimeout(() => {
     stringbox = stringbox.value;
+    stringbox = stringbox.toLowerCase();
     let mainArrayOfWords = getWordsArray(stringbox);
     let finalArrayOfWords = checkWordsArray(mainArrayOfWords);
     sessionStorage.setItem("Words", JSON.stringify(finalArrayOfWords));

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">laptop discount using parameterized constructor</h1>
+
+<h3> What is a laptop discount using parameterized constructor?</h3>
+
+<h3>A class based program of finding the special discounts on laptops by using a parameterized constructer</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For laptop discount using parameterized constructor</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class laptop</p>
+
+<p>{</p>
+
+<p> String name;</p>
+
+<p> float price;</p>
+
+<p>double dis,amt;</p>
+
+<p> laptop (String n, float pr)</p>
+
+<p>{</p>
+
+<p>name = n;</p>
+
+<p> price = pr;</p>
+
+<p>}</p>
+
+<p>public void compute()</p>
+
+<p>{</p>
+
+<p> if (price <= 25000)</p>
+
+<p>dis = price * 0.05;</p>
+
+<p> else if (price <= 50000)</p>
+
+<p>dis = price * 0.075;</p>
+
+<p>else if (price <= 100000)</p>
+
+<p> dis = price * 0.1;</p>
+
+<p> else</p>
+
+<p> dis = price * 0.15;</p>
+
+<p> amt = price - dis;</p>
+
+<p>}</p>
+
+<p> public void display()</p>
+
+<p>{</p>
+
+<p>System.out.println("Name: " + name);</p>
+
+<p> System.out.println("Discount: " + dis);</p>
+
+<p> System.out.println("Amount to be paid: " + amt);</p>
+
+<p>}</p>
+
+<p>public static void main()</p>
+
+<p>{</p>
+
+<p>Scanner in = new Scanner(System.in);</p>
+
+<p>System.out.print("Enter Customer Name: ");</p>
+
+<p> String str = in.nextLine();</p>
+
+<p>System.out.print("Enter Price: ");</p>
+
+<p> float p = in.nextFloat();</p>
+
+<p>laptop ob = new laptop(str,p);</p>
+
+<p>ob.compute();</p>
+
+<p>ob.display();</p>
+
+<p>}</p>
+
+<p>}</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+In this program, the class name is named as laptop as mentioned in the question. Data members like name, price, dis and amt are initialized in the parameterized constructor. public void compute() method is used to find the discount and the total amount and is displayed in public void display(). In the main method, an object of the class is created and it calls the member methods.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

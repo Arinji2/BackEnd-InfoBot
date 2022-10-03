@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">Write a menu driven driven program for the following patterns.
+ a. 1/a! + a/a! + a^2/a! + a^3/a! +......n
+b. 11111
+   22222
+   33333
+   44444
+   55555
+c. 1
+   2 3
+   4 5 6
+   7 8 9 10
+   11 12 13 14 15.
+d. I
+   I C
+   I C S
+   I C S E</h1>
+
+<h3>First make a switch block and then use for loop to print patterns</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For Write a menu driven driven program for the following patterns. a. 1/a! + a/a! + a^2/a! + a^3/a! + n b. 11111 22222 33333 44444 55555 c. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15. d. I I C I C S I C S E</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class pattern</p>
+
+<p>{</p>
+
+<p>Scanner ob=new Scanner(System.in);</p>
+
+<p> int c,i,j,n,a,f=1;</p>
+
+<p>double s = 0.0;</p>
+
+<p>String str="ICSE";</p>
+
+<p>System.out.println("Enter 1,2,3,4 for the respective patterns");</p>
+
+<p> c=ob.nextInt();</p>
+
+<p>switch(c)</p>
+
+<p>{</p>
+
+<p> System.out.println("Enter the number of terms");</p>
+
+<p>n=ob.nextInt();</p>
+
+<p> System.out.println("Enter the number you want the series with");</p>
+
+<p>a=ob.nextInt();</p>
+
+<p>for(i=1;i<=a;i++)</p>
+
+<p>f=f*i;</p>
+
+<p> for(j=0;j<n;j++)</p>
+
+<p>{</p>
+
+<p>s=s+(Math.pow(a,j)/f);</p>
+
+<p>}</p>
+
+<p>System.out.println(s);</p>
+
+<p>break;</p>
+
+<p>case2:</p>
+
+<p>for(i=1;i<=5;i++)</p>
+
+<p>{</p>
+
+<p>for(j=1;j<=5;j++)</p>
+
+<p>{</p>
+
+<p> System.out.print(i);</p>
+
+<p>}</p>
+
+<p>System.out.println();</p>
+
+<p>}</p>
+
+<p>break;</p>
+
+<p>case 3:</p>
+
+<p>int k=1;</p>
+
+<p>for(i=1;i<=5;i++)</p>
+
+<p>{</p>
+
+<p>for(j=1;j<=i;j++)</p>
+
+<p>{</p>
+
+<p>System.out.print(k++);</p>
+
+<p>}</p>
+
+<p>System.out.println();</p>
+
+<p>}</p>
+
+<p>break;</p>
+
+<p>case 4:</p>
+
+<p>for(i=1;i<=4;i++)</p>
+
+<p>{</p>
+
+<p>System.out.print(str.substring(0,i));</p>
+
+<p>System.out.println();</p>
+
+<p>}</p>
+
+<p>break;</p>
+
+<p></p>
+
+<p>break;</p>
+
+<p>System.out.println("ba ba black sheep");</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>

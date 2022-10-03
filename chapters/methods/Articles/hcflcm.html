@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+<title>General Programs</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<head>
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container" id="animate-info">
+<h1 class="heading"> method:HCF & LCM</h1>
+<h3> What is a method:HCF & LCM?</h3>
+<h3>HCF of two or more numbers is the greatest factor that divides the numbers evenly.The LCM of Least Common Multiple of 2 numbers is the smallest number, divisible by the two numbers, evenly</h3></div>
+<div class="code">
+<h2 id="animate-info">Code For method:HCF & LCM</h2></div>
+<div class="code-text" id="animate-info">
+<p>import java.util.Scanner;</p>
+<p>public class Hcflcm</p>
+<p>{</p>
+<p>int a;</p>
+<p>int b;</p>
+<p>Hcflcm(int x, int y)</p>
+<p>{</p>
+<p>b = y;</p>
+<p>a=x;</p>
+<p>}</p>
+<p>void calculate()</p>
+<p>{</p>
+<p>int hcf=0,lcm=0;</p>
+<p>for(int i=1;i<=Math.min(a,b);i++)</p>
+<p>{</p>
+<p>if(a%i==0&&b%i==0)</p>
+<p>hcf=i;</p>
+<p>}</p>
+<p>lcm=(a*b)/hcf;</p>
+<p>System.out.println("HCF = " + hcf);</p>
+<p>System.out.println("LCM = " + lcm);</p>
+<p>}</p>
+<p>static void main()</p>
+<p>{</p>
+<p>Scanner in = new Scanner(System.in);</p>
+<p> System.out.print("Enter first number: ");</p>
+<p>int x = in.nextInt();</p>
+<p>System.out.print("Enter second number: ");</p>
+<p>int y = in.nextInt();</p>
+<p>Hcflcm obj = new Hcflcm(x,y);</p>
+<p>obj.calculate();</p>
+<p>}</p>
+<p>}</p>
+

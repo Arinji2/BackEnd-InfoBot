@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">CountriesCapitals</h1>
+
+<h3> What is a CountriesCapitals?</h3>
+
+<p>import java.util.*;</p>
+
+<p>public class CountriesCapitals {</p>
+
+<p>public static void main() {</p>
+
+<p>Scanner in=new Scanner(System.in);</p>
+
+<p>String a[]=new String[10];</p>
+
+<p>String b[]=new String[10];</p>
+
+<p>char c;</p>
+
+<p>int i;</p>
+
+<p>System.out.println("Enter the name of the countries with their capitals");</p>
+
+<p>for(i=0;i<10;i++){</p>
+
+<p>a[i]=in.next();</p>
+
+<p>b[i]=in.next();</p>
+
+<p>}</p>
+
+<p>System.out.println("Countries\tCapitals");</p>
+
+<p>for(i=0;i<10;i++){</p>
+
+<p>c=a[i].charAt(0);</p>
+
+<p>c=Character.toUpperCase(c);</p>
+
+<p>if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U'){</p>
+
+<p>System.out.println(a[i]+"\t"+b[i]);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<h3>The first character of each country's name is checked. If it's a vowel, the String at that particular index position of both the arrays is printed.</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For CountriesCapitals</h2></div>
+
+<div class="code-text" id="animate-info">
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+The first character of each country's name is checked. If it's a vowel, the String at that particular index position of both the arrays is printed.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

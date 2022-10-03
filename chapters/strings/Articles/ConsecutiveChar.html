@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">ConsecutiveCharString</h1>
+
+<h3> What is a ConsecutiveCharString?</h3>
+
+<h3>forming a new sentence by replacing each consonant with the previous letter. If the previous letter is a vowel then replace it with the next letter (i.e. if the letter is B then replace it with C as the previous letter of B is A). Sample Input – ICC WORLD CUP Sample Output – IBB VOQKC BUQ.</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For ConsecutiveCharString</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>public class consecutiveLetter</p>
+
+<p>{</p>
+
+<p>static void main()</p>
+
+<p>{</p>
+
+<p>Scanner ob=new Scanner(System.in);</p>
+
+<p>String s, str=" ";</p>
+
+<p>int i;</p>
+
+<p>char b;</p>
+
+<p> System.out.println("Enter the string");</p>
+
+<p> s=ob.nextLine();</p>
+
+<p>for(i=0;i<s.length();i++)</p>
+
+<p>{</p>
+
+<p> b = s.charAt(i);</p>
+
+<p> if(b!= 'A' ||b!= 'E' ||b!= 'I' || b!='O' ||b!= 'U')</p>
+
+<p>{</p>
+
+<p>--b;</p>
+
+<p>if(b== 'A' ||b== 'E' ||b== 'I' || b=='O' ||b== 'U')</p>
+
+<p> str=str+(b+2);</p>
+
+<p>}</p>
+
+<p> else if(b!= 'a' ||b!= 'e' || b!='i' || b!='o' ||b!= 'u')</p>
+
+<p>{</p>
+
+<p>--b;</p>
+
+<p> if(b=='a' ||b== 'e' || b=='i' ||b== 'o' ||b== 'u')</p>
+
+<p> str=str+(b+2);</p>
+
+<p>}</p>
+
+<p>str=str+b;</p>
+
+<p>}</p>
+
+<p> System.out.println("old string "+s);</p>
+
+<p> System.out.println("new string "+str);</p>
+
+<p>}</p>
+
+<p>}</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+str+b is used to concat characters next to each other with specific modification of b according to the conditions given
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
+

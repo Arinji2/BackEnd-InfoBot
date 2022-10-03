@@ -1,7 +1,11 @@
 //Storage
 
-let Topics = [];
-let Links = [];
+let Topics = ["CountriesCapital", "PalindromeArray", "SevenWonders"];
+let Links = [
+  "../arrays/Articles/CountriesCapital.html",
+  "../arrays/Articles/PalindromeArray.html",
+  "../arrays/Articles/SevenWonders.html",
+];
 
 let stringbox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
@@ -139,6 +143,7 @@ function listPrograms() {
 function main() {
   sessionStorage.clear();
   stringbox = document.getElementById("input");
+  stringbox = stringbox.toLowerCase();
   finalArrayOfWords = [];
   loading(1);
   setTimeout(() => {
