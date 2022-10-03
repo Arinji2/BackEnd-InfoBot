@@ -1,8 +1,9 @@
 //Storage
 
-let Topics = ["CountriesCapital","PalindromeArray"];
+let Topics = ["CountriesCapital","PalindromeArray","SevenWonders"];
 let Links = ["../arrays/Articles/CountriesCapital.html",
-             "../arrays/Articles/PalindromeArray.html"];
+             "../arrays/Articles/PalindromeArray.html",
+             "../arrays/Articles/SevenWonders.html"];
 
 let stringbox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
