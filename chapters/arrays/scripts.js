@@ -1,6 +1,6 @@
 //Storage
 
-let Topics = ["CountriesCapital", "PalindromeArray", "SevenWonders"];
+let Topics = ["countriescapital", "palindromearray", "sevenwonders"];
 let Links = [
   "../arrays/Articles/CountriesCapital.html",
   "../arrays/Articles/PalindromeArray.html",
