@@ -9,6 +9,7 @@ let Topics = [
   "togglecase",
   "reversestring",
   "surnamefirst",
+  "ConsecutiveChar"
 ];
 let Links = [
   "Articles/replace.html",
@@ -19,6 +20,8 @@ let Links = [
   "Articles/togglecase.html",
   "Articles/reversestring.html",
   "Articles/surnamefirst.html",
+  "Articles/ConsecutiveChar.html",
+  
 ];
 let stringbox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
