@@ -1,7 +1,7 @@
 //Storage
 
 let Topics = ["CountriesCapital"];
-let Links = [];
+let Links = ["../arrays/Articles/CountriesCapital.html"];
 
 let stringbox = document.getElementById("input");
 const choiceHead = document.getElementById("choiceHead");
