@@ -9,7 +9,8 @@ let Topics = [
   "togglecase",
   "reversestring",
   "surnamefirst",
-  "ConsecutiveChar"
+  "ConsecutiveChar",
+  "PreviousChar"
 ];
 let Links = [
   "Articles/replace.html",
@@ -21,6 +22,8 @@ let Links = [
   "Articles/reversestring.html",
   "Articles/surnamefirst.html",
   "Articles/ConsecutiveChar.html",
+  "Articles/PreviousChar.html"
+  
   
 ];
 let stringbox = document.getElementById("input");
