@@ -1,10 +1,11 @@
 //Storage
 
-let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword"];
+let Topics = ["overloadvolume", "overloadcalculate", "firstcharinword", "SuccessiveDiscount"];
 let Links = [
   "../methods/Articles/overloadvolume.html",
   "../methods/Articles/overloadcalculate.html",
   "../methods/Articles/firstcharinword.html",
+  "../methods/Articles/SuccessiveDiscount.html"
 ];
 
 let stringbox = document.getElementById("input");
