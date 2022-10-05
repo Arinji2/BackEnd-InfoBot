@@ -54,32 +54,7 @@ body h3 {
 .input:focus {
   width: 50%;
 }
-#codeLines {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  border-radius: 25px;
-  width: 50%;
-  position: relative;
-  left: 25%;
-  overflow-wrap: break-word;
-  border: 3px solid white;
-}
-.greenText {
-  color: #00bb72;
-  font-style: italic;
-}
-#scroll-off,
-#dark-on {
-  display: none;
-}
 
-.toggles {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-}
 .logic-head {
   padding-top: 50px;
 }
@@ -101,6 +76,16 @@ body h3 {
 }
 .listItems li {
   color: #00bb72;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.greenText {
+  color: #00bb72;
+  font-style: italic;
 }
 @media screen and (max-width: 600px) {
   .heading,
