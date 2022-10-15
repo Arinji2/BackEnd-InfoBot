@@ -97,7 +97,9 @@ function confirmation(number) {
   }
   if (number == 1) {
     for (i = 0; i < Topics.length; i++) {
-      if (Topics[i] == words[0]) window.location.assign(Links[i]);
+      if (Topics[i] == words[0]) {
+        window.location.assign(Links[i]);
+      }
     }
   }
   if (number == 0) {
