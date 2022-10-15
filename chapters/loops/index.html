@@ -3,11 +3,12 @@
   <head>
     <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
-    <title>Loop Programs</title>
+    <title>InfoBot</title>
     <script
       src="https://kit.fontawesome.com/f1af357be6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
@@ -25,14 +26,13 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/ExternalCss/buttons.css" />
   </head>
-  <body>
-    <h1 class="title">Info Bot</h1>
-    <h1 class="heading">Loop Programs</h1>
+  <body class="text-4xl">
+    <h1 class="title p-4">Info Bot</h1>
+    <h1 class="text-yellow-400 text-8xl p-4">Loop Programs</h1>
 
-    <h1 class="Head">
-      Note: If the keyword has <span class="highlight">2 Words</span> , like
-      <span class="highlight">For Loop</span> , make sure to type it as
-      <span class="highlight">ForLoop</span>
+    <h1 class="Head text-red-700">
+      Note: If the keyword has 2 Words , like For Loop , make sure to type it as
+      ForLoop
     </h1>
     <div class="spacing"></div>
     <input
@@ -41,14 +41,22 @@
       placeholder="Enter Question Here"
       id="input"
       class="input"
+      onkeypress="enterpressalert(event, this)"
     />
     <div class="padded">
       <button
         id="addNameCode"
-        class="btn btn-primary btn-round mr-md-3 mb-md-0 mb-2"
+        class="border-2 border-yellow-400 p-2 rounded-xl bg-yellow-400 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-200 text-white text-4xl"
         onclick="main()"
       >
         Search
+      </button>
+      <button
+        id="addNameCode"
+        class="border-2 border-yellow-400 p-2 rounded-xl bg-yellow-400 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-200 text-white text-4xl"
+        onclick="listPrograms()"
+      >
+        KeyWords!
       </button>
     </div>
 
@@ -72,11 +80,16 @@
       </button>
     </div>
     <h2 id="output">Output:</h2>
-    <h2 id="list">
+    <h2 id="list" class="pb-2 text-4x">
       Here is a List of All the Programs in this Topic, see the name and re
       enter the Question.
     </h2>
-    <div id="listItems" class="listItems"><ul></ul></div>
+    <div
+      id="listItems"
+      class="listItems h-2/4 bg-black flex flex-row flex-wrap items-center justify-evenly"
+    >
+      <ul></ul>
+    </div>
   </body>
   <script src="general.js"></script>
 </html>
