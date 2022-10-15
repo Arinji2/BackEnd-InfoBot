@@ -93,7 +93,7 @@ function confirmation(number) {
     choiceRender(1);
     words[0] = toUpp(words[0]);
     choiceHead.innerHTML =
-      "Did you Mean <span class='greenText'>" + words[0] + "</span>";
+      "Did you Mean <span class='text-yellow-400'>" + words[0] + "</span>";
   }
   if (number == 1) {
     for (i = 0; i < Topics.length; i++) {
@@ -155,11 +155,14 @@ function toUpp(checkWord) {
 function listPrograms() {
   if (list.style.display != "block") {
     list.style.display = "block";
+    Topics = Topics.sort();
     Topics.forEach((item) => {
       item = toUpp(item);
       let listDiv = document.getElementById("listItems");
       let text = document.createElement("li");
       let content = document.createTextNode(item);
+      text.className =
+        "text-3xl p-3 scale-90 hover:scale-100 transition-all ease-in-out duration-300 text-yellow-400";
       text.appendChild(content);
       listDiv.appendChild(text);
     });
@@ -180,4 +183,11 @@ function main() {
     sessionStorage.setItem("Option", 0);
     confirmation(3);
   }, 2000);
+}
+
+function enterpressalert(e, textarea) {
+  var code = e.keyCode ? e.keyCode : e.which;
+  if (code == 13) {
+    main();
+  }
 }
