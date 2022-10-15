@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>Arrays</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">
+          Write a program to accept 10 numbers in a Single Dimensional
+          Array(SDA) and find the sum of even and odd numbers.
+        </h1>
+
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class array</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner(System.in);</p>
+
+          <p>int m[]=new int[10];</p>
+
+          <p>int i,sum1=0,sum2=0;</p>
+
+          <p>System.out.println("Enter 10 numbers");</p>
+
+          <p>for(i=0;i<10;i++)</p>
+
+          <p>{</p>
+
+          <p>m[i]=ob.nextInt();</p>
+
+          <p>}</p>
+
+          <p></p>
+
+          <p>for(i=1;i<10;i++)</p>
+
+          <p>{</p>
+
+          <p>if(m[i]%2==0)</p>
+
+          <p>{</p>
+
+          <p>sum1=sum1+m[i];</p>
+
+          <p>}</p>
+
+          <p>else</p>
+
+          <p>{</p>
+
+          <p>sum2=sum2+m[i];</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p></p>
+
+          <p>System.out.println("Sum of even numbers is "+sum1);</p>
+
+          <p>System.out.println("Sum of odd numbers is "+sum2);</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>

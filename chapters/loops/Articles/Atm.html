@@ -1,139 +1,133 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">ATM-Bank</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a ATM-Bank?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <p>import java.util.*;</p>
 
-</head>
+        <p>public class Bank {</p>
 
-<body>
+        <p>public static void main() {</p>
 
-<div class="container" id="animate-info">
+        <p>Scanner in=new Scanner(System.in);</p>
 
-<h1 class="heading">ATM-Bank</h1>
+        <p>int choice,k=0;</p>
 
-<h3> What is a ATM-Bank?</h3>
+        <p>double balance,deposit,withdraw;</p>
 
-<p>import java.util.*;</p>
+        <p>System.out.println("Enter your current balance");</p>
 
-<p>public class Bank {</p>
+        <p>balance=in.nextDouble();</p>
 
-<p>public static void main() {</p>
+        <p>while(true){</p>
 
-<p>Scanner in=new Scanner(System.in);</p>
+        <p>if(k>=3) {</p>
 
-<p>int choice,k=0;</p>
+        <p>System.out.println("Do you want to exit? Type 0");</p>
 
-<p>double balance,deposit,withdraw;</p>
+        <p>}</p>
 
-<p>System.out.println("Enter your current balance");</p>
+        <p>System.out.println("Enter your choice");</p>
 
-<p>balance=in.nextDouble();</p>
+        <p>choice=in.nextInt();</p>
 
-<p>while(true){</p>
+        <p>switch(choice){</p>
 
-<p>if(k>=3) {</p>
+        <p>case 1:</p>
 
-<p>System.out.println("Do you want to exit? Type 0");</p>
+        <p>System.out.println("Enter the money to be deposited");</p>
 
-<p>}</p>
+        <p>deposit=in.nextDouble();</p>
 
-<p>System.out.println("Enter your choice");</p>
+        <p>balance+=deposit;</p>
 
-<p>choice=in.nextInt();</p>
+        <p>System.out.println("Current Balance= "+balance);</p>
 
-<p>switch(choice){</p>
+        <p>break;</p>
 
-<p>case 1:</p>
+        <p>case 2:</p>
 
-<p>System.out.println("Enter the money to be deposited");</p>
+        <p>System.out.println("Enter the money to be withdrawn");</p>
 
-<p>deposit=in.nextDouble();</p>
+        <p>withdraw=in.nextDouble();</p>
 
-<p>balance+=deposit;</p>
+        <p>if(balance>=withdraw) {</p>
 
-<p>System.out.println("Current Balance= "+balance);</p>
+        <p>balance-=withdraw;</p>
 
-<p>break;</p>
+        <p>System.out.println("Current Balance= "+balance);</p>
 
-<p>case 2:</p>
+        <p>}</p>
 
-<p>System.out.println("Enter the money to be withdrawn");</p>
+        <p>else {</p>
 
-<p>withdraw=in.nextDouble();</p>
+        <p>System.out.println("Balance not sufficient");</p>
 
-<p>if(balance>=withdraw) {</p>
+        <p>}</p>
 
-<p>balance-=withdraw;</p>
+        <p>break;</p>
 
-<p>System.out.println("Current Balance= "+balance);</p>
+        <p>case 3:</p>
 
-<p>}</p>
+        <p>System.out.println("Current Balance= "+balance);</p>
 
-<p>else {</p>
+        <p>break;</p>
 
-<p>System.out.println("Balance not sufficient");</p>
+        <p>case 0:</p>
 
-<p>}</p>
+        <p>System.out.println("Program terminates");</p>
 
-<p>break;</p>
+        <p>System.exit(0);</p>
 
-<p>case 3: </p>
+        <p>break;</p>
 
-<p> System.out.println("Current Balance= "+balance); </p>
+        <p>default:</p>
 
-<p>break;</p>
+        <p>System.out.println("Invalid choice");</p>
 
-<p>case 0:</p>
+        <p>System.exit(0);</p>
 
-<p>System.out.println("Program terminates"); </p>
+        <p>}</p>
 
-<p>System.exit(0); </p>
+        <p>k++;</p>
 
-<p>break;</p>
+        <p>}</p>
 
-<p>default: </p>
+        <p>}</p>
 
-<p> System.out.println("Invalid choice"); </p>
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          The choice is inputted and goes to the switch block. After getting out
+          of the satiable condition, it goes back to the start(loop) and
+          continues till the user types '0' to exit.
+        </h3>
+      </div>
 
-<p> System.exit(0);</p>
-
-<p>}</p>
-
-<p>k++;</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-The choice is inputted and goes to the switch block. After getting out of the satiable condition, it goes back to the start(loop) and continues till the user types '0' to exit.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

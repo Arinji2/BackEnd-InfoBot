@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=0.7" />
-		<title>General Programs</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div class="container" id="animate-info">
-			<h1 class="heading">Palindrome Number</h1>
-			<h3>What is a Palindrome Number?</h3>
-			<h3>
-				A Palindrome Number is a number which remains the same when reversed.
-				For Example: 121 , 454
-			</h3>
-		</div>
-		<div class="code">
-			<h2 id="animate-info">Code For Palindrome Number</h2>
-		</div>
-		<div class="code-text" id="animate-info">
-			<p>------</p>
-			<p>import java.util.*;</p>
-			<p>public class palindrome{</p>
-			<p>static void main(){</p>
-			<p>int num,n=0,r,s=0, store=0;</p>
-			<p>Scanner in = new Scanner(System.in);</p>
-			<p>System.out.println("Enter a number");</p>
-			<p>num=in.nextInt();</p>
-			<p>store=num;</p>
-			<p>while(n &lt; num){</p>
-			<p>r=num%10;</p>
-			<p>s=s*10+r;</p>
-			<p>num=num/10;</p>
-			<p>}</p>
-			<p>if(s==store)</p>
-			<p>System.out.println("It is a palindrome number");</p>
-			<p>else</p>
-			<p>System.out.println("It is not a palindrome number");</p>
-			<p>}</p>
-			<p>}</p>
-			<p>------</p>
-		</div>
-		<div class="logic">
-			<h3 class="logic-text" id="animate-info">
-				For Palindrome Number, we made a copy of the input number and reversed
-				it using Character Extracting. Finally we checked if the new reversed
-				number is equal to the input number
-			</h3>
-		</div>
-		<script src="scripts.js"></script>
-	</body>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <title>InfoBot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="animate-info">
+      <h1 class="heading">Palindrome Number</h1>
+      <h3>What is a Palindrome Number?</h3>
+      <h3>
+        A Palindrome Number is a number which remains the same when reversed.
+        For Example: 121 , 454
+      </h3>
+    </div>
+    <div class="code">
+      <h2 id="animate-info">Code For Palindrome Number</h2>
+    </div>
+    <div class="code-text" id="animate-info">
+      <p>------</p>
+      <p>import java.util.*;</p>
+      <p>public class palindrome{</p>
+      <p>static void main(){</p>
+      <p>int num,n=0,r,s=0, store=0;</p>
+      <p>Scanner in = new Scanner(System.in);</p>
+      <p>System.out.println("Enter a number");</p>
+      <p>num=in.nextInt();</p>
+      <p>store=num;</p>
+      <p>while(n &lt; num){</p>
+      <p>r=num%10;</p>
+      <p>s=s*10+r;</p>
+      <p>num=num/10;</p>
+      <p>}</p>
+      <p>if(s==store)</p>
+      <p>System.out.println("It is a palindrome number");</p>
+      <p>else</p>
+      <p>System.out.println("It is not a palindrome number");</p>
+      <p>}</p>
+      <p>}</p>
+      <p>------</p>
+    </div>
+    <div class="logic">
+      <h3 class="logic-text" id="animate-info">
+        For Palindrome Number, we made a copy of the input number and reversed
+        it using Character Extracting. Finally we checked if the new reversed
+        number is equal to the input number
+      </h3>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>

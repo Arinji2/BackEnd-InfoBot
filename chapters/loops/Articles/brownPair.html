@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=0.7" />
-		<title>General Programs</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div class="container" id="animate-info">
-			<h1 class="heading">Brown Pair Number</h1>
-			<h3>What is a Brown Pair Number?</h3>
-			<h3>
-				If the sum of the factor of the smaller number + 1 is equal to the
-				square of the larger number.
-			</h3>
-		</div>
-		<div class="code">
-			<h2 id="animate-info">Code For Brown Pair Number</h2>
-		</div>
-		<div class="code-text" id="animate-info">
-			<p>------</p>
-			<p>import java.util.*;</p>
-			<p>public class brownpair</p>
-			<p>{</p>
-			<p>static void main()</p>
-			<p>{</p>
-			<p>int n1,n2,max,min,i,f=1;</p>
-			<p>Scanner ob=new Scanner(System.in);</p>
-			<p></p>
-			<p>System.out.println("Enter 2 numbers");</p>
-			<p>n1=ob.nextInt();</p>
-			<p>n2=ob.nextInt();</p>
-			<p></p>
-			<p>max=Math.max(n1,n2);</p>
-			<p>min=Math.min(n1,n2);</p>
-			<p></p>
-			<p>for(i=1;i<=min;i++)</p>
-			<p>{ f=f*i;</p>
-			<p>}</p>
-			<p></p>
-			<p>max=(int)Math.pow(max,2);</p>
-			<p></p>
-			<p>if((f+1)==max)</p>
-			<p>System.out.println("brown Pair");</p>
-			<p>else</p>
-			<p>System.out.println("Not a brown Pair");</p>
-			<p>}</p>
-			<p>}</p>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <title>InfoBot</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="animate-info">
+      <h1 class="heading">Brown Pair Number</h1>
+      <h3>What is a Brown Pair Number?</h3>
+      <h3>
+        If the sum of the factor of the smaller number + 1 is equal to the
+        square of the larger number.
+      </h3>
+    </div>
+    <div class="code">
+      <h2 id="animate-info">Code For Brown Pair Number</h2>
+    </div>
+    <div class="code-text" id="animate-info">
+      <p>------</p>
+      <p>import java.util.*;</p>
+      <p>public class brownpair</p>
+      <p>{</p>
+      <p>static void main()</p>
+      <p>{</p>
+      <p>int n1,n2,max,min,i,f=1;</p>
+      <p>Scanner ob=new Scanner(System.in);</p>
+      <p></p>
+      <p>System.out.println("Enter 2 numbers");</p>
+      <p>n1=ob.nextInt();</p>
+      <p>n2=ob.nextInt();</p>
+      <p></p>
+      <p>max=Math.max(n1,n2);</p>
+      <p>min=Math.min(n1,n2);</p>
+      <p></p>
+      <p>for(i=1;i<=min;i++)</p>
+      <p>{ f=f*i;</p>
+      <p>}</p>
+      <p></p>
+      <p>max=(int)Math.pow(max,2);</p>
+      <p></p>
+      <p>if((f+1)==max)</p>
+      <p>System.out.println("brown Pair");</p>
+      <p>else</p>
+      <p>System.out.println("Not a brown Pair");</p>
+      <p>}</p>
+      <p>}</p>
 
-			<p>------</p>
-		</div>
-		<div class="logic">
-			<h3 class="logic-text" id="animate-info"></h3>
-		</div>
-		<script src="scripts.js"></script>
-	</body>
+      <p>------</p>
+    </div>
+    <div class="logic">
+      <h3 class="logic-text" id="animate-info"></h3>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>

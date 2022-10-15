@@ -1,33 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 html {
-	margin: 0;
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
-	color: #757575;
-	background-color: black;
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #757575;
+  background-color: black;
 }
 
 .heading {
-	padding: 50px;
-	color: #00bb72;
-	font-size: 80px;
-	font-weight: 500;
-	text-decoration: 5px overline underline #757575;
-	text-underline-offset: 20px;
+  padding: 50px;
+  color: rgb(250 204 21);
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: 5px overline underline #757575;
+  text-underline-offset: 20px;
 }
 
 .animate-info {
-	animation: fadeInUp;
-	animation-duration: 1s;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 .code {
-	padding-top: 30px;
-	color: #00bb72;
+  padding-top: 30px;
+  color: rgb(250 204 21);
 }
-
+.code-text {
+  color: white;
+  background-color: rgb(5, 3, 3);
+  max-width: 50%;
+  border-radius: 8px;
+  text-align: left;
+}
+.code-text p {
+  padding: 5px;
+  margin: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 .logic h3 {
-	color: #00bb72;
-	padding-top: 30px;
+  color: rgb(250 204 21);
+  padding-top: 30px;
 }
