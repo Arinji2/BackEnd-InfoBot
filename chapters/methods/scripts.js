@@ -4,9 +4,9 @@ let Topics = [
   "overloadvolume",
   "overloadcalculate",
   "firstcharinword",
-  "SuccessiveDiscount",
+  "successivediscount",
   "hcflcm",
-  "LapDiscParam",
+  "lapdiscparam",
 ];
 let Links = [
   "../methods/Articles/overloadvolume.html",

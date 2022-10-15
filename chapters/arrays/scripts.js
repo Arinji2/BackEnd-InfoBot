@@ -1,10 +1,16 @@
 //Storage
 
-let Topics = ["countriescapital", "palindromearray", "sevenwonders"];
+let Topics = [
+  "countriescapital",
+  "palindromearray",
+  "sevenwonders",
+  "sumofevenodd",
+];
 let Links = [
   "../arrays/Articles/CountriesCapital.html",
   "../arrays/Articles/PalindromeArray.html",
   "../arrays/Articles/SevenWonders.html",
+  "../arrays/Articles/SumofEvenOdd.html",
 ];
 
 let stringbox = document.getElementById("input");

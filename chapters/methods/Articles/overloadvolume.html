@@ -1,96 +1,103 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">overloadVolume</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a overloadVolume?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          To overload the function calculate by using different parametric list.
+          (i) void calculate(int m, char ch) with one integer argument and one
+          character argument. It checks whether the integer argument is
+          divisible by 7 or not, if ch is 's', otherwise, it checks whether the
+          last digit of the integer argument is 7 or not (ii) void calculate(int
+          a, int b, char ch) with two integer arguments and one character
+          argument. It displays the greater of integer arguments if ch is 'g'
+          otherwise displays the smaller of integer arguments
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For overloadVolume</h2>
+      </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class volume</p>
 
-<div class="container" id="animate-info">
+          <p>{static double volume(double r)</p>
 
-<h1 class="heading">overloadVolume</h1>
+          <p>{double v= 4/3.0 * 22/7.0 * Math.pow(r,3);</p>
 
-<h3> What is a overloadVolume?</h3>
+          <p>return(v);</p>
 
-<h3>To overload the function calculate by using different parametric list. (i) void calculate(int m, char ch) with one integer argument and one character argument. It checks whether the integer argument is divisible by 7 or not, if ch is 's', otherwise, it checks whether the last digit of the integer argument is 7 or not (ii) void calculate(int a, int b, char ch) with two integer arguments and one character argument. It displays the greater of integer arguments if ch is 'g' otherwise displays the smaller of integer arguments</h3></div>
+          <p>}</p>
 
-<div class="code">
+          <p>static double volume(double h,double r)</p>
 
-<h2 id="animate-info">Code For overloadVolume</h2></div>
+          <p>{double v= h * 22/7.0 * Math.pow(r,2);</p>
 
-<div class="code-text" id="animate-info">
+          <p>return(v);</p>
 
-<p>import java.util.*;</p>
+          <p>}</p>
 
-<p>public class volume</p>
+          <p>static double volume(double l, double b, double h)</p>
 
-<p>{static double volume(double r)</p>
+          <p>{double v=l*b*h;</p>
 
-<p>{double v= 4/3.0 * 22/7.0 * Math.pow(r,3);</p>
+          <p>return(v);</p>
 
-<p> return(v);</p>
+          <p>}</p>
 
-<p> }</p>
+          <p>static void main()</p>
 
-<p>static double volume(double h,double r)</p>
+          <p>{</p>
 
-<p>{double v= h * 22/7.0 * Math.pow(r,2);</p>
+          <p>System.out.println(" Volume of the sphere=" + volume(5.0));</p>
 
-<p> return(v);</p>
+          <p>
+            System.out.println(" Volume of the cylinder=" + volume(5.0, 6.0));
+          </p>
 
-<p> }</p>
+          <p>
+            System.out.println(" Volume of the rectangle=" +
+            volume(5.0,7.0,9.0));
+          </p>
 
-<p>static double volume(double l, double b, double h)</p>
+          <p>}</p>
 
-<p>{double v=l*b*h;</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Here different parametric lists are used to overload the function
+          volume.
+        </h3>
+      </div>
 
-<p> return(v);</p>
-
-<p>}</p>
-
-<p>static void main()</p>
-
-<p>{</p>
-
-<p>System.out.println(" Volume of the sphere=" + volume(5.0));</p>
-
-<p>System.out.println(" Volume of the cylinder=" + volume(5.0, 6.0));</p>
-
-<p>System.out.println(" Volume of the rectangle=" + volume(5.0,7.0,9.0));</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-Here different parametric lists are used to overload the function volume.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

@@ -1,98 +1,94 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Dudeney Number</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a Dudeney Number?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          A Dudeney number is a positive integer for which the sum of its
+          decimal digits is equal to the cube root of the number. For example,
+          512 is a Dudeney number because it is the cube of 8, which is the sum
+          of its decimal digits (5+1+2).
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For DudeneyNumber</h2>
+      </div>
 
-<body>
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
 
-<div class="container" id="animate-info">
+        <p>public class dudeneyno</p>
 
-<h1 class="heading">Dudeney Number</h1>
+        <p>{</p>
 
-<h3> What is a Dudeney Number?</h3>
+        <p>static void main()</p>
 
-<h3>A Dudeney number is a positive integer for which the sum of its decimal digits is equal to the cube root of the number. For example, 512 is a Dudeney number because it is the cube of 8, which is the sum of its decimal digits (5+1+2).</h3></div>
+        <p>{</p>
 
-<div class="code">
+        <p>Scanner ob=new Scanner(System.in);</p>
 
-<h2 id="animate-info">Code For DudeneyNumber</h2></div>
+        <p>int n,s=0,r,t=0;</p>
 
-<div class="code-text" id="animate-info">
+        <p>System.out.println("enter the no");</p>
 
-<p>import java.util.*;</p>
+        <p>n=ob.nextInt();</p>
 
-<p>public class dudeneyno</p>
+        <p>n=t;</p>
 
-<p>{</p>
+        <p>while(n>0)</p>
 
-<p> static void main()</p>
+        <p>{</p>
 
-<p>{</p>
+        <p>r=n%10;</p>
 
-<p> Scanner ob=new Scanner(System.in);</p>
+        <p>s=s+r;</p>
 
-<p>int n,s=0,r,t=0;</p>
+        <p>n=n/10;</p>
 
-<p> System.out.println("enter the no");</p>
+        <p>}</p>
 
-<p> n=ob.nextInt();</p>
+        <p>if(t==(int)Math.pow(s,3))</p>
 
-<p> n=t;</p>
+        <p>System.out.println(t+ " is a dudeney number");</p>
 
-<p>while(n>0)</p>
+        <p>else</p>
 
-<p>{</p>
+        <p>System.out.println(t+ "is not a dudeney number");</p>
 
-<p> r=n%10;</p>
+        <p>}</p>
 
-<p>s=s+r;</p>
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Here while loop is used to find the sum of the digits of the number.
+        </h3>
+      </div>
 
-<p>n=n/10;</p>
-
-<p>}</p>
-
-<p>if(t==(int)Math.pow(s,3))</p>
-
-<p>System.out.println(t+ " is a dudeney number");</p>
-
-<p>else</p>
-
-<p>System.out.println(t+ "is not a dudeney number");</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-Here while loop is used to find the sum of the digits of the number.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
-

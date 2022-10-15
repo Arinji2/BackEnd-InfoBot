@@ -1,106 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">twinPrimeNo</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a twinPrimeNo?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>Pair of prime numbers with a difference of two.</h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For twinPrimeNo</h2>
+      </div>
 
-<body>
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
 
-<div class="container" id="animate-info">
+        <p>public class twinprime</p>
 
-<h1 class="heading">twinPrimeNo</h1>
+        <p>{</p>
 
-<h3> What is a twinPrimeNo?</h3>
+        <p>static void main()</p>
 
-<h3>Pair of prime numbers with a difference of two.</h3></div>
+        <p>{</p>
 
-<div class="code">
+        <p>int n,n1, k=0,k1=0,i;</p>
 
-<h2 id="animate-info">Code For twinPrimeNo</h2></div>
+        <p>Scanner ob=new Scanner(System.in);</p>
 
-<div class="code-text" id="animate-info">
+        <p>System.out.println("Enter the numbers");</p>
 
-<p>import java.util.*;</p>
+        <p>n=ob.nextInt();</p>
 
-<p>public class twinprime</p>
+        <p>n1=ob.nextInt();</p>
 
-<p>{</p>
+        <p>for(i=1;i<=n;i++)</p>
 
-<p>static void main()</p>
+        <p>{</p>
 
-<p>{</p>
+        <p>if(n%i==0)</p>
 
-<p>int n,n1, k=0,k1=0,i;</p>
+        <p>k++;</p>
 
-<p>Scanner ob=new Scanner(System.in);</p>
+        <p>}</p>
 
-<p>System.out.println("Enter the numbers");</p>
+        <p>for(i=1;i<=n1;i++)</p>
 
-<p>n=ob.nextInt();</p>
+        <p>{</p>
 
-<p>n1=ob.nextInt();</p>
+        <p>if(n1%i==0)</p>
 
-<p>for(i=1;i<=n;i++)</p>
+        <p>k1++;</p>
 
-<p>{</p>
+        <p>}</p>
 
-<p>if(n%i==0)</p>
+        <p>if(k==2&&k1==2&&Math.abs(n1-n)==2)</p>
 
-<p>k++;</p>
+        <p>System.out.println(n+" " + n1+" twin prime numbers ");</p>
 
-<p>}</p>
+        <p>else</p>
 
-<p>for(i=1;i<=n1;i++)</p>
+        <p>System.out.println(n+" " + n1+" is not twin prime numbers ");</p>
 
-<p>{</p>
+        <p>}</p>
 
-<p>if(n1%i==0)</p>
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          here first we check if the numbers are prime or not using for loop.
+          Then we find the different between the two numbers. Math.abs is used
+          to get a positive value for the difference.
+        </h3>
+      </div>
 
-<p>k1++;</p>
-
-<p>}</p>
-
-<p>if(k==2&&k1==2&&Math.abs(n1-n)==2)</p>
-
-<p>System.out.println(n+" " + n1+" twin prime numbers ");</p>
-
-<p>else</p>
-
-<p>System.out.println(n+" " + n1+" is not twin prime numbers ");</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-here first we check if the numbers are prime or not using for loop. Then we find the different between the two numbers. Math.abs is used to get a positive value for the difference.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
-

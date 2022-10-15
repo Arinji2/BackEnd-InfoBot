@@ -1,55 +1,94 @@
-<p>import java.util.*;</p>
+<!DOCTYPE html>
 
-<p>public class perfectno</p> 
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<p>{</p>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<p>static void main()</p>
+    <title>InfoBot</title>
 
-<p>{</p>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<p>Scanner in=new Scanner(System.in);</p>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<p>int n,i,s=0;</p>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<p>System.out.println("enter a number");</p>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Perfect Number</h1>
 
-<p>n=in.nextInt();</p>
+        <h3>What is a Perfect Number?</h3>
 
-<p>for(i=1;i<n;i++)</p>
+        <h3>
+          A perfect number is a positive integer that is equal to the sum of its
+          positive divisors, excluding the number itself. For instance, 6 has
+          divisors 1, 2 and 3, and 1 + 2 + 3 = 6, so 6 is a perfect numb
+        </h3>
+      </div>
 
-<p>{</p>
+      <div class="code">
+        <h2 id="animate-info">Code For Perfect Number</h2>
+      </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<p>if(n%i==0)</p>
+          <p>public class perfectno</p>
 
-<p>s=s+i;</p>
+          <p>{</p>
 
-<p>}</p>
+          <p>static void main()</p>
 
-<p></p>
+          <p>{</p>
 
-<p>if(s==n)</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-<p>System.out.println("perfect number");</p>
+          <p>int n,i,s=0;</p>
 
-<p>else</p>
+          <p>System.out.println("enter a number");</p>
 
-<p> System.out.println("not a perfect number");</p>
+          <p>n=in.nextInt();</p>
 
-<p>}</p>
+          <p>for(i=1;i<n;i++)</p>
 
-<p>}</p>
+          <p>{</p>
 
-</div><div class="logic">
+          <p>if(n%i==0)</p>
 
-<h3 class="logic-text" id="animate-info">
+          <p>s=s+i;</p>
 
-</h3>
+          <p>}</p>
 
-</div>
+          <p></p>
 
-<script src="scripts.js"></script>
+          <p>if(s==n)</p>
 
-</body>
+          <p>System.out.println("perfect number");</p>
 
+          <p>else</p>
+
+          <p>System.out.println("not a perfect number");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Here each factor of the number is checked, if found they are added to
+          a sum variable. If the Sum variable is equal to the input variable, it
+          is a Perfect Number.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

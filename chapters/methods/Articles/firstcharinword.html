@@ -1,105 +1,118 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">
+          Display the first character of each word by passing the string to a
+          method
+        </h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>
+          What is a Display the first character of each word by passing the
+          string to a method?
+        </h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          A program to accept a string from the user. Pass the string to a
+          method First(String str) which displays the first characters of each
+          word. Sample input - Thank god its Friday. Sample output - T <br />
+          G <br />
+          I <br />
+          F
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">
+          Code For Display the first character of each word by passing the
+          string to a method
+        </h2>
+      </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class program</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">Display the first character of each word by passing the string to a method</h1>
+          <p>void First(String str)</p>
 
-<h3> What is a Display the first character of each word by passing the string to a method?</h3>
+          <p>{</p>
 
-<h3>A program to accept a string from the user. Pass the string to a method First(String str) which displays the first characters of each word. Sample input - Thank god its Friday. Sample output - T <br /> G <br /> I <br /> F </h3></div>
+          <p>int i, l;</p>
 
-<div class="code">
+          <p>char b;</p>
 
-<h2 id="animate-info">Code For Display the first character of each word by passing the string to a method</h2></div>
+          <p>str = " " + str;</p>
 
-<div class="code-text" id="animate-info">
+          <p>l = str.length();</p>
 
-<p>import java.util.*;</p>
+          <p>for (i=0; i<l ; i++)</p>
 
-<p>public class program </p>
+          <p>{</p>
 
-<p>{</p>
+          <p>b = str.charAt(i);</p>
 
-<p> void First(String str)</p>
+          <p>if(Character.isWhitespace(b))</p>
 
-<p> {</p>
+          <p>System.out.println(str.charAt(i+1));</p>
 
-<p>int i, l;</p>
+          <p>}</p>
 
-<p>char b;</p>
+          <p>}</p>
 
-<p> str = " " + str;</p>
+          <p>public static void main()</p>
 
-<p> l = str.length();</p>
+          <p>{</p>
 
-<p>for (i=0; i<l ; i++)</p>
+          <p>Scanner in = new Scanner(System.in);</p>
 
-<p>{</p>
+          <p>String s;</p>
 
-<p> b = str.charAt(i);</p>
+          <p>program ob = new program();</p>
 
-<p>if(Character.isWhitespace(b))</p>
+          <p>System.out.println("Enter the Sentence");</p>
 
-<p>System.out.println(str.charAt(i+1));</p>
+          <p>s = in.nextLine().toUpperCase();</p>
 
-<p>}</p>
+          <p>ob.First(s);</p>
 
-<p> }</p>
+          <p>}</p>
 
-<p> public static void main() </p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, We are accepting the string in the main method of the
+          program, and passing it to a method First(String str). In this method,
+          the string undergoes a character extraction. It checks for a spaces.
+          If there is a space, It prints the next letter and the loop continues
+          until it finds another space, repeating the same thing until it exits.
+        </h3>
+      </div>
 
-<p>{</p>
-
-<p>Scanner in = new Scanner(System.in);</p>
-
-<p> String s;</p>
-
-<p> program ob = new program();</p>
-
-<p>System.out.println("Enter the Sentence");</p>
-
-<p>s = in.nextLine().toUpperCase();</p>
-
-<p>ob.First(s);</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-In this program, We are accepting the string in the main method of the program, and passing it to a method First(String str). In this method, the string undergoes a character extraction. It checks for a spaces. If there is a space, It prints the next letter and the loop continues until it finds another space, repeating the same thing until it exits.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
