@@ -1,129 +1,114 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Palindrome Arrays</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a Palindrome Arrays?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          Palindrome arrays are a set of 2 arrays one of which has its first
+          element same as the last element of the other array and so on.
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For Palindrome Arrays</h2>
+      </div>
 
-<body>
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
 
-<div class="container" id="animate-info">
+        <p>public class PalindromeArrays {</p>
 
-<h1 class="heading">Palindrome Arrays</h1>
+        <p>public static void main() {</p>
 
-<h3> What is a Palindrome Arrays?</h3>
+        <p>Scanner in=new Scanner(System.in);</p>
 
-<h3>Palindrome arrays are a set of 2 arrays one of which has its first element same as the last element of the other array and so on. </h3></div>
+        <p>int a[]=new int[10];</p>
 
-<div class="code">
+        <p>int b[]=new int[10];</p>
 
-<h2 id="animate-info">Code For Palindrome Arrays</h2></div>
+        <p>int i,k=0,t=9;</p>
 
-<div class="code-text" id="animate-info">
+        <p>System.out.println("Enter the elements for Array1");</p>
 
-</div><div class="logic">
+        <p>for(i=0;i<10;i++){</p>
 
-<h3 class="logic-text" id="animate-info">
+        <p>a[i]=in.nextInt();</p>
 
-If the element at the 'i'th position of the first array is the same as that of the element at the 't'th position (of the other array), a counter 'k' is incremented and the value of t is decremented(this allows the program to check the second element from the end and so on). If the final value of k comes to 10, it signifies that all the elements in the two arrays are the same (but in opposite direction) and hence are palindrome arrays.
+        <p>}</p>
 
-</h3>
+        <p>System.out.println("Enter the elements for Array2");</p>
 
-</div>
+        <p>for(i=0;i<10;i++){</p>
 
-<script src="scripts.js"></script>
+        <p>b[i]=in.nextInt();</p>
 
-</body>
+        <p>}</p>
 
-</html>
+        <p>for(i=0;i<10;i++){</p>
 
-<p>import java.util.*;</p>
+        <p>if(a[i]==b[t]){</p>
 
-<p>public class PalindromeArrays {</p>
+        <p>k++;</p>
 
-<p>public static void main() {</p>
+        <p>t--;</p>
 
-<p>Scanner in=new Scanner(System.in);</p>
+        <p>}</p>
 
-<p>int a[]=new int[10];</p>
+        <p>}</p>
 
-<p>int b[]=new int[10];</p>
+        <p>if(k==10){</p>
 
-<p>int i,k=0,t=9;</p>
+        <p>System.out.println("They are palindrome arrays");</p>
 
-<p>System.out.println("Enter the elements for Array1");</p>
+        <p>}</p>
 
-<p>for(i=0;i<10;i++){</p>
+        <p>else {</p>
 
-<p>a[i]=in.nextInt();</p>
+        <p>System.out.println("They are not palindrome arrays");</p>
 
-<p>}</p>
+        <p>}</p>
 
-<p>System.out.println("Enter the elements for Array2");</p>
+        <p>}</p>
 
-<p>for(i=0;i<10;i++){</p>
+        <p>}</p>
 
-<p>b[i]=in.nextInt();</p>
+        <p></p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          If the element at the 'i'th position of the first array is the same as
+          that of the element at the 't'th position (of the other array), a
+          counter 'k' is incremented and the value of t is decremented(this
+          allows the program to check the second element from the end and so
+          on). If the final value of k comes to 10, it signifies that all the
+          elements in the two arrays are the same (but in opposite direction)
+          and hence are palindrome arrays.
+        </h3>
+      </div>
 
-<p>}</p>
-
-<p>for(i=0;i<10;i++){</p>
-
-<p>if(a[i]==b[t]){</p>
-
-<p>k++;</p>
-
-<p>t--;</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>if(k==10){</p>
-
-<p>System.out.println("They are palindrome arrays");</p>
-
-<p>}</p>
-
-<p>else {</p>
-
-<p>System.out.println("They are not palindrome arrays");</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p></p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-If the element at the 'i'th position of the first array is the same as that of the element at the 't'th position (of the other array), a counter 'k' is incremented and the value of t is decremented(this allows the program to check the second element from the end and so on). If the final value of k comes to 10, it signifies that all the elements in the two arrays are the same (but in opposite direction) and hence are palindrome arrays.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

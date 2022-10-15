@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">
+          Linear search for finding seven wonders and its corresponding rank
+        </h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>
+          What is a Linear search for finding seven wonders and its
+          corresponding rank?
+        </h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          A program to assign 7 wonders of the world and input the name of the
+          monument to be searched. If found display the name with its
+          position(rank).
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">
+          Code For Linear search for finding seven wonders and its corresponding
+          rank
+        </h2>
+      </div>
 
-<body>
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
 
-<div class="container" id="animate-info">
+        <p>public class program</p>
 
-<h1 class="heading">Linear search for finding seven wonders and its corresponding rank</h1>
+        <p>{</p>
 
-<h3> What is a Linear search for finding seven wonders and its corresponding rank?</h3>
+        <p>public static void main()</p>
 
-<h3>A program to assign 7 wonders of the world and input the name of the monument to be searched. If found display the name with its position(rank).</h3></div>
+        <p>{</p>
 
-<div class="code">
+        <p>int i;</p>
 
-<h2 id="animate-info">Code For Linear search for finding seven wonders and its corresponding rank</h2></div>
+        <p>
+          String w[]= {"Taj mahal India" , "Machu Pichu Peru" , "Petra Jordan" ,
+          "Great Wall of China China" , "Chichen Itza Mexico" , "Colosseum
+          Italy" , "Christ the Redeemer Brazil"};
+        </p>
 
-<div class="code-text" id="animate-info">
+        <p>Scanner in = new Scanner(System.in);</p>
 
-<p>import java.util.*;</p>
+        <p>System.out.println("Enter the place to be found =");</p>
 
-<p>public class program</p>
+        <p>String c = in.nextLine();</p>
 
-<p>{</p>
+        <p>boolean x = false;</p>
 
-<p>public static void main()</p>
+        <p>for( i = 0; i<w.length; i++)</p>
 
-<p>{</p>
+        <p>{</p>
 
-<p> int i;</p>
+        <p>if(c.equalsIgnoreCase(w[i]))</p>
 
-<p>String w[]= {"Taj mahal India" , "Machu Pichu Peru" , "Petra Jordan" , "Great Wall of China China" , "Chichen Itza Mexico" , "Colosseum Italy" , "Christ the Redeemer Brazil"};</p>
+        <p>{</p>
 
-<p> Scanner in = new Scanner(System.in);</p>
+        <p>x = true;</p>
 
-<p> System.out.println("Enter the place to be found =");</p>
+        <p>System.out.println(" Rank = "+(i+1));</p>
 
-<p>String c = in.nextLine();</p>
+        <p>break;</p>
 
-<p>boolean x = false;</p>
+        <p>}</p>
 
-<p>for( i = 0; i<w.length; i++)</p>
+        <p>}</p>
 
-<p>{</p>
+        <p>if (x==false)</p>
 
-<p> if(c.equalsIgnoreCase(w[i]))</p>
+        <p>System.out.println("Invalid Input");</p>
 
-<p>{</p>
+        <p>}</p>
 
-<p> x = true;</p>
+        <p>}</p>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, we hardcode the seven wonders in the order of their
+          rank. When the user inputs the wonder whose rank they want to know,
+          the program undergoes a linear search to find the wonder. In linear
+          search loop, every element of the array is checked to match the
+          condition given by the user until it find the correct element. if
+          found, the loop exits by a break statement and the rank is displayed
+          by adding +1 to the index position of the wonder and if the wonder is
+          not there, the program states invalid input.
+        </h3>
+      </div>
 
-<p>System.out.println(" Rank = "+(i+1));</p>
-
-<p> break;</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p> if (x==false)</p>
-
-<p>System.out.println("Invalid Input");</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-In this program, we hardcode the seven wonders in the order of their rank. When the user inputs the wonder whose rank they want to know, the program undergoes a linear search to find the wonder. In linear search loop, every element of the array is checked to match the condition given by the user until it find the correct element. if found, the loop exits by a break statement and the rank is displayed by adding +1 to the index position of the wonder and if the wonder is not there, the program states invalid input.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
