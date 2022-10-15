@@ -1,135 +1,138 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">laptop discount using parameterized constructor</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a laptop discount using parameterized constructor?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+        <h3>
+          A class based program of finding the special discounts on laptops by
+          using a parameterized constructer
+        </h3>
+      </div>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">
+          Code For laptop discount using parameterized constructor
+        </h2>
+      </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class laptop</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">laptop discount using parameterized constructor</h1>
+          <p>String name;</p>
 
-<h3> What is a laptop discount using parameterized constructor?</h3>
+          <p>float price;</p>
 
-<h3>A class based program of finding the special discounts on laptops by using a parameterized constructer</h3></div>
+          <p>double dis,amt;</p>
 
-<div class="code">
+          <p>laptop (String n, float pr)</p>
 
-<h2 id="animate-info">Code For laptop discount using parameterized constructor</h2></div>
+          <p>{</p>
 
-<div class="code-text" id="animate-info">
+          <p>name = n;</p>
 
-<p>import java.util.*;</p>
+          <p>price = pr;</p>
 
-<p>public class laptop</p>
+          <p>}</p>
 
-<p>{</p>
+          <p>public void compute()</p>
 
-<p> String name;</p>
+          <p>{</p>
 
-<p> float price;</p>
+          <p>if (price <= 25000)</p>
 
-<p>double dis,amt;</p>
+          <p>dis = price * 0.05;</p>
 
-<p> laptop (String n, float pr)</p>
+          <p>else if (price <= 50000)</p>
 
-<p>{</p>
+          <p>dis = price * 0.075;</p>
 
-<p>name = n;</p>
+          <p>else if (price <= 100000)</p>
 
-<p> price = pr;</p>
+          <p>dis = price * 0.1;</p>
 
-<p>}</p>
+          <p>else</p>
 
-<p>public void compute()</p>
+          <p>dis = price * 0.15;</p>
 
-<p>{</p>
+          <p>amt = price - dis;</p>
 
-<p> if (price <= 25000)</p>
+          <p>}</p>
 
-<p>dis = price * 0.05;</p>
+          <p>public void display()</p>
 
-<p> else if (price <= 50000)</p>
+          <p>{</p>
 
-<p>dis = price * 0.075;</p>
+          <p>System.out.println("Name: " + name);</p>
 
-<p>else if (price <= 100000)</p>
+          <p>System.out.println("Discount: " + dis);</p>
 
-<p> dis = price * 0.1;</p>
+          <p>System.out.println("Amount to be paid: " + amt);</p>
 
-<p> else</p>
+          <p>}</p>
 
-<p> dis = price * 0.15;</p>
+          <p>public static void main()</p>
 
-<p> amt = price - dis;</p>
+          <p>{</p>
 
-<p>}</p>
+          <p>Scanner in = new Scanner(System.in);</p>
 
-<p> public void display()</p>
+          <p>System.out.print("Enter Customer Name: ");</p>
 
-<p>{</p>
+          <p>String str = in.nextLine();</p>
 
-<p>System.out.println("Name: " + name);</p>
+          <p>System.out.print("Enter Price: ");</p>
 
-<p> System.out.println("Discount: " + dis);</p>
+          <p>float p = in.nextFloat();</p>
 
-<p> System.out.println("Amount to be paid: " + amt);</p>
+          <p>laptop ob = new laptop(str,p);</p>
 
-<p>}</p>
+          <p>ob.compute();</p>
 
-<p>public static void main()</p>
+          <p>ob.display();</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>Scanner in = new Scanner(System.in);</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, the class name is named as laptop as mentioned in the
+          question. Data members like name, price, dis and amt are initialized
+          in the parameterized constructor. public void compute() method is used
+          to find the discount and the total amount and is displayed in public
+          void display(). In the main method, an object of the class is created
+          and it calls the member methods.
+        </h3>
+      </div>
 
-<p>System.out.print("Enter Customer Name: ");</p>
-
-<p> String str = in.nextLine();</p>
-
-<p>System.out.print("Enter Price: ");</p>
-
-<p> float p = in.nextFloat();</p>
-
-<p>laptop ob = new laptop(str,p);</p>
-
-<p>ob.compute();</p>
-
-<p>ob.display();</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-In this program, the class name is named as laptop as mentioned in the question. Data members like name, price, dis and amt are initialized in the parameterized constructor. public void compute() method is used to find the discount and the total amount and is displayed in public void display(). In the main method, an object of the class is created and it calls the member methods.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

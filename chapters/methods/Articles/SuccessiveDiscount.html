@@ -1,97 +1,93 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <div class="container" id="animate-info">
+        <h1 class="heading">Successive Discounts</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+        <h3>What is a Successive Discounts?</h3>
+        <h3>
+          The successive discounts are 10% and 8% which are hardcoded. The
+          inputted price along with the discount is sent to the methods.
+        </h3>
+      </div>
 
-<link rel="stylesheet" href="styles.css" />
+      <div class="code">
+        <h2 id="animate-info">Code For Successive Discounts</h2>
+      </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-</head>
+          <p>public class SuccessiveDiscount {</p>
 
-<body>
+          <p>static int Discount(int a){</p>
 
-<div class="container" id="animate-info">
+          <p>int d=(a*10)/100;</p>
 
-<h1 class="heading">Successive Discounts</h1>
+          <p>int dp=a-d;</p>
 
-<h3> What is a Successive Discounts?</h3>
+          <p>return dp;</p>
 
-<p>import java.util.*;</p>
+          <p>}</p>
 
-<p>public class SuccessiveDiscount {</p>
+          <p>static int Discount(int a, int b) {</p>
 
-<p>static int Discount(int a){</p>
+          <p>int d1=(a*b)/100;</p>
 
-<p>int d=(a*10)/100;</p>
+          <p>int dp1=a-d1;</p>
 
-<p>int dp=a-d;</p>
+          <p>return dp1;</p>
 
-<p>return dp;</p>
+          <p>}</p>
 
-<p>}</p>
+          <p>static void main() {</p>
 
-<p>static int Discount(int a, int b) {</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-<p>int d1=(a*b)/100;</p>
+          <p>int p;</p>
 
-<p>int dp1=a-d1;</p>
+          <p>System.out.println("Enter the price of the article");</p>
 
-<p>return dp1;</p>
+          <p>p=in.nextInt();</p>
 
-<p>}</p>
+          <p>int r=Discount(p);</p>
 
-<p>static void main() {</p>
+          <p>int r1=Discount(r,8);</p>
 
-<p>Scanner in=new Scanner(System.in);</p>
+          <p>System.out.println("The discounted price is= "+r1);</p>
 
-<p>int p;</p>
+          <p>}</p>
 
-<p>System.out.println("Enter the price of the article");</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          The successive discounts are 10% and 8% which are hardcoded. The
+          inputted price along with the discount is sent to the methods.
+        </h3>
+      </div>
 
-<p>p=in.nextInt();</p>
-
-<p>int r=Discount(p);</p>
-
-<p>int r1=Discount(r,8);</p>
-
-<p>System.out.println("The discounted price is= "+r1);</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<h3>The successive discounts are 10% and 8% which are hardcoded. The inputted price along with the discount is sent to the methods. </h3></div>
-
-<div class="code">
-
-<h2 id="animate-info">Code For Successive Discounts</h2></div>
-
-<div class="code-text" id="animate-info">
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-The successive discounts are 10% and 8% which are hardcoded. The inputted price along with the discount is sent to the methods.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
