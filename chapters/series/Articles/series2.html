@@ -20,56 +20,55 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">Pattern</h1>
+      <h1 class="heading">Series</h1>
 
-        <h3>What is a Pattern?</h3>
+      <h3>What is a Series?</h3>
 
-        <h3>
-          The counter variable (i) gets incremented by one after each iteration.
-          If its value is even its square gets increased by 1 else it gets
-          reduced by 1
-        </h3>
-      </div>
+      <h3>
+        The counter variable (i) gets incremented by one after each iteration.
+        If its value is even its square gets increased by 1 else it gets reduced
+        by 1
+      </h3>
 
       <div class="code">
-        <h2 id="animate-info">Code For Pattern</h2>
+        <h2 id="animate-info">Code For Series</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class Series {</p>
 
-        <p>public class Series {</p>
+          <p>static void main() {</p>
 
-        <p>static void main() {</p>
+          <p>int n,i;</p>
 
-        <p>int n,i;</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>Scanner in=new Scanner(System.in);</p>
+          <p>System.out.println("Enter the number of terms");</p>
 
-        <p>System.out.println("Enter the number of terms");</p>
+          <p>n=in.nextInt();</p>
 
-        <p>n=in.nextInt();</p>
+          <p>for(i=1;i<=n;i++){</p>
 
-        <p>for(i=1;i<=n;i++){</p>
+          <p>if(i%2!=0){</p>
 
-        <p>if(i%2!=0){</p>
+          <p>System.out.print((int)(Math.pow(i,2))-1+" ");</p>
 
-        <p>System.out.print((int)(Math.pow(i,2))-1+" ");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>else {</p>
 
-        <p>else {</p>
+          <p>System.out.print((int)(Math.pow(i,2))+1+" ");</p>
 
-        <p>System.out.print((int)(Math.pow(i,2))+1+" ");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

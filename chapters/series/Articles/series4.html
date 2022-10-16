@@ -24,10 +24,7 @@
 
       <h3>What is a Series?</h3>
 
-      <h3>
-        raise a(the input number) to the power of 0,1,2,.. divided by factorial
-        of a.
-      </h3>
+      <h3>To find the sum with the use of for loop</h3>
 
       <div class="code">
         <h2 id="animate-info">Code For Series</h2>
@@ -36,7 +33,7 @@
         <div class="code-text" id="animate-info">
           <p>import java.util.*;</p>
 
-          <p>public class pattern_1</p>
+          <p>public class series2</p>
 
           <p>{</p>
 
@@ -44,39 +41,15 @@
 
           <p>{</p>
 
-          <p>Scanner in=new Scanner(System.in);</p>
+          <p>int i;</p>
 
-          <p>System.out.println("Enter the number of terms");</p>
+          <p>double s=0.0;</p>
 
-          <p>int n=in.nextInt();</p>
+          <p>for(i=5 ; i < = 10 ; i++)</p>
 
-          <p>double sum = 0.0;</p>
+          <p>s=s+ (i-1)/i;</p>
 
-          <p>System.out.println("Enter the number");</p>
-
-          <p>int a = in.nextInt();</p>
-
-          <p>int i,f=1;</p>
-
-          <p>for(i=1;i<=a;i++)</p>
-
-          <p>{</p>
-
-          <p>f = f*i;</p>
-
-          <p>}</p>
-
-          <p>for(i = 1;i<=n; i++)</p>
-
-          <p>{</p>
-
-          <p>//System.out.print(a+ "^" + i + "/" + f + " + ");</p>
-
-          <p>sum = sum + (Math.pow(a,i))/f;</p>
-
-          <p>}</p>
-
-          <p>System.out.println("sum = " + sum);</p>
+          <p>System.out.println("Sum ="+s);</p>
 
           <p>}</p>
 
@@ -85,9 +58,7 @@
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
-          Factorial of the entered number is found using for loop and stored in
-          variable f. The next for loop is used to find the sum of the number
-          raised to i (that updates in for loop) divided by f.
+          here the loop finds the sum for numbers 4/5 to 9/10
         </h3>
       </div>
 
