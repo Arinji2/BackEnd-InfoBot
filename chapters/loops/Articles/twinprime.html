@@ -20,74 +20,73 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">twinPrimeNo</h1>
+      <h1 class="heading">TwinPrime</h1>
 
-        <h3>What is a twinPrimeNo?</h3>
+      <h3>What is a TwinPrime?</h3>
 
-        <h3>Pair of prime numbers with a difference of two.</h3>
-      </div>
+      <h3>Pair of prime numbers with a difference of two.</h3>
 
       <div class="code">
-        <h2 id="animate-info">Code For twinPrimeNo</h2>
+        <h2 id="animate-info">Code For TwinPrime</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class twinprime</p>
 
-        <p>public class twinprime</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>static void main()</p>
 
-        <p>static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>int n,n1, k=0,k1=0,i;</p>
 
-        <p>int n,n1, k=0,k1=0,i;</p>
+          <p>Scanner ob=new Scanner(System.in);</p>
 
-        <p>Scanner ob=new Scanner(System.in);</p>
+          <p>System.out.println("Enter the numbers");</p>
 
-        <p>System.out.println("Enter the numbers");</p>
+          <p>n=ob.nextInt();</p>
 
-        <p>n=ob.nextInt();</p>
+          <p>n1=ob.nextInt();</p>
 
-        <p>n1=ob.nextInt();</p>
+          <p>for(i=1;i<=n;i++)</p>
 
-        <p>for(i=1;i<=n;i++)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>if(n%i==0)</p>
 
-        <p>if(n%i==0)</p>
+          <p>k++;</p>
 
-        <p>k++;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>for(i=1;i<=n1;i++)</p>
 
-        <p>for(i=1;i<=n1;i++)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>if(n1%i==0)</p>
 
-        <p>if(n1%i==0)</p>
+          <p>k1++;</p>
 
-        <p>k1++;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>if(k==2&&k1==2&&Math.abs(n1-n)==2)</p>
 
-        <p>if(k==2&&k1==2&&Math.abs(n1-n)==2)</p>
+          <p>System.out.println(n+" " + n1+" twin prime numbers ");</p>
 
-        <p>System.out.println(n+" " + n1+" twin prime numbers ");</p>
+          <p>else</p>
 
-        <p>else</p>
+          <p>System.out.println(n+" " + n1+" is not twin prime numbers ");</p>
 
-        <p>System.out.println(n+" " + n1+" is not twin prime numbers ");</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
-          here first we check if the numbers are prime or not using for loop.
+          Here first we check if the numbers are prime or not using for loop.
           Then we find the different between the two numbers. Math.abs is used
           to get a positive value for the difference.
         </h3>

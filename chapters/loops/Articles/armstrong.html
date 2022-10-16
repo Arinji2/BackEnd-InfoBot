@@ -11,40 +11,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container" id="animate-info">
-      <h1 class="heading">Armstrong Number</h1>
-      <h3>What is a Armstrong Number?</h3>
-      <h3>
-        If the sum of the cubes of every digit in a number is equal to the
-        number itself then it is called an Armstrong number For example: 153 =
-        1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup>
-      </h3>
-    </div>
+    <h1 class="heading">Armstrong Number</h1>
+    <h3>What is a Armstrong Number?</h3>
+    <h3>
+      If the sum of the cubes of every digit in a number is equal to the number
+      itself then it is called an Armstrong number For example: 153 = 1<sup
+        >3</sup
+      >
+      + 5<sup>3</sup> + 3<sup>3</sup>
+    </h3>
+
     <div class="code">
       <h2 id="animate-info">Code For Armstrong Number</h2>
     </div>
-    <div class="code-text" id="animate-info">
-      <p>------</p>
-      <p>import java.util.*;</p>
-      <p>public class armstrong{</p>
-      <p>static void main(){</p>
-      <p>Scanner in = new Scanner(System.in);</p>
-      <p>int n,r,t,s=0;</p>
-      <p>System.out.println("Enter a number");</p>
-      <p>n=in.nextInt();</p>
-      <p>t=n;</p>
-      <p>while(t>0){</p>
-      <p>r=t%10;</p>
-      <p>s=s + (int)Math.pow(r,3);</p>
-      <p>t=t/10;</p>
-      <p>}</p>
-      <p>if(n==s)</p>
-      <p>System.out.println("It is a Armstrong number");</p>
-      <p>else</p>
-      <p>System.out.println("It is not a Armstrong number");</p>
-      <p>}</p>
-      <p>}</p>
-      <p>------</p>
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*;</p>
+        <p>public class armstrong{</p>
+        <p>static void main(){</p>
+        <p>Scanner in = new Scanner(System.in);</p>
+        <p>int n,r,t,s=0;</p>
+        <p>System.out.println("Enter a number");</p>
+        <p>n=in.nextInt();</p>
+        <p>t=n;</p>
+        <p>while(t>0){</p>
+        <p>r=t%10;</p>
+        <p>s=s + (int)Math.pow(r,3);</p>
+        <p>t=t/10;</p>
+        <p>}</p>
+        <p>if(n==s)</p>
+        <p>System.out.println("It is a Armstrong number");</p>
+        <p>else</p>
+        <p>System.out.println("It is not a Armstrong number");</p>
+        <p>}</p>
+        <p>}</p>
+      </div>
     </div>
     <div class="logic">
       <h3 class="logic-text" id="animate-info">

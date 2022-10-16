@@ -20,105 +20,106 @@
     </head>
 
     <body>
+      <h1 class="heading">ATM-Bank</h1>
+
       <div class="container" id="animate-info">
-        <h1 class="heading">ATM-Bank</h1>
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-        <h3>What is a ATM-Bank?</h3>
+          <p>public class Bank {</p>
 
-        <p>import java.util.*;</p>
+          <p>public static void main() {</p>
 
-        <p>public class Bank {</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>public static void main() {</p>
+          <p>int choice,k=0;</p>
 
-        <p>Scanner in=new Scanner(System.in);</p>
+          <p>double balance,deposit,withdraw;</p>
 
-        <p>int choice,k=0;</p>
+          <p>System.out.println("Enter your current balance");</p>
 
-        <p>double balance,deposit,withdraw;</p>
+          <p>balance=in.nextDouble();</p>
 
-        <p>System.out.println("Enter your current balance");</p>
+          <p>while(true){</p>
 
-        <p>balance=in.nextDouble();</p>
+          <p>if(k>=3) {</p>
 
-        <p>while(true){</p>
+          <p>System.out.println("Do you want to exit? Type 0");</p>
 
-        <p>if(k>=3) {</p>
+          <p>}</p>
 
-        <p>System.out.println("Do you want to exit? Type 0");</p>
+          <p>System.out.println("Enter your choice");</p>
 
-        <p>}</p>
+          <p>choice=in.nextInt();</p>
 
-        <p>System.out.println("Enter your choice");</p>
+          <p>switch(choice){</p>
 
-        <p>choice=in.nextInt();</p>
+          <p>case 1:</p>
 
-        <p>switch(choice){</p>
+          <p>System.out.println("Enter the money to be deposited");</p>
 
-        <p>case 1:</p>
+          <p>deposit=in.nextDouble();</p>
 
-        <p>System.out.println("Enter the money to be deposited");</p>
+          <p>balance+=deposit;</p>
 
-        <p>deposit=in.nextDouble();</p>
+          <p>System.out.println("Current Balance= "+balance);</p>
 
-        <p>balance+=deposit;</p>
+          <p>break;</p>
 
-        <p>System.out.println("Current Balance= "+balance);</p>
+          <p>case 2:</p>
 
-        <p>break;</p>
+          <p>System.out.println("Enter the money to be withdrawn");</p>
 
-        <p>case 2:</p>
+          <p>withdraw=in.nextDouble();</p>
 
-        <p>System.out.println("Enter the money to be withdrawn");</p>
+          <p>if(balance>=withdraw) {</p>
 
-        <p>withdraw=in.nextDouble();</p>
+          <p>balance-=withdraw;</p>
 
-        <p>if(balance>=withdraw) {</p>
+          <p>System.out.println("Current Balance= "+balance);</p>
 
-        <p>balance-=withdraw;</p>
+          <p>}</p>
 
-        <p>System.out.println("Current Balance= "+balance);</p>
+          <p>else {</p>
 
-        <p>}</p>
+          <p>System.out.println("Balance not sufficient");</p>
 
-        <p>else {</p>
+          <p>}</p>
 
-        <p>System.out.println("Balance not sufficient");</p>
+          <p>break;</p>
 
-        <p>}</p>
+          <p>case 3:</p>
 
-        <p>break;</p>
+          <p>System.out.println("Current Balance= "+balance);</p>
 
-        <p>case 3:</p>
+          <p>break;</p>
 
-        <p>System.out.println("Current Balance= "+balance);</p>
+          <p>case 0:</p>
 
-        <p>break;</p>
+          <p>System.out.println("Program terminates");</p>
 
-        <p>case 0:</p>
+          <p>System.exit(0);</p>
 
-        <p>System.out.println("Program terminates");</p>
+          <p>break;</p>
 
-        <p>System.exit(0);</p>
+          <p>default:</p>
 
-        <p>break;</p>
+          <p>System.out.println("Invalid choice");</p>
 
-        <p>default:</p>
+          <p>System.exit(0);</p>
 
-        <p>System.out.println("Invalid choice");</p>
+          <p>}</p>
 
-        <p>System.exit(0);</p>
+          <p>k++;</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>k++;</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
+
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
           The choice is inputted and goes to the switch block. After getting out
