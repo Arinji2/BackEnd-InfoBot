@@ -10,7 +10,7 @@ html {
 
 .heading {
   padding: 50px;
-  color: #00bb72;
+  color: rgb(250 204 21);
   font-size: 80px;
   font-weight: 500;
   text-decoration: 5px overline underline #757575;
@@ -24,10 +24,10 @@ html {
 
 .code {
   padding-top: 30px;
-  color: #00bb72;
+  color: rgb(250 204 21);
 }
 
 .logic h3 {
-  color: #00bb72;
+  color: rgb(250 204 21);
   padding-top: 30px;
 }

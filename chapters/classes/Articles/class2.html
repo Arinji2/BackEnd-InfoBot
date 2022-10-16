@@ -1,111 +1,104 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">Loan</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>How to Solve the Loan?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>The Loan Program calculates Intrest and Amount</h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For Loan</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class Loan</p>
 
-<div class="container" id="animate-info">
+          <p>{ int time;</p>
 
-<h1 class="heading">Class based program</h1>
+          <p>double principal,rate,interest,amt;</p>
 
-<h3> What is a Class based program?</h3>
+          <p>void getdata() {</p>
 
-<h3>Program of loan in class based program</h3></div>
+          <p>Scanner in = new Scanner(System.in);</p>
 
-<div class="code">
+          <p>System.out.println("Enter principal,time");</p>
 
-<h2 id="animate-info">Code For Class based program</h2></div>
+          <p>principal = in.nextInt();</p>
 
-<div class="code-text" id="animate-info">
+          <p>time = in.nextInt();</p>
 
-<p>import java.util.*;</p>
+          <p>} void calculate()</p>
 
-<p>public class Loan</p>
+          <p>{ { if(time<=5)</p>
 
-<p>{ int time;</p>
+          <p>interest = principal*15*time/100.0;</p>
 
-<p>double principal,rate,interest,amt;</p>
+          <p>else if(time>5 && time<=10)</p>
 
-<p>void getdata() {</p>
+          <p>interest = principal*12*time/100.0;</p>
 
-<p> Scanner in = new Scanner(System.in);</p>
+          <p>else if(time>10)</p>
 
-<p> System.out.println("Enter principal,time");</p>
+          <p>interest = principal*10*time/100.0;</p>
 
-<p>principal = in.nextInt();</p>
+          <p>else</p>
 
-<p>time = in.nextInt();</p>
+          <p>System.out.println("Invalid input");</p>
 
-<p>} void calculate()</p>
+          <p>} amt = principal + interest;</p>
 
-<p> { { if(time<=5)</p>
+          <p>} void display()</p>
 
-<p> interest = principal*15*time/100.0;</p>
+          <p>{ System.out.println("Interest = " + interest);</p>
 
-<p> else if(time>5 && time<=10)</p>
+          <p>System.out.println("amount = " + amt);</p>
 
-<p> interest = principal*12*time/100.0;</p>
+          <p>} static void main()</p>
 
-<p>else if(time>10)</p>
+          <p>{ Loan sc = new Loan();</p>
 
-<p> interest = principal*10*time/100.0;</p>
+          <p>sc.getdata();</p>
 
-<p>else</p>
+          <p>sc.calculate();</p>
 
-<p> System.out.println("Invalid input");</p>
+          <p>sc.display();</p>
 
-<p>} amt = principal + interest;</p>
+          <p>} }</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Loan is used as public class because it is mentioned in the question.
+          As it is an instance variable all variables are initialized with
+          double or the data type mentioned. Void getdata() is used to take the
+          input of principal and time. void calculate() is used to calculate the
+          interest. Display is used to display everything.
+        </h3>
+      </div>
 
-<p> } void display()</p>
-
-<p> { System.out.println("Interest = " + interest);</p>
-
-<p>System.out.println("amount = " + amt);</p>
-
-<p>} static void main()</p>
-
-<p>{ Loan sc = new Loan();</p>
-
-<p> sc.getdata();</p>
-
-<p>sc.calculate();</p>
-
-<p>sc.display();</p>
-
-<p>} }</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-Loan is used as public class because it is mentioned in the question. As it is an instance variable all variables are initialized with double or the data type mentioned. Void getdata() is used to take the input of principal and time. void calculate() is used to calculate the interest. Display is used to display everything.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
-
-

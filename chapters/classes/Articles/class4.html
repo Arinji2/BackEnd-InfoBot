@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Car</h1>
+
+      <h3>What is a Car Program?</h3>
+
+      <h3>
+        A menu driven program to input showroom price and the number of years
+        the car is used (‘1’ for one year old, ‘2’ for two years old and so on).
+        Calculate the depreciated value. Display the original price of the car,
+        depreciated value and the amount to be paid.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Car</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class program</p>
+
+          <p>{</p>
+
+          <p>public static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner in = new Scanner(System.in);</p>
+
+          <p>int choice;</p>
+
+          <p>double price, dep = 0.0, amt;</p>
+
+          <p>System.out.println("1. One year old car");</p>
+
+          <p>System.out.println("2. Two year old car");</p>
+
+          <p>System.out.println("3. Three year old car");</p>
+
+          <p>System.out.println("4. Four year old car");</p>
+
+          <p>System.out.println("5. More than four year old car");</p>
+
+          <p>System.out.println("Enter your choice: ");</p>
+
+          <p>choice = in.nextInt();</p>
+
+          <p>System.out.println("Enter showroom price: ");</p>
+
+          <p>price = in.nextDouble();</p>
+
+          <p>switch(choice)</p>
+
+          <p>{</p>
+
+          <p>case 1:</p>
+
+          <p>dep = 0.1 * price;</p>
+
+          <p>break;</p>
+
+          <p>case 2:</p>
+
+          <p>dep = 0.2 * price;</p>
+
+          <p>break;</p>
+
+          <p>case 3:</p>
+
+          <p>dep = 0.3 * price;</p>
+
+          <p>break;</p>
+
+          <p>case 4:</p>
+
+          <p>dep = 0.5 * price;</p>
+
+          <p>break;</p>
+
+          <p>case 5:</p>
+
+          <p>dep = 0.6 * price;</p>
+
+          <p>break;</p>
+
+          <p>default:</p>
+
+          <p>System.out.println("Wrong choice!");</p>
+
+          <p>break;</p>
+
+          <p>}</p>
+
+          <p>amt = price - dep;</p>
+
+          <p>System.out.println("Original Price = " + price);</p>
+
+          <p>System.out.println("Depreciated Value = " + dep);</p>
+
+          <p>System.out.println("Amount to be paid = " + amt);</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In the above program, the depreciated value is to be found. Being a
+          menu driven program we use switch case with specifications mentioned
+          in the question. the value is calculated with the total amount and
+          displayed to the user
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Bill</h1>
+
+      <h3>How to Solve the Bill Program</h3>
+
+      <h3>
+        It is a class as user defined type method for calculating the phone bill
+        with a parameterized constructor
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Bill</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class Bill</p>
+
+          <p>{</p>
+
+          <p>int bno;</p>
+
+          <p>String name;</p>
+
+          <p>int call;</p>
+
+          <p>double amt;</p>
+
+          <p>Bill()</p>
+
+          <p>{</p>
+
+          <p>bno = 0;</p>
+
+          <p>name = "";</p>
+
+          <p>call = 0;</p>
+
+          <p>amt = 0.0;</p>
+
+          <p>}</p>
+
+          <p>Bill(int bno1, String name1, int call1)</p>
+
+          <p>bno = bno1;</p>
+
+          <p>name = name1;</p>
+
+          <p>call = call1;</p>
+
+          <p>}</p>
+
+          <p>public void calculate()</p>
+
+          <p>{</p>
+
+          <p>double charge;</p>
+
+          <p>if (call <= 100)</p>
+
+          <p>charge = call * 0.6;</p>
+
+          <p>else if (call <= 200)</p>
+
+          <p>charge = 60 + ((call - 100) * 0.8);</p>
+
+          <p>else if (call <= 300)</p>
+
+          <p>charge = 60 + 80 + ((call - 200) * 1.2);</p>
+
+          <p>else</p>
+
+          <p>charge = 60 + 80 + 120 + ((call - 300) * 1.5);</p>
+
+          <p>amt = charge + 125;</p>
+
+          <p>}</p>
+
+          <p>public void display()</p>
+
+          <p>{</p>
+
+          <p>System.out.println("Bill No: " + bno);</p>
+
+          <p>System.out.println("Name: " + name);</p>
+
+          <p>System.out.println("Calls: " + call);</p>
+
+          <p>System.out.println("Amount Payable: " + amt);</p>
+
+          <p>}</p>
+
+          <p>public static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner in = new Scanner(System.in);</p>
+
+          <p>System.out.print("Enter Name: ");</p>
+
+          <p>String custName = in.nextLine();</p>
+
+          <p>System.out.print("Enter Bill Number: ");</p>
+
+          <p>int billNum = in.nextInt();</p>
+
+          <p>System.out.print("Enter Calls: ");</p>
+
+          <p>int numCalls = in.nextInt();</p>
+
+          <p>Bill ob = new Bill(billNum, custName, numCalls);</p>
+
+          <p>ob.calculate();</p>
+
+          <p>ob.display();</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, the class name is named Bill as mentioned in the
+          question. Data members like name, call, bno and amt are initialized in
+          the parameterized constructor. public void calculate() method is used
+          to find the charge and the total amount and is displayed in public
+          void display(). In the main method, an object of the class is created
+          and it calls the member methods.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
