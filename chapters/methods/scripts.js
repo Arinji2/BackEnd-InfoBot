@@ -141,8 +141,13 @@ function toUpp(checkWord) {
 function listPrograms() {
   if (list.style.display != "block") {
     list.style.display = "block";
-    TopicsTemp = Topics.sort();
-    TopicsTemp.forEach((item) => {
+    let topicsTemp = [];
+
+    Topics.forEach((item) => {
+      topicsTemp.push(item);
+    });
+    topicsTemp.sort();
+    topicsTemp.forEach((item) => {
       item = toUpp(item);
       let listDiv = document.getElementById("listItems");
       let text = document.createElement("li");
