@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">Number of Words, Spaces and Vowels</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>What is a Number of Words, Spaces and Vowels?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>
+        A program that displays the number of spaces, words and vowels contained
+        in the entered string.
+      </h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">
+          Code For A program that displays the number of spaces, words and
+          vowels contained in the entered string.
+        </h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class no</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">Number of Words, Spaces and Vowels</h1>
+          <p>static void main()</p>
 
-<h3> What is a Number of Words, Spaces and Vowels?</h3>
+          <p>{</p>
 
-<h3>A program that displays the number of spaces, words and vowels contained in the entered string.</h3></div>
+          <p>Scanner sg=new Scanner(System.in);</p>
 
-<div class="code">
+          <p>String s;</p>
 
-<h2 id="animate-info">Code For A program that displays the number of spaces, words and vowels contained in the entered string.</h2></div>
+          <p>int i,l,k=0,v=0,c=0;</p>
 
-<div class="code-text" id="animate-info">
+          <p>char b;</p>
 
-<p>import java.util.*; </p>
+          <p>System.out.println("Enter the sentence");</p>
 
-<p>public class no</p>
+          <p>s=sg.nextLine();</p>
 
-<p>{</p>
+          <p>s=s.toUpperCase();</p>
 
-<p>static void main()</p>
+          <p>l=s.length();</p>
 
-<p>{</p>
+          <p>for(i=0;i<l;i++)</p>
 
-<p> Scanner sg=new Scanner(System.in); </p>
+          <p>{</p>
 
-<p>String s;</p>
+          <p>b=s.charAt(i);</p>
 
-<p>int i,l,k=0,v=0,c=0; </p>
+          <p>if (b==' ')</p>
 
-<p>char b;</p>
+          <p>{</p>
 
-<p>System.out.println("Enter the sentence");</p>
+          <p>k++;</p>
 
-<p>s=sg.nextLine();</p>
+          <p>}</p>
 
-<p>s=s.toUpperCase();</p>
+          <p>else if(b=='A'||b=='E'||b=='I'||b=='O'||b=='U')</p>
 
-<p> l=s.length();</p>
+          <p>{</p>
 
-<p>for(i=0;i<l;i++)</p>
+          <p>v++;</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>b=s.charAt(i);</p>
+          <p>else</p>
 
-<p>if (b==' ')</p>
+          <p>c++;</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>k++;</p>
+          <p>System.out.println("Number of Spaces="+k);</p>
 
-<p>}</p>
+          <p>System.out.println("Number of Words="+(k+1));</p>
 
-<p>else if(b=='A'||b=='E'||b=='I'||b=='O'||b=='U') </p>
+          <p>System.out.println("Number of vowels="+v);</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>v++;</p>
+          <p>}</p>
 
-<p>}</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          Each character was extracted and checked if it satisfies the given
+          conditions. The number of vowels, spaces were counted using counter
+          variable and finally their total number was displayed. Spaces plus 1
+          gave us the number of words.
+        </h3>
+      </div>
 
-<p>else</p>
-
-<p>c++;</p>
-
-<p>}</p>
-
-<p>System.out.println("Number of Spaces="+k);</p>
-
-<p>System.out.println("Number of Words="+(k+1)); </p>
-
-<p>System.out.println("Number of vowels="+v); </p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-Each character was extracted and checked if it satisfies the given conditions. The number of vowels, spaces were counted using counter variable and finally their total number was displayed. Spaces plus 1 gave us the number of words.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

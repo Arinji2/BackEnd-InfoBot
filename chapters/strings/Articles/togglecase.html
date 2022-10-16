@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">ToggleCase</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>What is a ToggleCase?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>
+        ToggleCase is text that is converted to mixed case version of the text.
+        For instance, the word "dictionary" could be converted into
+        "dIctIOnAry".
+      </h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For ToggleCase</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class togglecase</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">toggleCase</h1>
+          <p>static void main()</p>
 
-<h3> What is a toggleCase?</h3>
+          <p>{</p>
 
-<h3>ToggleCase is text that is converted to mixed case version of the text. For instance, the word "dictionary" could be converted into "dIctIOnAry".</h3></div>
+          <p>Scanner ob=new Scanner(System.in);</p>
 
-<div class="code">
+          <p>String s;</p>
 
-<h2 id="animate-info">Code For toggleCase</h2></div>
+          <p>int i;</p>
 
-<div class="code-text" id="animate-info">
+          <p>char b;</p>
 
-<p>import java.util.*;</p>
+          <p>System.out.println("Enter the string");</p>
 
-<p>public class togglecase</p>
+          <p>s=ob.nextLine();</p>
 
-<p>{</p>
+          <p>for(i=0;i<s.length();i++)</p>
 
-<p>static void main()</p>
+          <p>{</p>
 
-<p>{</p>
+          <p>b = s.charAt(i);</p>
 
-<p> Scanner ob=new Scanner(System.in);</p>
+          <p>if(Character.isLowerCase(b))</p>
 
-<p> String s;</p>
+          <p>System.out.print(Character.toUpperCase(b));</p>
 
-<p> int i;</p>
+          <p>else if(Character.isUpperCase(b))</p>
 
-<p>char b;</p>
+          <p>System.out.print(Character.toLowerCase(b));</p>
 
-<p>System.out.println("Enter the string");</p>
+          <p>else</p>
 
-<p>s=ob.nextLine();</p>
+          <p>System.out.print(b);</p>
 
-<p> for(i=0;i<s.length();i++)</p>
+          <p>}</p>
 
-<p> {</p>
+          <p>}</p>
 
-<p> b = s.charAt(i);</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          First we will take String input from user . If the letter is in
+          uppercase we will convert it to lowercase and if it is in uppercase we
+          will convert it to lowercase.
+        </h3>
+      </div>
 
-<p>if(Character.isLowerCase(b))</p>
-
-<p>System.out.print(Character.toUpperCase(b));</p>
-
-<p>else if(Character.isUpperCase(b))</p>
-
-<p> System.out.print(Character.toLowerCase(b));</p>
-
-<p> else</p>
-
-<p> System.out.print(b);</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-First we will take String input from user . If the letter is in uppercase we will convert it to lowercase and if it is in uppercase we will convert it to lowercase.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
