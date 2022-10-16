@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>InfoBot</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>InfoBot</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">PreviousLetterString</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>What is a PreviousLetterString?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>
+        the new string is formed by replacing each character by its previous
+        character. (eg A should be replaced by Z , C should be replaced by B)
+      </h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For PreviousLetterString</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>public class previouschar</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">PreviousLetterString</h1>
+          <p>static void main()</p>
 
-<h3> What is a PreviousLetterString?</h3>
+          <p>{</p>
 
-<h3>the new string is formed by replacing each character by its previous character. (eg A should be replaced by Z , C should be replaced by B)</h3></div>
+          <p>Scanner ob=new Scanner(System.in);</p>
 
-<div class="code">
+          <p>String s;</p>
 
-<h2 id="animate-info">Code For PreviousLetterString</h2></div>
+          <p>int i;</p>
 
-<div class="code-text" id="animate-info">
+          <p>char b;</p>
 
-<p>import java.util.*;</p>
+          <p>String str=" ";</p>
 
-<p>public class previouschar</p>
+          <p>System.out.println("Enter a sentence");</p>
 
-<p>{</p>
+          <p>s=ob.nextLine();</p>
 
-<p>static void main()</p>
+          <p>s=s.toUpperCase();</p>
 
-<p>{</p>
+          <p>for(i=0;i<s.length();i++)</p>
 
-<p>Scanner ob=new Scanner(System.in);</p>
+          <p>{</p>
 
-<p>String s;</p>
+          <p>b=s.charAt(i);</p>
 
-<p>int i;</p>
+          <p>if(b==' ')</p>
 
-<p>char b;</p>
+          <p>str=str+b;</p>
 
-<p>String str=" ";</p>
+          <p>else if(b=='A')</p>
 
-<p>System.out.println("Enter a sentence");</p>
+          <p>str=str+'Z';</p>
 
-<p>s=ob.nextLine();</p>
+          <p>else</p>
 
-<p>s=s.toUpperCase();</p>
+          <p>str=str + --b;</p>
 
-<p>for(i=0;i<s.length();i++)</p>
+          <p>}</p>
 
-<p>{</p>
+          <p>System.out.println("original string "+s);</p>
 
-<p>b=s.charAt(i);</p>
+          <p>System.out.println("new string "+str);</p>
 
-<p>if(b==' ')</p>
+          <p>}</p>
 
-<p>str=str+b;</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          str+b collects the characters one beside the other
+        </h3>
+      </div>
 
-<p>else if(b=='A')</p>
-
-<p>str=str+'Z';</p>
-
-<p>else</p>
-
-<p>str=str + --b;</p>
-
-<p>}</p>
-
-<p>System.out.println("original string "+s);</p>
-
-<p>System.out.println("new string "+str);</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-str+b collects the characters one beside the other
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

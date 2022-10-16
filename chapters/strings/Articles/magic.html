@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Magic String</h1>
+
+      <h3>What is a Magic String?</h3>
+
+      <h3>
+        A string is said to be a magic string if two consecutive letters are
+        also consecutive in the english alphabet.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Magic String</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class MagicString {</p>
+
+          <p>public static void main() {</p>
+
+          <p>Scanner in=new Scanner(System.in);</p>
+
+          <p>String s;</p>
+
+          <p>System.out.println("Enter a word");</p>
+
+          <p>s=in.next();</p>
+
+          <p>Magic(s);</p>
+
+          <p>}</p>
+
+          <p>static void Magic(String str) {</p>
+
+          <p>str=str.toLowerCase();</p>
+
+          <p>int i,k=0;</p>
+
+          <p>for(i=0;i<str.length()-1;i++){</p>
+
+          <p>if(((int)str.charAt(i+1))-(int)str.charAt(i)==1) {</p>
+
+          <p>System.out.println("Magic String");</p>
+
+          <p>k++;</p>
+
+          <p>break;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>if(k==0){</p>
+
+          <p>System.out.println("Not a Magic String");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          The ascii values of the characters are compared. If the difference
+          between the ascii values of the (i+1)th and the ith character is 1,
+          then they are consecutive even in the English Alphabet.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
