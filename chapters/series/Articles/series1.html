@@ -20,71 +20,68 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">1/a! + a/a! + a^2/a! + a^3/a! +......n</h1>
+      <h1 class="heading">Series</h1>
 
-        <h3>What is a 1/a! + a/a! + a^2/a! + a^3/a! +......n?</h3>
+      <h3>What is a Series?</h3>
 
-        <h3>
-          raise a(the input number) to the power of 0,1,2,.. divided by
-          factorial of a.
-        </h3>
-      </div>
+      <h3>
+        raise a(the input number) to the power of 0,1,2,.. divided by factorial
+        of a.
+      </h3>
 
       <div class="code">
-        <h2 id="animate-info">
-          Code For 1/a! + a/a! + a^2/a! + a^3/a! +......n
-        </h2>
+        <h2 id="animate-info">Code For Series</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class pattern_1</p>
 
-        <p>public class pattern_1</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>static void main()</p>
 
-        <p>static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>Scanner in=new Scanner(System.in);</p>
+          <p>System.out.println("Enter the number of terms");</p>
 
-        <p>System.out.println("Enter the number of terms");</p>
+          <p>int n=in.nextInt();</p>
 
-        <p>int n=in.nextInt();</p>
+          <p>double sum = 0.0;</p>
 
-        <p>double sum = 0.0;</p>
+          <p>System.out.println("Enter the number");</p>
 
-        <p>System.out.println("Enter the number");</p>
+          <p>int a = in.nextInt();</p>
 
-        <p>int a = in.nextInt();</p>
+          <p>int i,f=1;</p>
 
-        <p>int i,f=1;</p>
+          <p>for(i=1;i<=a;i++)</p>
 
-        <p>for(i=1;i<=a;i++)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>f = f*i;</p>
 
-        <p>f = f*i;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>for(i = 1;i<=n; i++)</p>
 
-        <p>for(i = 1;i<=n; i++)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>//System.out.print(a+ "^" + i + "/" + f + " + ");</p>
 
-        <p>//System.out.print(a+ "^" + i + "/" + f + " + ");</p>
+          <p>sum = sum + (Math.pow(a,i))/f;</p>
 
-        <p>sum = sum + (Math.pow(a,i))/f;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>System.out.println("sum = " + sum);</p>
 
-        <p>System.out.println("sum = " + sum);</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

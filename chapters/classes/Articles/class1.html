@@ -20,128 +20,124 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">
-          To define the class Grade_Revision according to the following
-          specifications
-        </h1>
+      <h1 class="heading">Grade Revision</h1>
 
-        <h3>How to Solve the Program</h3>
+      <h3>How to Solve the Grade Revision</h3>
 
-        <h3>
-          The program calculates the new salary of the employee as per the
-          following specifications.
-        </h3>
-      </div>
+      <h3>
+        The Grade Revision calculates the new salary of the employee as per the
+        given specifications.
+      </h3>
 
       <div class="code">
-        <h2 id="animate-info">Code For The Program</h2>
+        <h2 id="animate-info">Code For The Grade Revision</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class Grade_Revision</p>
 
-        <p>public class Grade_Revision</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>String name;</p>
 
-        <p>String name;</p>
+          <p>int bas;</p>
 
-        <p>int bas;</p>
+          <p>int expn;</p>
 
-        <p>int expn;</p>
+          <p>double inc;</p>
 
-        <p>double inc;</p>
+          <p>double nbas;</p>
 
-        <p>double nbas;</p>
+          <p>Grade_Revision()</p>
 
-        <p>Grade_Revision()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>name="";</p>
 
-        <p>name="";</p>
+          <p>bas=0;</p>
 
-        <p>bas=0;</p>
+          <p>expn=0;</p>
 
-        <p>expn=0;</p>
+          <p>inc=0.0;</p>
 
-        <p>inc=0.0;</p>
+          <p>nbas=0.0;</p>
 
-        <p>nbas=0.0;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>void accept()</p>
 
-        <p>void accept()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>Scanner sc=new Scanner(System.in);</p>
 
-        <p>Scanner sc=new Scanner(System.in);</p>
+          <p>System.out.println("Enter the name");</p>
 
-        <p>System.out.println("Enter the name");</p>
+          <p>name=sc.next();</p>
 
-        <p>name=sc.next();</p>
+          <p>System.out.println("Enter the basic salary");</p>
 
-        <p>System.out.println("Enter the basic salary");</p>
+          <p>bas=sc.nextInt();</p>
 
-        <p>bas=sc.nextInt();</p>
+          <p>System.out.println("Enter the experience");</p>
 
-        <p>System.out.println("Enter the experience");</p>
+          <p>expn=sc.nextInt();</p>
 
-        <p>expn=sc.nextInt();</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>void increment()</p>
 
-        <p>void increment()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>if(expn<3)</p>
 
-        <p>if(expn<3)</p>
+          <p>inc=1000.0+10.0/100.0*bas;</p>
 
-        <p>inc=1000.0+10.0/100.0*bas;</p>
+          <p>else if(expn>=3&&expn<5)</p>
 
-        <p>else if(expn>=3&&expn<5)</p>
+          <p>inc=3000.0+12.0/100.0*bas;</p>
 
-        <p>inc=3000.0+12.0/100.0*bas;</p>
+          <p>else if(expn>=5&&expn<10)</p>
 
-        <p>else if(expn>=5&&expn<10)</p>
+          <p>inc=5000.0+15.0/100.0*bas;</p>
 
-        <p>inc=5000.0+15.0/100.0*bas;</p>
+          <p>else</p>
 
-        <p>else</p>
+          <p>inc=8000.0+20.0/100.0*bas;</p>
 
-        <p>inc=8000.0+20.0/100.0*bas;</p>
+          <p>nbas=bas+inc;</p>
 
-        <p>nbas=bas+inc;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>void display()</p>
 
-        <p>void display()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>System.out.println("The name is "+name);</p>
 
-        <p>System.out.println("The name is "+name);</p>
+          <p>System.out.println("The experience is"+expn);</p>
 
-        <p>System.out.println("The experience is"+expn);</p>
+          <p>System.out.println("The new salary is"+nbas);</p>
 
-        <p>System.out.println("The new salary is"+nbas);</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>static void main()</p>
 
-        <p>static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>Grade_Revision sc=new Grade_Revision();</p>
 
-        <p>Grade_Revision sc=new Grade_Revision();</p>
+          <p>sc.accept();</p>
 
-        <p>sc.accept();</p>
+          <p>sc.increment();</p>
 
-        <p>sc.increment();</p>
+          <p>sc.display();</p>
 
-        <p>sc.display();</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

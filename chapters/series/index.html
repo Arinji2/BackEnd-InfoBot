@@ -22,7 +22,7 @@
         theme: {
           extend: {
             colors: {
-              cGreen: "#00bb72;",
+              cGreen: "rgb(250 204 21);",
             },
           },
         },
@@ -39,25 +39,37 @@
     </h2>
     <div class="flex flex-col">
       <div
-        class="flex flex-col md:flex-row justify-content-center pt-10 space-y-4 md:space-y-0 md:space-x-10 text-lg items-center"
+        class="flex flex-row flex-wrap gap-5 justify-around pt-10 space-y-4 md:space-y-0 text-lg"
       >
         <div
-          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl"
+          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-500"
           onclick="Series(1)"
         >
           1/a! + a/a! + a^2/a! + a^3/a! +......n
         </div>
         <div
-          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl"
+          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-500"
           onclick="Series(2)"
         >
           0 5 8 17 24...n
         </div>
         <div
-          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl"
+          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-500"
           onclick="Series(3)"
         >
           Fibonacci
+        </div>
+        <div
+          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-500"
+          onclick="Series(4)"
+        >
+          4/5 + 5/6 + 6/7 + ....8/9 <br />
+        </div>
+        <div
+          class="w-full md:w-1/4 text-center shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-500"
+          onclick="Series(5)"
+        >
+          a/1+ a/3+a/5 + a/7 + .....n <br />
         </div>
       </div>
     </div>

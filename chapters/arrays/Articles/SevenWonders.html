@@ -20,82 +20,75 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">
-          Linear search for finding seven wonders and its corresponding rank
-        </h1>
+      <h1 class="heading">7 Wonders of the World(Linear Search)</h1>
 
-        <h3>
-          What is a Linear search for finding seven wonders and its
-          corresponding rank?
-        </h3>
+      <h3>What is a 7 Wonders of the World(Linear Search) ?</h3>
 
-        <h3>
-          A program to assign 7 wonders of the world and input the name of the
-          monument to be searched. If found display the name with its
-          position(rank).
-        </h3>
-      </div>
+      <h3>
+        A program to assign 7 wonders of the world and input the name of the
+        monument to be searched. If found display the name with its
+        position(rank).
+      </h3>
 
       <div class="code">
         <h2 id="animate-info">
-          Code For Linear search for finding seven wonders and its corresponding
-          rank
+          Code For 7 Wonders of the World(Linear Search)
         </h2>
       </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class program</p>
 
-        <p>public class program</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>public static void main()</p>
 
-        <p>public static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>int i;</p>
 
-        <p>int i;</p>
+          <p>
+            String w[]= {"Taj mahal India" , "Machu Pichu Peru" , "Petra Jordan"
+            , "Great Wall of China China" , "Chichen Itza Mexico" , "Colosseum
+            Italy" , "Christ the Redeemer Brazil"};
+          </p>
 
-        <p>
-          String w[]= {"Taj mahal India" , "Machu Pichu Peru" , "Petra Jordan" ,
-          "Great Wall of China China" , "Chichen Itza Mexico" , "Colosseum
-          Italy" , "Christ the Redeemer Brazil"};
-        </p>
+          <p>Scanner in = new Scanner(System.in);</p>
 
-        <p>Scanner in = new Scanner(System.in);</p>
+          <p>System.out.println("Enter the place to be found =");</p>
 
-        <p>System.out.println("Enter the place to be found =");</p>
+          <p>String c = in.nextLine();</p>
 
-        <p>String c = in.nextLine();</p>
+          <p>boolean x = false;</p>
 
-        <p>boolean x = false;</p>
+          <p>for( i = 0; i < w.length; i++)</p>
 
-        <p>for( i = 0; i<w.length; i++)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>if(c.equalsIgnoreCase(w[i]))</p>
 
-        <p>if(c.equalsIgnoreCase(w[i]))</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>x = true;</p>
 
-        <p>x = true;</p>
+          <p>System.out.println(" Rank = "+(i+1));</p>
 
-        <p>System.out.println(" Rank = "+(i+1));</p>
+          <p>break;</p>
 
-        <p>break;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>if (x==false)</p>
 
-        <p>if (x==false)</p>
+          <p>System.out.println("Invalid Input");</p>
 
-        <p>System.out.println("Invalid Input");</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

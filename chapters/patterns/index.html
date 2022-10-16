@@ -22,7 +22,7 @@
         theme: {
           extend: {
             colors: {
-              cGreen: "#00bb72;",
+              cGreen: "rgb(250 204 21);",
             },
           },
         },
@@ -39,7 +39,7 @@
     </h2>
     <div class="flex flex-col">
       <div
-        class="flex flex-col md:flex-row justify-content-center pt-10 space-y-4 md:space-y-0 md:space-x-10 text-lg"
+        class="flex flex-row flex-wrap gap-5 justify-around pt-10 space-y-4 md:space-y-0 text-lg"
       >
         <div
           class="w-full md:w-1/4 text-left shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-300"
@@ -68,6 +68,25 @@
           onclick="pattern(4)"
         >
           I <br />IC <br />ICS <br />ICSE
+        </div>
+        <div
+          class="w-full md:w-1/4 text-left shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-300"
+          onclick="pattern(5)"
+        >
+          1 <br />
+          3 5<br />
+          7 11 13<br />
+          15 17 19
+        </div>
+        <div
+          class="w-full md:w-1/4 text-left shadow-cGreen shadow-md p-4 hover:shadow-cyan-500 cursor-pointer hover:shadow-xl transition-all ease-in-out duration-300"
+          onclick="pattern(6)"
+        >
+          A <br />
+          A B<br />
+          A B C<br />
+          A B C D <br />
+          A B C D E
         </div>
       </div>
     </div>

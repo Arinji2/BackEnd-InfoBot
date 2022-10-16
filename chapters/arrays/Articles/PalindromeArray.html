@@ -20,81 +20,80 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">Palindrome Arrays</h1>
+      <h1 class="heading">Palindrome Arrays</h1>
 
-        <h3>What is a Palindrome Arrays?</h3>
+      <h3>What is a Palindrome Arrays?</h3>
 
-        <h3>
-          Palindrome arrays are a set of 2 arrays one of which has its first
-          element same as the last element of the other array and so on.
-        </h3>
-      </div>
+      <h3>
+        Palindrome arrays are a set of 2 arrays one of which has its first
+        element same as the last element of the other array and so on.
+      </h3>
 
       <div class="code">
         <h2 id="animate-info">Code For Palindrome Arrays</h2>
       </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class PalindromeArrays {</p>
 
-        <p>public class PalindromeArrays {</p>
+          <p>public static void main() {</p>
 
-        <p>public static void main() {</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>Scanner in=new Scanner(System.in);</p>
+          <p>int a[]=new int[10];</p>
 
-        <p>int a[]=new int[10];</p>
+          <p>int b[]=new int[10];</p>
 
-        <p>int b[]=new int[10];</p>
+          <p>int i,k=0,t=9;</p>
 
-        <p>int i,k=0,t=9;</p>
+          <p>System.out.println("Enter the elements for Array1");</p>
 
-        <p>System.out.println("Enter the elements for Array1");</p>
+          <p>for(i=0;i<10;i++){</p>
 
-        <p>for(i=0;i<10;i++){</p>
+          <p>a[i]=in.nextInt();</p>
 
-        <p>a[i]=in.nextInt();</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>System.out.println("Enter the elements for Array2");</p>
 
-        <p>System.out.println("Enter the elements for Array2");</p>
+          <p>for(i=0;i<10;i++){</p>
 
-        <p>for(i=0;i<10;i++){</p>
+          <p>b[i]=in.nextInt();</p>
 
-        <p>b[i]=in.nextInt();</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>for(i=0;i<10;i++){</p>
 
-        <p>for(i=0;i<10;i++){</p>
+          <p>if(a[i]==b[t]){</p>
 
-        <p>if(a[i]==b[t]){</p>
+          <p>k++;</p>
 
-        <p>k++;</p>
+          <p>t--;</p>
 
-        <p>t--;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>if(k==10){</p>
 
-        <p>if(k==10){</p>
+          <p>System.out.println("They are palindrome arrays");</p>
 
-        <p>System.out.println("They are palindrome arrays");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>else {</p>
 
-        <p>else {</p>
+          <p>System.out.println("They are not palindrome arrays");</p>
 
-        <p>System.out.println("They are not palindrome arrays");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p></p>
+          <p></p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
