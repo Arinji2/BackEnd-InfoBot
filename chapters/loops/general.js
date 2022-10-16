@@ -157,8 +157,8 @@ function toUpp(checkWord) {
 function listPrograms() {
   if (list.style.display != "block") {
     list.style.display = "block";
-    Topics = Topics.sort();
-    Topics.forEach((item) => {
+    TopicsTemp = Topics.sort();
+    TopicsTemp.forEach((item) => {
       item = toUpp(item);
       let listDiv = document.getElementById("listItems");
       let text = document.createElement("li");
