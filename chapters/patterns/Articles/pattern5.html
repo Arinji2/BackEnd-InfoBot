@@ -27,7 +27,7 @@
       </div>
       <div class="container" id="animate-info">
         <div class="code-text" id="animate-info">
-          <p>public class pat4</p>
+          <p>public class patterns</p>
 
           <p>{</p>
 
@@ -35,15 +35,23 @@
 
           <p>{</p>
 
-          <p>int i;</p>
+          <p>int i,j;</p>
 
-          <p>String str = "ICSE";</p>
+          <p>int k=1;</p>
 
-          <p>for(i=1;i<=4;i++)</p>
+          <p>for(i=1;i<=5;i++)</p>
 
           <p>{</p>
 
-          <p>System.out.print(str.substring(0,i));</p>
+          <p>for(j=1;j<=i;j++)</p>
+
+          <p>{</p>
+
+          <p>k=k+2;</p>
+
+          <p>System.out.print(k+" ");</p>
+
+          <p>}</p>
 
           <p>System.out.println();</p>
 
@@ -53,16 +61,17 @@
 
           <p>}</p>
         </div>
-      </div>
-      <div class="logic">
-        <h3 class="logic-text" id="animate-info">
-          String function s.substring() is used that extracts a characters from
-          a given index to i and prints it. For loop runs 4 times since ICSE
-          contains 4 characters.
-        </h3>
-      </div>
+        <div class="logic">
+          <h3 class="logic-text" id="animate-info">
+            Firstly we use the first for loop to print the number of rows.
+            Second we use the next for loop to print the elements in the rows.
+            The k variable is initialized to 1 and then added by 2 to print all
+            the odd numbers
+          </h3>
+        </div>
 
-      <script src="scripts.js"></script>
+        <script src="scripts.js"></script>
+      </div>
     </body>
   </head>
 </html>
