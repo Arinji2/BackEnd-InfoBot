@@ -20,76 +20,75 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">Special Number</h1>
+      <h1 class="heading">Special Number</h1>
 
-        <h3>What is a Special Number?</h3>
+      <h3>What is a Special Number?</h3>
 
-        <h3>
-          A special two-digit number is such that when the sum of its digits is
-          added to the product of its digits, the result is equal to the
-          original two-digit number. Example: Consider the number 59. Sum of
-          digits => 5 + 9 = 14 Product of its digits => 5 x 9 = 45. Sum of the
-          sum of digits and product of digits => 14 + 45 = 59
-        </h3>
-      </div>
+      <h3>
+        A special two-digit number is such that when the sum of its digits is
+        added to the product of its digits, the result is equal to the original
+        two-digit number. Example: Consider the number 59. Sum of digits => 5 +
+        9 = 14 Product of its digits => 5 x 9 = 45. Sum of the sum of digits and
+        product of digits => 14 + 45 = 59
+      </h3>
 
       <div class="code">
         <h2 id="animate-info">Code For Special Number</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class specialNo</p>
 
-        <p>public class specialNo</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>static void main()</p>
 
-        <p>static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>Scanner sg=new Scanner(System.in);</p>
 
-        <p>Scanner sg=new Scanner(System.in);</p>
+          <p>System.out.println("enter 2 digit number");</p>
 
-        <p>System.out.println("enter 2 digit number");</p>
+          <p>int n=sg.nextInt();</p>
 
-        <p>int n=sg.nextInt();</p>
+          <p>int k=0,r,s=0,p=1,t=n;</p>
 
-        <p>int k=0,r,s=0,p=1,t=n;</p>
+          <p>while(t>0)</p>
 
-        <p>while(t>0)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>r=t%10;</p>
 
-        <p>r=t%10;</p>
+          <p>k++;</p>
 
-        <p>k++;</p>
+          <p>s=s+r;</p>
 
-        <p>s=s+r;</p>
+          <p>p=p*r;</p>
 
-        <p>p=p*r;</p>
+          <p>t=t/10;</p>
 
-        <p>t=t/10;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>if(k==2)</p>
 
-        <p>if(k==2)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>if((s+p)==n)</p>
 
-        <p>if((s+p)==n)</p>
+          <p>System.out.println(n + " is special 2 digit no");</p>
 
-        <p>System.out.println(n + " is special 2 digit no");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>else</p>
 
-        <p>else</p>
+          <p>System.out.println(n + " is not a special 2 digit no");</p>
 
-        <p>System.out.println(n + " is not a special 2 digit no");</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

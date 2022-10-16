@@ -20,95 +20,94 @@
     </head>
 
     <body>
-      <div class="container" id="animate-info">
-        <h1 class="heading">Tech Number</h1>
+      <h1 class="heading">Tech Number</h1>
 
-        <h3>What is a Tech Number?</h3>
+      <h3>What is a Tech Number?</h3>
 
-        <h3>
-          A number is called a tech number if the given number has an even
-          number of digits and the number can be divided exactly into two parts
-          from the middle. After equally dividing the number, sum up the numbers
-          and the square should be equal to the original number
-        </h3>
-      </div>
+      <h3>
+        A number is called a tech number if the given number has an even number
+        of digits and the number can be divided exactly into two parts from the
+        middle. After equally dividing the number, sum up the numbers and the
+        square should be equal to the original number
+      </h3>
 
       <div class="code">
         <h2 id="animate-info">Code For Tech Number</h2>
       </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class program</p>
 
-        <p>public class program</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>public static void main()</p>
 
-        <p>public static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>int n, num, a, b, digits=0, square;</p>
 
-        <p>int n, num, a, b, digits=0, square;</p>
+          <p>Scanner in = new Scanner(System.in);</p>
 
-        <p>Scanner in = new Scanner(System.in);</p>
+          <p>System.out.println("Enter the number: ");</p>
 
-        <p>System.out.println("Enter the number: ");</p>
+          <p>n = in.nextInt();</p>
 
-        <p>n = in.nextInt();</p>
+          <p>num = n;</p>
 
-        <p>num = n;</p>
+          <p>while (num > 0)</p>
 
-        <p>while (num > 0)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>digits++;</p>
 
-        <p>digits++;</p>
+          <p>num = num / 10;</p>
 
-        <p>num = num / 10;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>if (digits == 4)</p>
 
-        <p>if (digits == 4)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>num = n;</p>
 
-        <p>num = n;</p>
+          <p>a = num % 100;</p>
 
-        <p>a = num % 100;</p>
+          <p>b = num / 100;</p>
 
-        <p>b = num / 100;</p>
+          <p>square = (a+b) * (a+b);</p>
 
-        <p>square = (a+b) * (a+b);</p>
+          <p>if (n == square)</p>
 
-        <p>if (n == square)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>System.out.println(n +" is a Tech number.");</p>
 
-        <p>System.out.println(n +" is a Tech number.");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>else</p>
 
-        <p>else</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>System.out.println(n +" is not a Tech number.");</p>
 
-        <p>System.out.println(n +" is not a Tech number.");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>else</p>
 
-        <p>else</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>System.out.println(n + " is not a Tech number.");</p>
 
-        <p>System.out.println(n + " is not a Tech number.");</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">

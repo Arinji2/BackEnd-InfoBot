@@ -21,9 +21,9 @@
 
     <body>
       <div class="container" id="animate-info">
-        <h1 class="heading">fibonacci series</h1>
+        <h1 class="heading">Fibonacci Series</h1>
 
-        <h3>What is a fibonacci series?</h3>
+        <h3>What is a Fibonacci Series?</h3>
 
         <h3>
           The Fibonacci sequence is a set of integers (the Fibonacci numbers)
@@ -35,51 +35,46 @@
       </div>
 
       <div class="code">
-        <h2 id="animate-info">
-          Code For The Fibonacci sequence is a set of integers (the Fibonacci
-          numbers) that starts with a zero, followed by a one, then by another
-          one, and then by a series of steadily increasing numbers. The sequence
-          follows the rule that each number is equal to the sum of the preceding
-          two numbers.
-        </h2>
+        <h2 id="animate-info">Code For The Fibonacci Series</h2>
       </div>
+      <div class="container">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-      <div class="code-text" id="animate-info">
-        <p>import java.util.*;</p>
+          <p>public class fibonacci</p>
 
-        <p>public class fibonacci</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>static void main()</p>
 
-        <p>static void main()</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>Scanner in=new Scanner(System.in);</p>
 
-        <p>Scanner in=new Scanner(System.in);</p>
+          <p>System.out.println( "Enter the end value");</p>
 
-        <p>System.out.println( "Enter the end value");</p>
+          <p>int n=in.nextInt();</p>
 
-        <p>int n=in.nextInt();</p>
+          <p>int firstTerm = 0, secondTerm = 1;</p>
 
-        <p>int firstTerm = 0, secondTerm = 1;</p>
+          <p>System.out.println("Fibonacci Series till " + n + " terms:");</p>
 
-        <p>System.out.println("Fibonacci Series till " + n + " terms:");</p>
+          <p>for (int i = 1; i <= n; ++i)</p>
 
-        <p>for (int i = 1; i <= n; ++i)</p>
+          <p>{</p>
 
-        <p>{</p>
+          <p>System.out.print(firstTerm + ", ");</p>
 
-        <p>System.out.print(firstTerm + ", ");</p>
+          <p>int nextTerm = firstTerm + secondTerm; firstTerm = secondTerm;</p>
 
-        <p>int nextTerm = firstTerm + secondTerm; firstTerm = secondTerm;</p>
+          <p>secondTerm = nextTerm;</p>
 
-        <p>secondTerm = nextTerm;</p>
+          <p>}</p>
 
-        <p>}</p>
+          <p>}</p>
 
-        <p>}</p>
-
-        <p>}</p>
+          <p>}</p>
+        </div>
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
