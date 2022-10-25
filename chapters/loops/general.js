@@ -17,6 +17,7 @@ let Topics = [
   "amicable",
   "pronic",
   "disarium",
+  "palprime",
   
 ];
 let Links = [
@@ -36,6 +37,7 @@ let Links = [
   "../loops/Articles/amicable.html",
   "../loops/Articles/pronic.html",
   "../loops/Articles/disarium.html",
+  "../loops/Articles/palprime.html",
 ];
 
 let stringbox = document.getElementById("input");
