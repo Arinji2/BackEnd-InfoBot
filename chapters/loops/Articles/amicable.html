@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>General Programs</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<div class="container" id="animate-info">
+
+<h1 class="heading">AmicablePair</h1>
+
+<h3> What is a AmicablePair?</h3>
+
+<h3>Amicable pair:These numbers are two different natural numbers related in such a way that the sum of the proper divisors of each is equal to the other number.Example:(220,284)</h3></div>
+
+<div class="code">
+
+<h2 id="animate-info">Code For AmicablePair</h2></div>
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*;</p>
+
+<p>class amicablepair</p>
+
+<p>{</p>
+
+<p>static void main()</p>
+
+<p>{</p>
+
+<p>Scanner ob= new Scanner(System.in);</p>
+
+<p>int a,b,s1=0,s2=0,i,j;</p>
+
+<p>System.out.println("Enter the 2 numbers");</p>
+
+<p>a=ob.nextInt();</p>
+
+<p>b=ob.nextInt();</p>
+
+<p>for(i=1;i<a;i++)</p>
+
+<p>{</p>
+
+<p>if(a%i==0)</p>
+
+<p>s1=s1+i;</p>
+
+<p>}</p>
+
+<p>for(j=1;j<b;j++)</p>
+
+<p>{</p>
+
+<p>if(b%j==0)</p>
+
+<p>s2=s2+j;</p>
+
+<p>}</p>
+
+<p>if(s1==b && s2==a)</p>
+
+<p>System.out.println("It is Amicable pair");</p>
+
+<p>System.out.println("It is not a Amicable pair");</p>
+
+<p>}</p>
+
+<p>}</p>
+
+</div><div class="logic">
+
+<h3 class="logic-text" id="animate-info">
+
+In this program, we take input of 2 numbers. Then using 2 for loops for each number we find out the sum of factors of each number .At the end we check whether the sum of factors of the first number is equal to the second number and vice versa.
+
+</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
+
