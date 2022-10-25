@@ -14,6 +14,7 @@ let Topics = [
   "dudeney",
   "perfect",
   "atm",
+  "amicable"
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
