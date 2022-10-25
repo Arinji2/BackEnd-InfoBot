@@ -14,6 +14,11 @@ let Topics = [
   "dudeney",
   "perfect",
   "atm",
+  "amicable",
+  "pronic",
+  "disarium",
+  "palprime",
+  
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -29,6 +34,10 @@ let Links = [
   "../loops/Articles/dudeney.html",
   "../loops/Articles/PerfectNumber.html",
   "../loops/Articles/Atm.html",
+  "../loops/Articles/amicable.html",
+  "../loops/Articles/pronic.html",
+  "../loops/Articles/disarium.html",
+  "../loops/Articles/palprime.html",
 ];
 
 let stringbox = document.getElementById("input");
