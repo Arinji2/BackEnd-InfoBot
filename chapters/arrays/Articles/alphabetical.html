@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Alphabetical Order</h1>
+
+      <h3>What is an Alphabetical Order?</h3>
+
+      <h3>To arrange 10 names input by the user in Alphabetical order.</h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Alphabetical Order</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>class alphabetical order</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner (System.in);</p>
+
+          <p>String m[]=new String[10];</p>
+
+          <p>int i,j;</p>
+
+          <p>String t;</p>
+
+          <p>System.out.println("Enter 10 names");</p>
+
+          <p>for(i=0;i<10;i++)</p>
+
+          <p>{</p>
+
+          <p>m[i]=ob.next();</p>
+
+          <p>}</p>
+
+          <p>for(i=0;i<9;i++)</p>
+
+          <p>{</p>
+
+          <p>for(j=0;j<9-i;j++)</p>
+
+          <p>{</p>
+
+          <p>if(m[j].compareToIgnoreCase(m[j+1])>0)</p>
+
+          <p>t=m[j];</p>
+
+          <p>m[j]=m[j+1];</p>
+
+          <p>m[j+1]=t;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>System.out.println("Sorted Array:");</p>
+
+          <p>for(i=0;i<10;i++)</p>
+
+          <p>{</p>
+
+          <p>System.out.print(m[i]+",");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, we arrange the names in alphabetical order by using
+          bubble sort technique.Bubble sort technique is to swap the elements of
+          the array depending on the condition given.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

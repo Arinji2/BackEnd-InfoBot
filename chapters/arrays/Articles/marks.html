@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Grade List</h1>
+
+      <h3>What is a Grade List?</h3>
+
+      <h3>
+        Write a program in Java using arrays: (a) To store the Roll No., Name
+        and marks in six subjects for 100 students. (b) Calculate the percentage
+        of marks obtained by each candidate. The maximum marks in each subject
+        are 100. (c) Calculate the Grade as per given criteria
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Grade List</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>class grade_list</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner(System.in);</p>
+
+          <p>String name[]=new String[100];</p>
+
+          <p>int rollno[]=new int[100];</p>
+
+          <p>int Bio[]=new int[100];</p>
+
+          <p>int Math[]=new int[100];</p>
+
+          <p>int Chem[]=new int[100];</p>
+
+          <p>int Comp[]=new int[100];</p>
+
+          <p>int Phy[]=new int[100];</p>
+
+          <p>int Eng[]=new int[100];</p>
+
+          <p>int i;</p>
+
+          <p>
+            System.out.println("Enter student name,roll no. and marks for
+            biology,physics,chemsitry,computers,maths and english");
+          </p>
+
+          <p>for(i=0;i<100;i++)</p>
+
+          <p>{</p>
+
+          <p>name[i]=ob.nextLine();</p>
+
+          <p>rollno[i]=ob.nextInt();</p>
+
+          <p>Bio[i]=ob.nextInt();</p>
+
+          <p>Phy[i]=ob.nextInt();</p>
+
+          <p>Chem[i]=ob.nextInt();</p>
+
+          <p>Comp[i]=ob.nextInt();</p>
+
+          <p>Math[i]=ob.nextInt();</p>
+
+          <p>Eng[i]=ob.nextInt();</p>
+
+          <p>}</p>
+
+          <p>double percentage[]=new double[100];</p>
+
+          <p>char grade[]=new char[100];</p>
+
+          <p>for(i=0;i<100;i++)</p>
+
+          <p>{</p>
+
+          <p>
+            percentage[i]=((double)(Bio[i]+Math[i]+Chem[i]+Comp[i]+Phy[i]+Eng[i])/6);
+          </p>
+
+          <p>if(percentage[i]>=80.0 && percentage[i]<=100.0)</p>
+
+          <p>grade[i]='A';</p>
+
+          <p>else if(percentage[i]>=60.0 && percentage[i]<80.0)</p>
+
+          <p>grade[i]='B';</p>
+
+          <p>else if(percentage[i]>=40.0 && percentage[i]<60.0)</p>
+
+          <p>grade[i]='C';</p>
+
+          <p>else if(percentage[i]<40.0)</p>
+
+          <p>grade[i]='D';</p>
+
+          <p>}</p>
+
+          <p>System.out.println(" Student grade list:");</p>
+
+          <p>for(i=0;i<100;i++)</p>
+
+          <p>{</p>
+
+          <p>
+            System.out.println("Student name: "+name[i]+" Roll number:
+            "+rollno[i]+" Percentage= "+percentage[i]+" Grade: "+grade[i]);
+          </p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, we take the input for name,roll number and marks for
+          respective subjects.Then we calculate percentage and use if else
+          ladder to assign grades. Finally we print all the details.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

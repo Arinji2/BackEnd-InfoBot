@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Binary Search</h1>
+
+      <h3>What is a Binary Search?</h3>
+
+      <h3>
+        It is a way to search numbers faster in an array. In the above program
+        it searches for a record by using binary search.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Binary Search</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class program</p>
+
+          <p>{</p>
+
+          <p>public static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner in = new Scanner(System.in);</p>
+
+          <p>
+            int arr[] = {1957, 1960, 1975, 1988, 1996, 1997, 1999, 2003, 2005,
+            2008};
+          </p>
+
+          <p>int lb = 0, ub = 9, mid = 0;</p>
+
+          <p>int year;</p>
+
+          <p>boolean x = false;</p>
+
+          <p>System.out.println("Enter the year to be found");</p>
+
+          <p>year = in.nextInt();</p>
+
+          <p>while(lb<=ub)</p>
+
+          <p>{</p>
+
+          <p>mid = (lb+ub)/2;</p>
+
+          <p>if(arr[mid]==year)</p>
+
+          <p>{</p>
+
+          <p>x= true;</p>
+
+          <p>break;</p>
+
+          <p>}</p>
+
+          <p>else if(arr[mid]<year)</p>
+
+          <p>lb= mid + 1;</p>
+
+          <p>else</p>
+
+          <p>ub = mid - 1;</p>
+
+          <p>}</p>
+
+          <p>if(x)</p>
+
+          <p>System.out.println("Record exists");</p>
+
+          <p>else</p>
+
+          <p>System.out.println("Record does not exist");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, the year entered by the user is searched through a
+          binary search method. In binary search, the mid value of the array is
+          found and checked whether the value to be found is in the upper bound
+          or the lower bound. It undergoes a loop where the middle value keeps
+          on decreasing or increasing according to the year. If it is found the
+          boolean value turns to true and it displays a message - "Record
+          exists" else - "Record does not exist"
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

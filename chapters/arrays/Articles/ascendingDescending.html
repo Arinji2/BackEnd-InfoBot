@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Ascending_Descending</h1>
+
+      <h3>What is a Ascending_Descending?</h3>
+
+      <h3>
+        Write a program to accept a list of 20 integers. Sort the first 10
+        numbers in ascending order and the next 10 in descending by using Bubble
+        Sort technique. Finally, print the complete list.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Ascending_Descending</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>class ascending_descending</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner(System.in);</p>
+
+          <p>int m[]=new int[20];</p>
+
+          <p>int i,j,t=0;</p>
+
+          <p>System.out.println("Enter 20 numbers");</p>
+
+          <p>for(i=0;i<20;i++)</p>
+
+          <p>{</p>
+
+          <p>m[i]=ob.nextInt();</p>
+
+          <p>}</p>
+
+          <p>for(i=0;i<9;i++)</p>
+
+          <p>{</p>
+
+          <p>for(j=0;j<9-i;j++)</p>
+
+          <p>{</p>
+
+          <p>if(m[j]>m[j+1])</p>
+
+          <p>{</p>
+
+          <p>t=m[j];</p>
+
+          <p>m[j]=m[j+1];</p>
+
+          <p>m[j+1]=t;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>for(i=0;i<9;i++)</p>
+
+          <p>{</p>
+
+          <p>for(j=10;j<19-i;j++)</p>
+
+          <p>{</p>
+
+          <p>if(m[j]<m[j+1])</p>
+
+          <p>{</p>
+
+          <p>t=m[j];</p>
+
+          <p>m[j]=m[j+1];</p>
+
+          <p>m[j+1]=t;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>System.out.println("Sorted Array=");</p>
+
+          <p>for(i=0;i<20;i++)</p>
+
+          <p>{</p>
+
+          <p>System.out.println(m[i]);</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, we take the input of 20 numbers in an array.Then
+          using bubble sort technique we sort the first 10 elements in ascending
+          order.We use the same technique again to sort the next 10 elements in
+          descending order. Finally we print the sorted array.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
