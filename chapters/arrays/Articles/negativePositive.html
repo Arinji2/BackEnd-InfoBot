@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Negative Positive Sort</h1>
+
+      <h3>What is a negative positive sort</h3>
+
+      <h3>
+        An array program to input 10 numbers in a Single Dimensional Array (SDA)
+        and display all the negative numbers followed by the positive numbers
+        without changing the order of the numbers.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Odd and Even Sort</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>public class program</p>
+
+          <p>{</p>
+
+          <p>public static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner in = new Scanner(System.in);</p>
+
+          <p>int arr[] = new int[10];</p>
+
+          <p>System.out.println("Enter 10 numbers");</p>
+
+          <p>for (int i = 0; i < arr.length; i++)</p>
+
+          <p>{</p>
+
+          <p>arr[i] = in.nextInt();</p>
+
+          <p>}</p>
+
+          <p>for (int i = 0; i < arr.length; i++)</p>
+
+          <p>{</p>
+
+          <p>if (arr[i] < 0)</p>
+
+          <p>System.out.print(arr[i] + ", ");</p>
+
+          <p>}</p>
+
+          <p>for (int i = 0; i < arr.length; i++)</p>
+
+          <p>{</p>
+
+          <p>if (arr[i] >= 0)</p>
+
+          <p>System.out.print(arr[i] + ", ");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, The number is sorted whether it is positive or
+          negative. While printing the array, it undergoes a condition, if it is
+          less than zero i.e. if it is negative, it will print else the loop
+          will continue without changing its order. The second loop deals with
+          positive numbers in the same way.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

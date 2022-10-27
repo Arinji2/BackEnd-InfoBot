@@ -20,23 +20,23 @@
     </head>
 
     <body>
-      <h1 class="heading">Pronic</h1>
+      <h1 class="heading">Munchausen</h1>
 
-      <h3>What is a Pronic?</h3>
+      <h3>What is a Munchausen?</h3>
 
       <h3>
-        A pronic number is a number that is the product of two consecutive
-        integers.Example 6=2*3
+        Munchausen Number:-A Munchhausen number is a number equal to the sum of
+        its digits raised to each digit's power.
       </h3>
 
       <div class="code">
-        <h2 id="animate-info">Code For Pronic</h2>
+        <h2 id="animate-info">Code For Munchausen</h2>
       </div>
       <div class="container" id="animate-info">
         <div class="code-text" id="animate-info">
           <p>import java.util.*;</p>
 
-          <p>class pronicnumber</p>
+          <p>class munchausen</p>
 
           <p>{</p>
 
@@ -44,37 +44,37 @@
 
           <p>{</p>
 
-          <p>Scanner sc= new Scanner(System.in);</p>
+          <p>Scanner ob = new Scanner(System.in);</p>
 
-          <p>System.out.println("Enter a number");</p>
+          <p>int n;</p>
 
-          <p>int n= sc.nextInt();</p>
+          <p>System.out.println("Enter the number");</p>
 
-          <p>int k=0;</p>
+          <p>n=ob.nextInt();</p>
 
-          <p>for( int i=1; i<n; i++)</p>
+          <p>int t,r,s=0;</p>
+
+          <p>t=n;</p>
+
+          <p>while(t>0)</p>
 
           <p>{</p>
 
-          <p>if(i*(i+1)==n)</p>
+          <p>r=t%10;</p>
 
-          <p>{</p>
+          <p>s=s+(int)Math.pow(r,r);</p>
 
-          <p>k++;</p>
-
-          <p>break;</p>
+          <p>t=t/10;</p>
 
           <p>}</p>
 
-          <p>}</p>
+          <p>if(n==s)</p>
 
-          <p>if(k==1)</p>
-
-          <p>System.out.println("It is a Pronic number");</p>
+          <p>System.out.println("It is a munchausen number");</p>
 
           <p>else</p>
 
-          <p>System.out.println("It is not a Pronic number");</p>
+          <p>System.out.println( n+"is not a munchausen number");</p>
 
           <p>}</p>
 
@@ -83,9 +83,10 @@
       </div>
       <div class="logic">
         <h3 class="logic-text" id="animate-info">
-          In this program, We first take the input of the number.We then use for
-          loop and check whether the product of two consecutive integers is
-          equal to the number.
+          In this program, we first take the input and make the copy of the
+          input number in other variable.Then we use digit extraction technique
+          and raise the digit to digit's power and store it in a variable.At the
+          end we print appropiate message according to the final value obtained.
         </h3>
       </div>
 

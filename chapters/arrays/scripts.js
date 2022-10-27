@@ -5,12 +5,26 @@ let Topics = [
   "palindromearray",
   "sevenwonders",
   "sumofevenodd",
+  "negativepositive",
+  "binarysearch",
+  "dynamicsize",
+  "alphabeticalorder",
+  "ascendingdescending",
+  "evenodd",
+  "marks",
 ];
 let Links = [
   "../arrays/Articles/CountriesCapital.html",
   "../arrays/Articles/PalindromeArray.html",
   "../arrays/Articles/SevenWonders.html",
   "../arrays/Articles/SumofEvenOdd.html",
+  "../arrays/Articles/negativePositive.html",
+  "../arrays/Articles/binarySearch.html",
+  "../arrays/Articles/dynamicSize.html",
+  "../arrays/Articles/alphabetical.html",
+  "../arrays/Articles/ascendingDescending.html",
+  "../arrays/Articles/evenOdd.html",
+  "../arrays/Articles/marks.html",
 ];
 
 let stringbox = document.getElementById("input");

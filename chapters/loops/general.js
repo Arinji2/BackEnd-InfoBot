@@ -18,7 +18,7 @@ let Topics = [
   "pronic",
   "disarium",
   "palprime",
-  
+  "munchausen",
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -38,6 +38,7 @@ let Links = [
   "../loops/Articles/pronic.html",
   "../loops/Articles/disarium.html",
   "../loops/Articles/palprime.html",
+  "../loops/Articles/munchausen.html",
 ];
 
 let stringbox = document.getElementById("input");

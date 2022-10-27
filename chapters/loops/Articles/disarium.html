@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>General Programs</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">Disarium</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>What is a Disarium?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>
+        A number is called Disarium if sum of its digits powered with their
+        respective positions is equal to the number itself.Example:- 89=8+(9*9)
+      </h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For Disarium</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>class Disarium</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">Disarium</h1>
+          <p>static void main()</p>
 
-<h3> What is a Disarium?</h3>
+          <p>{</p>
 
-<h3>A number is called Disarium if sum of its digits powered with their respective positions is equal to the number itself.Example:- 89=8+(9*9)</h3></div>
+          <p>Scanner sc=new Scanner(System.in);</p>
 
-<div class="code">
+          <p>System.out.print("Input a number : ");</p>
 
-<h2 id="animate-info">Code For Disarium</h2></div>
+          <p>int num = sc.nextInt();</p>
 
-<div class="code-text" id="animate-info">
+          <p>int copy = num, d = 0, sum = 0;</p>
 
-<p>import java.util.*;</p>
+          <p>String s = Integer.toString(num);</p>
 
-<p>class Disarium</p>
+          <p>int len = s.length();</p>
 
-<p>{</p>
+          <p>while(copy>0)</p>
 
-<p>static void main()</p>
+          <p>{</p>
 
-<p>{</p>
+          <p>d = copy % 10;</p>
 
-<p>Scanner sc=new Scanner(System.in);</p>
+          <p>sum = sum + (int)Math.pow(d,len);</p>
 
-<p>System.out.print("Input a number : ");</p>
+          <p>len--;</p>
 
-<p>int num = sc.nextInt();</p>
+          <p>copy = copy / 10;</p>
 
-<p>int copy = num, d = 0, sum = 0;</p>
+          <p>}</p>
 
-<p>String s = Integer.toString(num); </p>
+          <p>if(sum == num)</p>
 
-<p>int len = s.length();</p>
+          <p>System.out.println("Disarium Number");</p>
 
-<p>while(copy>0)</p>
+          <p>else</p>
 
-<p>{</p>
+          <p>System.out.println("It is not a Disarium Number");</p>
 
-<p>d = copy % 10; </p>
+          <p>}</p>
 
-<p>sum = sum + (int)Math.pow(d,len);</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, we take the input of a number and make a copy of
+          it.Then using wrapper class we convert the number into a string. Then
+          we use digit extraction and store the sum of the digits raised to its
+          position.At the end we check whether the sum is equal to the input
+          number.
+        </h3>
+      </div>
 
-<p>len--;</p>
-
-<p>copy = copy / 10;</p>
-
-<p>}</p>
-
-<p>if(sum == num)</p>
-
-<p> System.out.println("Disarium Number");</p>
-
-<p>else</p>
-
-<p>System.out.println("It is not a Disarium Number");</p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-In this program, we take the input of a number and make a copy of it.Then using wrapper class we convert the number into a string. Then we use digit extraction and store the sum of the digits raised to its position.At the end we check whether the sum is equal to the input number.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Even and Odd numbers</h1>
+
+      <h3>What is a Even and Odd numbers?</h3>
+
+      <h3>
+        Write a program to accept 20 numbers in a Single Dimensional Array (SDA)
+        arr[20]. Transfer and store all the even numbers in an array even[] and
+        all the odd numbers in another array odd[]. Finally, print the elements
+        of both the arrays.
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">Code For Even and Odd numbers</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>class even_odd_sort</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner(System.in);</p>
+
+          <p>int m[]=new int [20];</p>
+
+          <p>int i,e=0,o=0;</p>
+
+          <p>System.out.println("Enter 20 number");</p>
+
+          <p>for(i=0;i<20;i++)</p>
+
+          <p>{</p>
+
+          <p>m[i]=ob.nextInt();</p>
+
+          <p>if(m[i]%2==0)</p>
+
+          <p>e++;</p>
+
+          <p>else</p>
+
+          <p>o++;</p>
+
+          <p>}</p>
+
+          <p>int even[]=new int[e];</p>
+
+          <p>int odd[]=new int[o];</p>
+
+          <p>int k1=0,k2=0;</p>
+
+          <p>for(i=0;i<20;i++)</p>
+
+          <p>{</p>
+
+          <p>if(m[i]%2==0)</p>
+
+          <p>{</p>
+
+          <p>even[k1]=m[i];</p>
+
+          <p>k1++;</p>
+
+          <p>}</p>
+
+          <p>else</p>
+
+          <p>{</p>
+
+          <p>odd[k2]=m[i];</p>
+
+          <p>k2++;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>System.out.println("Even Array = ");</p>
+
+          <p>for(i=0;i<e;i++)</p>
+
+          <p>{</p>
+
+          <p>System.out.print(even[i]+" ");</p>
+
+          <p>}</p>
+
+          <p>System.out.println("Odd array = ");</p>
+
+          <p>for(i=0;i<o;i++)</p>
+
+          <p>{</p>
+
+          <p>System.out.print(odd[i]+" ");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          In this program, while taking the input for 20 numbers we use counters
+          and count the number of even and odd numbers to declare the storage of
+          respective arrays. Then we do element extraction of an array and check
+          whether they are an even number or an odd number and store it in the
+          respective array.At the end we print both arrays.
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>

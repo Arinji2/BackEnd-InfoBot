@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>General Programs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+      <h1 class="heading">Search on number of elements input by user</h1>
+
+      <h3>What is a Search on number of elements input by user?</h3>
+
+      <h3>
+        Write a program to input an array with the nth element taken by the user
+        and a s number to be searched. If found display the message “search
+        successful” with its position else “number not in the list”
+      </h3>
+
+      <div class="code">
+        <h2 id="animate-info">
+          Code For Search on number of elements input by user
+        </h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
+
+          <p>class n_search</p>
+
+          <p>{</p>
+
+          <p>static void main()</p>
+
+          <p>{</p>
+
+          <p>Scanner ob=new Scanner (System.in);</p>
+
+          <p>System.out.println("Enter number of elements for the array");</p>
+
+          <p>int n=ob.nextInt();</p>
+
+          <p>int i;</p>
+
+          <p>int m[]=new int[n];</p>
+
+          <p>System.out.println("Enter numbers for the array");</p>
+
+          <p>for(i=0;i<n;i++)</p>
+
+          <p>{</p>
+
+          <p>m[i]=ob.nextInt();</p>
+
+          <p>}</p>
+
+          <p>int s;boolean x=false;</p>
+
+          <p>System.out.println("Enter number to be searched");</p>
+
+          <p>s=ob.nextInt();</p>
+
+          <p>for(i=0;i<n;i++)</p>
+
+          <p>{</p>
+
+          <p>if(s==m[i])</p>
+
+          <p>{</p>
+
+          <p>x=true;</p>
+
+          <p>break;</p>
+
+          <p>}</p>
+
+          <p>}</p>
+
+          <p>if(x)</p>
+
+          <p>System.out.println("Search successful at position ="+(i+1));</p>
+
+          <p>else</p>
+
+          <p>System.out.println("Number not in list");</p>
+
+          <p>}</p>
+
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          For this search program,we take the input of the number of elements
+          and use it to declare storage of the array and use that number for the
+          limit of the for loop. Then we use linear search technique in which we
+          element extraction and check whether is it equal to the search number
+        </h3>
+      </div>
+
+      <script src="scripts.js"></script>
+    </body>
+  </head>
+</html>
