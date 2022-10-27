@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+    <title>General Programs</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<title>General Programs</title>
+    <head>
+      <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
+    <body>
+      <h1 class="heading">Palprime</h1>
 
-<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+      <h3>What is a Palprime?</h3>
 
-<link rel="stylesheet" href="styles.css" />
+      <h3>
+        The number should be a prime number as well as a palindrome number.A
+        Palindrome Number is a number which remains the same when reversed. For
+        Example: 121 , 454
+      </h3>
 
-</head>
+      <div class="code">
+        <h2 id="animate-info">Code For Palprime</h2>
+      </div>
+      <div class="container" id="animate-info">
+        <div class="code-text" id="animate-info">
+          <p>import java.util.*;</p>
 
-<body>
+          <p>class palprime</p>
 
-<div class="container" id="animate-info">
+          <p>{</p>
 
-<h1 class="heading">Palprime</h1>
+          <p>static void main()</p>
 
-<h3> What is a Palprime?</h3>
+          <p>{</p>
 
-<h3>The number should be a prime number as well as a palindrome number.A Palindrome Number is a number which remains the same when reversed. For Example: 121 , 454</h3></div>
+          <p>Scanner ob=new Scanner(System.in);</p>
 
-<div class="code">
+          <p>int n;</p>
 
-<h2 id="animate-info">Code For Palprime</h2></div>
+          <p>System.out.println("Enter number");</p>
 
-<div class="code-text" id="animate-info">
+          <p>n=ob.nextInt();</p>
 
-<p>import java.util.*;</p>
+          <p>int t=n,k=0,s=0,r;</p>
 
-<p>class palprime</p>
+          <p>int i;</p>
 
-<p>{</p>
+          <p>for(i=1;i<n;i++)</p>
 
-<p>static void main()</p>
+          <p>{</p>
 
-<p>{</p>
+          <p>if(n%i==0)</p>
 
-<p>Scanner ob=new Scanner(System.in);</p>
+          <p>k++;</p>
 
-<p>int n;</p>
+          <p>}</p>
 
-<p>System.out.println("Enter number");</p>
+          <p>while(t>0)</p>
 
-<p>n=ob.nextInt();</p>
+          <p>{</p>
 
-<p>int t=n,k=0,s=0,r;</p>
+          <p>r=t%10;</p>
 
-<p>int i;</p>
+          <p>s=(s*10)+r;</p>
 
-<p>for(i=1;i<n;i++)</p>
+          <p>t=t/10;</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>if(n%i==0)</p>
+          <p>if(s==n && k==1)</p>
 
-<p>k++;</p>
+          <p>System.out.println("The number is a palprime number");</p>
 
-<p>}</p>
+          <p>else</p>
 
-<p>while(t>0)</p>
+          <p>System.out.println("The number is not a palprime number");</p>
 
-<p>{</p>
+          <p>}</p>
 
-<p>r=t%10;</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="logic">
+        <h3 class="logic-text" id="animate-info">
+          For the Palprime number, we made a copy of the input number and first
+          counted the number of factors of the number. .Then we reversed it
+          using Character Extracting. Finally we checked whether it was a
+          palprime number or not.
+        </h3>
+      </div>
 
-<p>s=(s*10)+r;</p>
-
-<p>t=t/10;</p>
-
-<p>}</p>
-
-<p>if(s==n && k==1)</p>
-
-<p>System.out.println("The number is a palprime number");</p>
-
-<p>else</p>
-
-<p>System.out.println("The number is not a palprime number"); </p>
-
-<p>}</p>
-
-<p>}</p>
-
-</div><div class="logic">
-
-<h3 class="logic-text" id="animate-info">
-
-For the Palprime number, we made a copy of the input number and first counted the number of factors of the number. .Then we reversed it using Character Extracting. Finally we checked whether it was a palprime number or not.
-
-</h3>
-
-</div>
-
-<script src="scripts.js"></script>
-
-</body>
-
+      <script src="scripts.js"></script>
+    </body>
+  </head>
 </html>
