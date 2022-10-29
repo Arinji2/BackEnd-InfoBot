@@ -13,6 +13,7 @@ let Topics = [
   "evenodd",
   "marks",
   "specialword",
+  "thirdarray".
 ];
 let Links = [
   "../arrays/Articles/CountriesCapital.html",
@@ -27,6 +28,7 @@ let Links = [
   "../arrays/Articles/evenOdd.html",
   "../arrays/Articles/marks.html",
   "../arrays/Articles/specialword.html",
+  "../arrays/Articles/thirdarray.html",
 ];
 
 let stringbox = document.getElementById("input");
