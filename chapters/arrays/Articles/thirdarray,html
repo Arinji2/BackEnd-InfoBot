@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>InfoBot</title>
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<h1 class="heading">ThirdArray</h1>
+
+<h3>What is a ThirdArray?</h3>
+
+<h3>To input the elements of the first and second array in the third array</h3>
+
+<div class="code">
+
+<h2 id="animate-info">Code For ThirdArray</h2>
+
+</div>
+
+<div class="container" id="animate-info">
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*; public class array1 { public static void main() {</p>
+
+<p></p>
+
+<p>Scanner in = new Scanner(System.in);</p>
+
+<p></p>
+
+<p>int P[] = new int[6];</p>
+
+<p>int Q[] = new int[4];</p>
+
+<p>int R[] = new int[10];</p>
+
+<p>int i = 0;</p>
+
+<p></p>
+
+<p>System.out.println("Enter 6 elements of array P:");</p>
+
+<p>for (i = 0; i < P.length; i++)</p>
+
+<p>{</p>
+
+<p>P[i] = in.nextInt();</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>System.out.println("Enter 4 elements of array Q:");</p>
+
+<p>for (i = 0; i < Q.length; i++)</p>
+
+<p>{</p>
+
+<p>Q[i] = in.nextInt();</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>i = 0;</p>
+
+<p>while(i < P.length)</p>
+
+<p>{</p>
+
+<p>R[i] = P[i];</p>
+
+<p>i++;</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>int j = 0;</p>
+
+<p>while(j < Q.length)</p>
+
+<p>{</p>
+
+<p>R[i++] = Q[j++];</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>System.out.println("Elements of Array R:");</p>
+
+<p>for (i = 0; i < R.length; i++) {</p>
+
+<p>System.out.print(R[i] + " ");</p>
+
+<p>} } }</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3 class="logic-text" id="animate-info">In the first while loop we
+copy the elements of elements of array p in array r and in the second
+while loop we use the incremented i to continue the index position in
+r and copy the elements of array q</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
