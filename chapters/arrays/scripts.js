@@ -12,6 +12,7 @@ let Topics = [
   "ascendingdescending",
   "evenodd",
   "marks",
+  "specialword",
 ];
 let Links = [
   "../arrays/Articles/CountriesCapital.html",
@@ -25,6 +26,7 @@ let Links = [
   "../arrays/Articles/ascendingDescending.html",
   "../arrays/Articles/evenOdd.html",
   "../arrays/Articles/marks.html",
+  "../arrays/Articles/specialword.html",
 ];
 
 let stringbox = document.getElementById("input");
