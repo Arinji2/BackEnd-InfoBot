@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>InfoBot</title>
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<h1 class="heading">Specialword</h1>
+
+<h3>What is a Specialword?</h3>
+
+<h3>Display all the special words present in the array. A special word is a word which starts and ends with the same letter.</h3>
+
+<div class="code">
+
+<h2 id="animate-info">Code For Specialword</h2>
+
+</div>
+
+<div class="container" id="animate-info">
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.*; </p>
+
+<p>class specialword </p>
+
+<p>{</p>
+
+<p>static void main()</p>
+
+<p>{</p>
+
+<p>Scanner ob=new Scanner(System.in);</p>
+
+<p>String s[]=new String[10];</p>
+
+<p>int i;</p>
+
+<p>System.out.println("Enter 10 names");</p>
+
+<p>for(i=0;i<10;i++)</p>
+
+<p>{</p>
+
+<p>s[i]=ob.next();</p>
+
+<p>s[i]=s[i].toUpperCase();</p>
+
+<p>}</p>
+
+<p>for(i=0;i<10;i++)</p>
+
+<p>{</p>
+
+<p>if(s[i].charAt(0)==(s[i].charAt(s[i].length()-1)))</p>
+
+<p>System.out.println(s[i]);</p>
+
+<p>} } }</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3 class="logic-text" id="animate-info">In this program, we take the input of names and convert each name to uppercase.Then using element extraction we check whether the first and last letter of each name are the same. If same we print the name.</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>

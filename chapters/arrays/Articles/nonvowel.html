@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+<title>InfoBot</title>
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+<h1 class="heading">NonVowelNameArray</h1>
+
+<h3>What is a NonVowelNameArray?</h3>
+
+<h3>To input 10 names in a Single Dimensional Array and display the
+names that do not start with vowels</h3>
+
+<div class="code">
+
+<h2 id="animate-info">Code For NonVowelNameArray</h2>
+
+</div>
+
+<div class="container" id="animate-info">
+
+<div class="code-text" id="animate-info">
+
+<p>import java.util.Scanner; public class array2 { public static void
+main() {</p>
+
+<p>Scanner in = new Scanner(System.in);</p>
+
+<p>String names[] = new String[10];</p>
+
+<p>System.out.println("Enter 10 names");</p>
+
+<p></p>
+
+<p>for (int i = 0; i < names.length; i++)</p>
+
+<p>{</p>
+
+<p>names[i] = in.nextLine();</p>
+
+<p>}</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>for (int i = 0; i < names.length; i++) {</p>
+
+<p>if (Character.toUpperCase(names[i].charAt(0)) !=
+'A'&&Character.toUpperCase(names[i].charAt(0)) !=
+'E'&&Character.toUpperCase(names[i].charAt(0)) !=
+'I'&&Character.toUpperCase(names[i].charAt(0)) !=
+'O'&&Character.toUpperCase(names[i].charAt(0)) != 'U')</p>
+
+<p></p>
+
+<p>{</p>
+
+<p>System.out.println(names[i]);</p>
+
+<p>}</p>
+
+<p>} }</p>
+
+<p>}</p>
+
+</div>
+
+</div>
+
+</div>
+
+<h3 class="logic-text"
+id="animate-info">Character.toUpperCase(names[i].charAt(0)) helps us
+extract the first character of the element of the array and check if
+its not equal to vowel if so then display it.</h3>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
