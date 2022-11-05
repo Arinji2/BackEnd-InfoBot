@@ -1,6 +1,22 @@
 function classChoose(number) {
-  if (number === 1) window.location.assign("Articles/class1.html");
-  else if (number === 2) window.location.assign("Articles/class2.html");
-  else if (number === 3) window.location.assign("Articles/class3.html");
-  else if (number === 4) window.location.assign("Articles/class4.html");
+  switch (number) {
+    case 1:
+      window.location.assign("Articles/class1.html");
+      break;
+    case 2:
+      window.location.assign("Articles/class2.html");
+      break;
+    case 3:
+      window.location.assign("Articles/class3.html");
+      break;
+    case 4:
+      window.location.assign("Articles/class4.html");
+      break;
+    case 5:
+      window.location.assign("Articles/class5.html");
+      break;
+    case 6:
+      window.location.assign("Articles/class6.html");
+      break;
+  }
 }

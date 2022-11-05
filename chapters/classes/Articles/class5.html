@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Right_Triangle</h1>
+
+    <h3>What is a Right_Triangle?</h3>
+
+    <h3>
+      Create a class Right_Triangle having data members as the perpendicular and
+      base of aright-angled triangle(int p, int b). Use a parameterised
+      constructor to initialize the object.With the help of function area( ) and
+      diagonal( ), calculate and display the area and diagonal of the right
+      angled triangle
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For Right_Triangle</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>
+          class Right_Triangle { static int perpendicular,base;
+          Right_Triangle(int p,int b) {
+        </p>
+
+        <p>perpendicular=p;</p>
+
+        <p>base=b; } static void area() {</p>
+
+        <p>double area=(0.5*perpendicular*base);</p>
+
+        <p>System.out.println("Area ="+area); } static void diagonal() {</p>
+
+        <p>double diagonal;</p>
+
+        <p>diagonal=Math.sqrt(((perpendicular*perpendicular)+(base*base)));</p>
+
+        <p>
+          System.out.println("Length of diagonal= "+diagonal); } static void
+          main() {
+        </p>
+
+        <p>Right_Triangle sc=new Right_Triangle(3,4);</p>
+
+        <p>sc.area();</p>
+
+        <p>sc.diagonal(); } }</p>
+      </div>
+    </div>
+    <h3 class="logic-text" id="animate-info">
+      In this program we calculate the area using the formula 1/2*b*h and print
+      it. We use the Pythagoras theorem to calculate the length of the diagonal.
+      We use void main to run the above functions.
+    </h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

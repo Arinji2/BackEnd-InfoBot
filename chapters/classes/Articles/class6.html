@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Triplet</h1>
+
+    <h3>What is a Triplet?</h3>
+
+    <h3>
+      When sum of square of two numbers forms a square of some other number,
+      then these three numbers are called a Pythagorean triplet.
+      Example:(3,4,5):
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For Triplet</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*; class triplet { int a,b,c; void getdata() {</p>
+
+        <p>Scanner ob=new Scanner(System.in);</p>
+
+        <p>System.out.println("Enter three numbers");</p>
+
+        <p>a=ob.nextInt();</p>
+
+        <p>b=ob.nextInt();</p>
+
+        <p>c=ob.nextInt(); } void findprint() {</p>
+
+        <p>if(((a*a)+(b*b))==(c*c))</p>
+
+        <p>{</p>
+
+        <p>System.out.println("The numbers are a pythagorean triplet");</p>
+
+        <p>}</p>
+
+        <p>else</p>
+
+        <p>
+          System.out.println("the numbers are not a pythagorean triplet"); }
+          void main() {
+        </p>
+
+        <p>triplet sc=new triplet();</p>
+
+        <p>sc.getdata();</p>
+
+        <p>sc.findprint(); } }</p>
+      </div>
+    </div>
+
+    <h3 class="logic-text" id="animate-info">
+      In this program we accept the input in void getdata().In void findprint()
+      we check whether the sum of square of first two numbers is equal to the
+      square of the third number. Accordingly we print appropriate statements.
+      We use void main() to run the above functions.
+    </h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
