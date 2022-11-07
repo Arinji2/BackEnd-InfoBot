@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Rectangle</h1>
+
+    <h3>What is a Rectangle?</h3>
+
+    <h3>
+      To calculate volume and surface area of rectangle using member methods
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For RectangleClassProg</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>public class Rectangle</p>
+        <p>{</p>
+        <p>double length; double breadth; double height;</p>
+        <p>Rectangle(double l,double b,double h)</p>
+        <p>{</p>
+
+        <p>length = l;</p>
+
+        <p>breadth = b;</p>
+
+        <p>height = h; } void surfacearea() {</p>
+
+        <p>
+          double sa = 2 * (length * breadth + breadth * height + length *
+          height);
+        </p>
+
+        <p>System.out.println("Surface Area = " + sa); } void volume() {</p>
+
+        <p>double vol = length * breadth * height;</p>
+
+        <p>System.out.println("Volume = " + vol); } static void main() {</p>
+
+        <p>Rectangle sc=new Rectangle(20.0,17.0,16.0);</p>
+
+        <p>sc.surfacearea();</p>
+
+        <p>sc.volume();</p>
+
+        <p>}</p>
+        <p>}</p>
+      </div>
+
+      <h3 class="logic-text" id="animate-info">
+        using class surfacearea() we calculate surface area To find the surface
+        area of a cuboid, add the areas of all 6 faces. We can also label the
+        length (l), breadth (b), and height (h) and use the formula,
+        SA=2lb+2lh+2hb, to find the surface area and through function volume we
+        find the volume of cuboid that is l*b*h
+      </h3>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
