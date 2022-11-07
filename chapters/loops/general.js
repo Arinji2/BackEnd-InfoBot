@@ -19,6 +19,9 @@ let Topics = [
   "disarium",
   "palprime",
   "munchausen",
+  "neon",
+  "niven",
+  "harshad",
 ];
 let Links = [
   "../loops/Articles/palindrome.html",
@@ -39,6 +42,9 @@ let Links = [
   "../loops/Articles/disarium.html",
   "../loops/Articles/palprime.html",
   "../loops/Articles/munchausen.html",
+  "../loops/Articles/neon.html",
+  "../loops/Articles/niven.html",
+  "../loops/Articles/harshad.html",
 ];
 
 let stringbox = document.getElementById("input");

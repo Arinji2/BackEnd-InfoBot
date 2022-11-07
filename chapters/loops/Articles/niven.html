@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Niven Number</h1>
+
+    <h3>What is a Niven Number?</h3>
+
+    <h3>
+      A number is said to be the Niven number if it is divisible by the sum of
+      its digit.
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For Niven Number</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>
+          import java.util.*; public class Niven_Number { public static void
+          main() {
+        </p>
+
+        <p>Scanner in = new Scanner(System.in);</p>
+
+        <p></p>
+
+        <p></p>
+
+        <p>int num;</p>
+
+        <p>int rem = 0, sum = 0, n;</p>
+
+        <p>System.out.println("Enter the number to check");</p>
+
+        <p>num = in.nextInt();</p>
+
+        <p></p>
+
+        <p>n = num;</p>
+
+        <p></p>
+
+        <p></p>
+
+        <p>while(num > 0)</p>
+
+        <p>{</p>
+
+        <p>rem = num%10;</p>
+
+        <p>sum = sum + rem;</p>
+
+        <p>num = num/10;</p>
+
+        <p>}</p>
+
+        <p></p>
+
+        <p></p>
+
+        <p>if(n%sum == 0)</p>
+
+        <p>System.out.println(n + " is a Niven number");</p>
+
+        <p>else</p>
+
+        <p>System.out.println(n + " is not a Niven number"); } }</p>
+      </div>
+    </div>
+
+    <h3 class="logic-text" id="animate-info">
+      In this program we are first defining and taking the value of the variable
+      num from the user. Then we are making a copy of the num by storing the
+      value of num in variable n. We use a while loop in which we divide the
+      number by 10 to get its remainder i.e. its digit which is then added to
+      our total sum. After the loop exits, variable n undergoes a condition, it
+      checks whether the number is divisible but the sum or not. If it does then
+      the given number is a Niven number. Else, given number is not a Niven
+      number.
+    </h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

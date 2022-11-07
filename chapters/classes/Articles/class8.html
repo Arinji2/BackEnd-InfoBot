@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Next to Next Letter</h1>
+
+    <h3>What is a Next to Next Letter?</h3>
+
+    <h3>
+      Replace each character with the next to next character. For Example A to C
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For Next to Next Letter</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>
+          import java.util.*; class Stringop { static String str; Stringop() {
+        </p>
+
+        <p>str=""; } static void accept() {</p>
+
+        <p>Scanner ob=new Scanner(System.in);</p>
+
+        <p>System.out.println("Enter sentence");</p>
+
+        <p>str=ob.nextLine();</p>
+
+        <p>} static void encode() {</p>
+
+        <p>char b;</p>
+
+        <p>int i;</p>
+
+        <p></p>
+
+        <p>for(i=0;i<str.length();i++)</p>
+
+        <p>{</p>
+
+        <p>b=str.charAt(i);</p>
+
+        <p>if(b==' ')</p>
+
+        <p>System.out.print(b);</p>
+
+        <p>else if(b=='Y'||b=='y')</p>
+
+        <p>System.out.print("a");</p>
+
+        <p>else if(b=='z'||b=='Z')</p>
+
+        <p>System.out.print("b");</p>
+
+        <p>else</p>
+
+        <p>System.out.print(((char)(b+2)));</p>
+
+        <p>}</p>
+
+        <p>System.out.println(); } static void print() {</p>
+
+        <p>int i;</p>
+
+        <p>char b;</p>
+
+        <p></p>
+
+        <p>for(i=0;i<str.length();i++)</p>
+
+        <p>{</p>
+
+        <p>b=str.charAt(i);</p>
+
+        <p>if(b==' ')</p>
+
+        <p>System.out.println();</p>
+
+        <p>else</p>
+
+        <p>System.out.print(b);</p>
+
+        <p>} } static void main() {</p>
+
+        <p>Stringop sc=new Stringop();</p>
+
+        <p>sc.accept();</p>
+
+        <p>sc.encode();</p>
+
+        <p>sc.print(); } }</p>
+      </div>
+    </div>
+
+    <h3 class="logic-text" id="animate-info">
+      In this program we initialize the variable str to null in function
+      Stringop().Then we take input in function void accept(). In void
+      encode(),we use character extraction and print the next to next letter
+      (i.e. for A we print C).In void print() we print each word of the string
+      on a new line.Finally we use void main() to run the above functions.
+    </h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
