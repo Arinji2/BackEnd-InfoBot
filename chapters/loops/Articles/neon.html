@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Pictures/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+
+    <title>InfoBot</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">Neon</h1>
+
+    <h3>What is a Neon?</h3>
+
+    <h3>
+      Neon number is a number where the sum of digits of square of the number is
+      equal to the number. (eg.9 9*9 = 81 and 8+1=9)
+    </h3>
+
+    <div class="code">
+      <h2 id="animate-info">Code For Neon</h2>
+    </div>
+
+    <div class="container" id="animate-info">
+      <div class="code-text" id="animate-info">
+        <p>import java.util.*; class neon { static void main() {</p>
+
+        <p>Scanner ob=new Scanner(System.in);</p>
+
+        <p>System.out.println("Enter a number");</p>
+
+        <p>int n=ob.nextInt();</p>
+
+        <p>int s=n*n;</p>
+
+        <p>int a=0,r;</p>
+
+        <p>while(s>0)</p>
+
+        <p>{</p>
+
+        <p>r=s%10;</p>
+
+        <p>a=a+r;</p>
+
+        <p>s=s/10;</p>
+
+        <p>}</p>
+
+        <p>if(a==n)</p>
+
+        <p>System.out.println("It is a Neon number");</p>
+
+        <p>else</p>
+
+        <p>System.out.println("It is not a Neon number"); } }</p>
+      </div>
+    </div>
+
+    <h3 class="logic-text" id="animate-info">
+      In this program we use character first store the square of the input
+      number in a variable. Using digit extraction we add the digits of the
+      square. At the end we check whether it is equal to the input number.
+    </h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

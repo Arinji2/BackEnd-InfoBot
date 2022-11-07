@@ -18,5 +18,14 @@ function classChoose(number) {
     case 6:
       window.location.assign("Articles/class6.html");
       break;
+    case 7:
+      window.location.assign("Articles/class7.html");
+      break;
+    case 8:
+      window.location.assign("Articles/class8.html");
+      break;
+    case 9:
+      window.location.assign("Articles/class9.html");
+      break;
   }
 }

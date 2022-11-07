@@ -30,5 +30,8 @@ function pattern(number) {
     case 10:
       window.location.assign("Articles/pattern10.html");
       break;
+    case 11:
+      window.location.assign("Articles/pattern11.html");
+      break;
   }
 }
